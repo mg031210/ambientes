@@ -1,14 +1,14 @@
 ﻿Public Class Form1
 
-    Private Sub Nombre_Click(sender As Object, e As EventArgs) Handles Nombre.Click
+    Private Sub Nombre_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -16,11 +16,11 @@
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -28,7 +28,7 @@
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -36,11 +36,20 @@
 
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+    Private Sub ComboBox1_SelectedIndexChanged_1(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub SocioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SocioToolStripMenuItem.Click
 
+    End Sub
+
+    Private Sub InsertarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles InsertarToolStripMenuItem2.Click
+
+    End Sub
+
+    Private Sub InsertarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InsertarToolStripMenuItem.Click
+        Form2 frm = New Form2();
+        frm.Show();
     End Sub
 End Class
