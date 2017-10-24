@@ -168,7 +168,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(337, 347)
+        Me.Button1.Location = New System.Drawing.Point(469, 375)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 12
@@ -180,7 +180,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.SocioToolStripMenuItem, Me.ProveedorToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(580, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(609, 24)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -243,7 +243,7 @@ Partial Class Form1
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(267, 37)
+        Me.TextBox6.Location = New System.Drawing.Point(308, 37)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(236, 20)
         Me.TextBox6.TabIndex = 16
@@ -253,7 +253,7 @@ Partial Class Form1
         Me.Button2.BackgroundImage = Global.ambientes.My.Resources.Resources.search_148820_960_720
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(509, 27)
+        Me.Button2.Location = New System.Drawing.Point(550, 27)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(47, 38)
         Me.Button2.TabIndex = 17
@@ -284,7 +284,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(580, 384)
+        Me.ClientSize = New System.Drawing.Size(609, 421)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button2)
