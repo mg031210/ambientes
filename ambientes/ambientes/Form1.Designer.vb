@@ -37,10 +37,11 @@ Partial Class Form1
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Left
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.SocioToolStripMenuItem, Me.ProveedorToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(609, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(98, 421)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -48,26 +49,26 @@ Partial Class Form1
         '
         Me.UsuarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertarToolStripMenuItem2, Me.ActualizarToolStripMenuItem2})
         Me.UsuarioToolStripMenuItem.Name = "UsuarioToolStripMenuItem"
-        Me.UsuarioToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+        Me.UsuarioToolStripMenuItem.Size = New System.Drawing.Size(85, 19)
         Me.UsuarioToolStripMenuItem.Text = "Usuario"
         '
         'InsertarToolStripMenuItem2
         '
         Me.InsertarToolStripMenuItem2.Name = "InsertarToolStripMenuItem2"
-        Me.InsertarToolStripMenuItem2.Size = New System.Drawing.Size(126, 22)
+        Me.InsertarToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.InsertarToolStripMenuItem2.Text = "Insertar"
         '
         'ActualizarToolStripMenuItem2
         '
         Me.ActualizarToolStripMenuItem2.Name = "ActualizarToolStripMenuItem2"
-        Me.ActualizarToolStripMenuItem2.Size = New System.Drawing.Size(126, 22)
+        Me.ActualizarToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.ActualizarToolStripMenuItem2.Text = "Actualizar"
         '
         'SocioToolStripMenuItem
         '
         Me.SocioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertarToolStripMenuItem, Me.ActualizarToolStripMenuItem})
         Me.SocioToolStripMenuItem.Name = "SocioToolStripMenuItem"
-        Me.SocioToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
+        Me.SocioToolStripMenuItem.Size = New System.Drawing.Size(85, 19)
         Me.SocioToolStripMenuItem.Text = "Socio"
         '
         'InsertarToolStripMenuItem
@@ -86,19 +87,19 @@ Partial Class Form1
         '
         Me.ProveedorToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertarToolStripMenuItem1, Me.ActualizarToolStripMenuItem1})
         Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
-        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
+        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(85, 19)
         Me.ProveedorToolStripMenuItem.Text = "Proveedor"
         '
         'InsertarToolStripMenuItem1
         '
         Me.InsertarToolStripMenuItem1.Name = "InsertarToolStripMenuItem1"
-        Me.InsertarToolStripMenuItem1.Size = New System.Drawing.Size(126, 22)
+        Me.InsertarToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.InsertarToolStripMenuItem1.Text = "Insertar"
         '
         'ActualizarToolStripMenuItem1
         '
         Me.ActualizarToolStripMenuItem1.Name = "ActualizarToolStripMenuItem1"
-        Me.ActualizarToolStripMenuItem1.Size = New System.Drawing.Size(126, 22)
+        Me.ActualizarToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ActualizarToolStripMenuItem1.Text = "Actualizar"
         '
         'Form1

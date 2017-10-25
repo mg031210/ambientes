@@ -1,4 +1,5 @@
 ﻿Public Class Form1
+    Public frm As New Form2()
 
     Private Sub Nombre_Click(sender As Object, e As EventArgs)
 
@@ -46,10 +47,19 @@
 
     Private Sub InsertarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles InsertarToolStripMenuItem2.Click
 
+        frm.Show()
+        frm.StartPosition = FormStartPosition.CenterScreen
     End Sub
 
     Private Sub InsertarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InsertarToolStripMenuItem.Click
-        Form2 frm = New Form2();
-        frm.Show();
+
+    End Sub
+
+    Private Sub NuevoToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub UsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuarioToolStripMenuItem.Click
+
     End Sub
 End Class
