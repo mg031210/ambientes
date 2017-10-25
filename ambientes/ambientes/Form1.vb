@@ -45,13 +45,13 @@
 
     End Sub
 
-    Private Sub InsertarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles InsertarToolStripMenuItem2.Click
+    Private Sub InsertarToolStripMenuItem2_Click(sender As Object, e As EventArgs)
 
         frm.Show()
         frm.StartPosition = FormStartPosition.CenterScreen
     End Sub
 
-    Private Sub InsertarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InsertarToolStripMenuItem.Click
+    Private Sub InsertarToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 

@@ -22,6 +22,7 @@ Partial Class Form6
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form6))
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -36,9 +37,11 @@ Partial Class Form6
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Nombre = New System.Windows.Forms.Label()
         Me.nom = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox6
@@ -62,7 +65,7 @@ Partial Class Form6
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(106, 109)
+        Me.Label5.Location = New System.Drawing.Point(171, 130)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(127, 20)
         Me.Label5.TabIndex = 63
@@ -71,7 +74,7 @@ Partial Class Form6
         'TextBox5
         '
         Me.TextBox5.AccessibleName = "nom"
-        Me.TextBox5.Location = New System.Drawing.Point(265, 111)
+        Me.TextBox5.Location = New System.Drawing.Point(330, 132)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(68, 20)
         Me.TextBox5.TabIndex = 62
@@ -81,7 +84,7 @@ Partial Class Form6
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(154, 318)
+        Me.Label4.Location = New System.Drawing.Point(219, 339)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(79, 20)
         Me.Label4.TabIndex = 61
@@ -90,7 +93,7 @@ Partial Class Form6
         'TextBox4
         '
         Me.TextBox4.AccessibleName = "nom"
-        Me.TextBox4.Location = New System.Drawing.Point(265, 320)
+        Me.TextBox4.Location = New System.Drawing.Point(330, 341)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(127, 20)
         Me.TextBox4.TabIndex = 60
@@ -100,7 +103,7 @@ Partial Class Form6
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(149, 277)
+        Me.Label3.Location = New System.Drawing.Point(214, 298)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(84, 20)
         Me.Label3.TabIndex = 59
@@ -109,7 +112,7 @@ Partial Class Form6
         'TextBox3
         '
         Me.TextBox3.AccessibleName = "nom"
-        Me.TextBox3.Location = New System.Drawing.Point(265, 277)
+        Me.TextBox3.Location = New System.Drawing.Point(330, 298)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(300, 20)
         Me.TextBox3.TabIndex = 58
@@ -119,7 +122,7 @@ Partial Class Form6
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(89, 240)
+        Me.Label2.Location = New System.Drawing.Point(154, 261)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(144, 20)
         Me.Label2.TabIndex = 57
@@ -128,7 +131,7 @@ Partial Class Form6
         'TextBox2
         '
         Me.TextBox2.AccessibleName = "nom"
-        Me.TextBox2.Location = New System.Drawing.Point(265, 242)
+        Me.TextBox2.Location = New System.Drawing.Point(330, 263)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(177, 20)
         Me.TextBox2.TabIndex = 56
@@ -138,7 +141,7 @@ Partial Class Form6
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(92, 196)
+        Me.Label1.Location = New System.Drawing.Point(157, 217)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(141, 20)
         Me.Label1.TabIndex = 55
@@ -147,7 +150,7 @@ Partial Class Form6
         'TextBox1
         '
         Me.TextBox1.AccessibleName = "nom"
-        Me.TextBox1.Location = New System.Drawing.Point(265, 198)
+        Me.TextBox1.Location = New System.Drawing.Point(330, 219)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(177, 20)
         Me.TextBox1.TabIndex = 54
@@ -157,7 +160,7 @@ Partial Class Form6
         Me.Nombre.AutoSize = True
         Me.Nombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Nombre.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Nombre.Location = New System.Drawing.Point(162, 152)
+        Me.Nombre.Location = New System.Drawing.Point(227, 173)
         Me.Nombre.Name = "Nombre"
         Me.Nombre.Size = New System.Drawing.Size(71, 20)
         Me.Nombre.TabIndex = 53
@@ -166,10 +169,29 @@ Partial Class Form6
         'nom
         '
         Me.nom.AccessibleName = "nom"
-        Me.nom.Location = New System.Drawing.Point(265, 152)
+        Me.nom.Location = New System.Drawing.Point(330, 173)
         Me.nom.Name = "nom"
         Me.nom.Size = New System.Drawing.Size(177, 20)
         Me.nom.TabIndex = 52
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label6.Location = New System.Drawing.Point(233, 380)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(65, 20)
+        Me.Label6.TabIndex = 68
+        Me.Label6.Text = "Celular"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.AccessibleName = "nom"
+        Me.TextBox7.Location = New System.Drawing.Point(330, 382)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(127, 20)
+        Me.TextBox7.TabIndex = 67
         '
         'Button2
         '
@@ -182,24 +204,15 @@ Partial Class Form6
         Me.Button2.TabIndex = 66
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label6
+        'PictureBox1
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(168, 359)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 20)
-        Me.Label6.TabIndex = 68
-        Me.Label6.Text = "Celular"
-        '
-        'TextBox7
-        '
-        Me.TextBox7.AccessibleName = "nom"
-        Me.TextBox7.Location = New System.Drawing.Point(265, 361)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(127, 20)
-        Me.TextBox7.TabIndex = 67
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(156, 134)
+        Me.PictureBox1.TabIndex = 101
+        Me.PictureBox1.TabStop = False
         '
         'Form6
         '
@@ -207,6 +220,7 @@ Partial Class Form6
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(759, 492)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.Button2)
@@ -226,6 +240,7 @@ Partial Class Form6
         Me.Controls.Add(Me.nom)
         Me.Name = "Form6"
         Me.Text = "Actualizar Usuario"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -248,4 +263,5 @@ Partial Class Form6
     Friend WithEvents nom As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

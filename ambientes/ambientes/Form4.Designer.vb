@@ -22,6 +22,7 @@ Partial Class Form4
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form4))
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -43,6 +44,8 @@ Partial Class Form4
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label6
@@ -50,7 +53,7 @@ Partial Class Form4
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(183, 340)
+        Me.Label6.Location = New System.Drawing.Point(222, 345)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(32, 20)
         Me.Label6.TabIndex = 52
@@ -77,7 +80,7 @@ Partial Class Form4
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(144, 92)
+        Me.Label5.Location = New System.Drawing.Point(183, 97)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 20)
         Me.Label5.TabIndex = 48
@@ -86,7 +89,7 @@ Partial Class Form4
         'TextBox5
         '
         Me.TextBox5.AccessibleName = "nom"
-        Me.TextBox5.Location = New System.Drawing.Point(262, 92)
+        Me.TextBox5.Location = New System.Drawing.Point(301, 97)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(68, 20)
         Me.TextBox5.TabIndex = 47
@@ -96,7 +99,7 @@ Partial Class Form4
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(131, 299)
+        Me.Label4.Location = New System.Drawing.Point(170, 304)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(84, 20)
         Me.Label4.TabIndex = 46
@@ -105,7 +108,7 @@ Partial Class Form4
         'TextBox4
         '
         Me.TextBox4.AccessibleName = "nom"
-        Me.TextBox4.Location = New System.Drawing.Point(262, 301)
+        Me.TextBox4.Location = New System.Drawing.Point(301, 306)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(127, 20)
         Me.TextBox4.TabIndex = 45
@@ -115,7 +118,7 @@ Partial Class Form4
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(177, 256)
+        Me.Label3.Location = New System.Drawing.Point(216, 261)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(38, 20)
         Me.Label3.TabIndex = 44
@@ -124,7 +127,7 @@ Partial Class Form4
         'TextBox3
         '
         Me.TextBox3.AccessibleName = "nom"
-        Me.TextBox3.Location = New System.Drawing.Point(262, 258)
+        Me.TextBox3.Location = New System.Drawing.Point(301, 263)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(300, 20)
         Me.TextBox3.TabIndex = 43
@@ -134,7 +137,7 @@ Partial Class Form4
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(121, 221)
+        Me.Label2.Location = New System.Drawing.Point(160, 226)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(94, 20)
         Me.Label2.TabIndex = 42
@@ -143,7 +146,7 @@ Partial Class Form4
         'TextBox2
         '
         Me.TextBox2.AccessibleName = "nom"
-        Me.TextBox2.Location = New System.Drawing.Point(262, 223)
+        Me.TextBox2.Location = New System.Drawing.Point(301, 228)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(177, 20)
         Me.TextBox2.TabIndex = 41
@@ -153,7 +156,7 @@ Partial Class Form4
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(121, 177)
+        Me.Label1.Location = New System.Drawing.Point(160, 182)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(94, 20)
         Me.Label1.TabIndex = 40
@@ -162,7 +165,7 @@ Partial Class Form4
         'TextBox1
         '
         Me.TextBox1.AccessibleName = "nom"
-        Me.TextBox1.Location = New System.Drawing.Point(262, 179)
+        Me.TextBox1.Location = New System.Drawing.Point(301, 184)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(177, 20)
         Me.TextBox1.TabIndex = 39
@@ -172,7 +175,7 @@ Partial Class Form4
         Me.Nombre.AutoSize = True
         Me.Nombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Nombre.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Nombre.Location = New System.Drawing.Point(170, 131)
+        Me.Nombre.Location = New System.Drawing.Point(209, 136)
         Me.Nombre.Name = "Nombre"
         Me.Nombre.Size = New System.Drawing.Size(45, 20)
         Me.Nombre.TabIndex = 38
@@ -181,7 +184,7 @@ Partial Class Form4
         'nom
         '
         Me.nom.AccessibleName = "nom"
-        Me.nom.Location = New System.Drawing.Point(262, 133)
+        Me.nom.Location = New System.Drawing.Point(301, 138)
         Me.nom.Name = "nom"
         Me.nom.Size = New System.Drawing.Size(177, 20)
         Me.nom.TabIndex = 37
@@ -189,7 +192,7 @@ Partial Class Form4
         'TextBox7
         '
         Me.TextBox7.AccessibleName = "nom"
-        Me.TextBox7.Location = New System.Drawing.Point(262, 342)
+        Me.TextBox7.Location = New System.Drawing.Point(301, 347)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(127, 20)
         Me.TextBox7.TabIndex = 53
@@ -197,7 +200,7 @@ Partial Class Form4
         'TextBox8
         '
         Me.TextBox8.AccessibleName = "nom"
-        Me.TextBox8.Location = New System.Drawing.Point(262, 381)
+        Me.TextBox8.Location = New System.Drawing.Point(301, 386)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(127, 20)
         Me.TextBox8.TabIndex = 55
@@ -207,7 +210,7 @@ Partial Class Form4
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(162, 379)
+        Me.Label7.Location = New System.Drawing.Point(201, 384)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(53, 20)
         Me.Label7.TabIndex = 54
@@ -216,7 +219,7 @@ Partial Class Form4
         'TextBox9
         '
         Me.TextBox9.AccessibleName = "nom"
-        Me.TextBox9.Location = New System.Drawing.Point(262, 423)
+        Me.TextBox9.Location = New System.Drawing.Point(301, 428)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(127, 20)
         Me.TextBox9.TabIndex = 57
@@ -226,7 +229,7 @@ Partial Class Form4
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(37, 421)
+        Me.Label8.Location = New System.Drawing.Point(76, 426)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(178, 20)
         Me.Label8.TabIndex = 56
@@ -243,12 +246,23 @@ Partial Class Form4
         Me.Button2.TabIndex = 51
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(156, 134)
+        Me.PictureBox1.TabIndex = 101
+        Me.PictureBox1.TabStop = False
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(752, 506)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TextBox8)
@@ -272,6 +286,7 @@ Partial Class Form4
         Me.Controls.Add(Me.nom)
         Me.Name = "Form4"
         Me.Text = "Actualizar Proveedor"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -297,4 +312,5 @@ Partial Class Form4
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents Label8 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
