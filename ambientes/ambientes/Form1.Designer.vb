@@ -41,7 +41,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.SocioToolStripMenuItem, Me.ProveedorToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(98, 421)
+        Me.MenuStrip1.Size = New System.Drawing.Size(79, 421)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -49,57 +49,57 @@ Partial Class Form1
         '
         Me.UsuarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertarToolStripMenuItem2, Me.ActualizarToolStripMenuItem2})
         Me.UsuarioToolStripMenuItem.Name = "UsuarioToolStripMenuItem"
-        Me.UsuarioToolStripMenuItem.Size = New System.Drawing.Size(85, 19)
+        Me.UsuarioToolStripMenuItem.Size = New System.Drawing.Size(66, 19)
         Me.UsuarioToolStripMenuItem.Text = "Usuario"
         '
         'InsertarToolStripMenuItem2
         '
         Me.InsertarToolStripMenuItem2.Name = "InsertarToolStripMenuItem2"
-        Me.InsertarToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.InsertarToolStripMenuItem2.Size = New System.Drawing.Size(126, 22)
         Me.InsertarToolStripMenuItem2.Text = "Insertar"
         '
         'ActualizarToolStripMenuItem2
         '
         Me.ActualizarToolStripMenuItem2.Name = "ActualizarToolStripMenuItem2"
-        Me.ActualizarToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.ActualizarToolStripMenuItem2.Size = New System.Drawing.Size(126, 22)
         Me.ActualizarToolStripMenuItem2.Text = "Actualizar"
         '
         'SocioToolStripMenuItem
         '
         Me.SocioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertarToolStripMenuItem, Me.ActualizarToolStripMenuItem})
         Me.SocioToolStripMenuItem.Name = "SocioToolStripMenuItem"
-        Me.SocioToolStripMenuItem.Size = New System.Drawing.Size(85, 19)
+        Me.SocioToolStripMenuItem.Size = New System.Drawing.Size(66, 19)
         Me.SocioToolStripMenuItem.Text = "Socio"
         '
         'InsertarToolStripMenuItem
         '
         Me.InsertarToolStripMenuItem.Name = "InsertarToolStripMenuItem"
-        Me.InsertarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.InsertarToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.InsertarToolStripMenuItem.Text = "Insertar"
         '
         'ActualizarToolStripMenuItem
         '
         Me.ActualizarToolStripMenuItem.Name = "ActualizarToolStripMenuItem"
-        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.ActualizarToolStripMenuItem.Text = "Actualizar"
         '
         'ProveedorToolStripMenuItem
         '
         Me.ProveedorToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertarToolStripMenuItem1, Me.ActualizarToolStripMenuItem1})
         Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
-        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(85, 19)
+        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(66, 19)
         Me.ProveedorToolStripMenuItem.Text = "Proveedor"
         '
         'InsertarToolStripMenuItem1
         '
         Me.InsertarToolStripMenuItem1.Name = "InsertarToolStripMenuItem1"
-        Me.InsertarToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.InsertarToolStripMenuItem1.Size = New System.Drawing.Size(126, 22)
         Me.InsertarToolStripMenuItem1.Text = "Insertar"
         '
         'ActualizarToolStripMenuItem1
         '
         Me.ActualizarToolStripMenuItem1.Name = "ActualizarToolStripMenuItem1"
-        Me.ActualizarToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ActualizarToolStripMenuItem1.Size = New System.Drawing.Size(126, 22)
         Me.ActualizarToolStripMenuItem1.Text = "Actualizar"
         '
         'Form1
@@ -111,7 +111,7 @@ Partial Class Form1
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
-        Me.Text = "Menu_registro"
+        Me.Text = "Home"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
