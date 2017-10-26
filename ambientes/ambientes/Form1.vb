@@ -1,6 +1,6 @@
 ﻿Public Class Form1
     Public frm As New Form2()
-
+    Public dlg As New Form9()
     Private Sub Nombre_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -60,6 +60,12 @@
     End Sub
 
     Private Sub UsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuarioToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub ProveedorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProveedorToolStripMenuItem.Click
+        dlg.MdiParent = dlg.MdiParent
+        dlg.Show()
 
     End Sub
 End Class

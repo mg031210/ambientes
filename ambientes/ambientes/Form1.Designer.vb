@@ -47,33 +47,33 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.SocioToolStripMenuItem, Me.ProveedorToolStripMenuItem, Me.RegistrarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.MembresíasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(86, 421)
+        Me.MenuStrip1.Size = New System.Drawing.Size(95, 421)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'UsuarioToolStripMenuItem
         '
         Me.UsuarioToolStripMenuItem.Name = "UsuarioToolStripMenuItem"
-        Me.UsuarioToolStripMenuItem.Size = New System.Drawing.Size(79, 19)
+        Me.UsuarioToolStripMenuItem.Size = New System.Drawing.Size(88, 19)
         Me.UsuarioToolStripMenuItem.Text = "Venta"
         '
         'SocioToolStripMenuItem
         '
         Me.SocioToolStripMenuItem.Name = "SocioToolStripMenuItem"
-        Me.SocioToolStripMenuItem.Size = New System.Drawing.Size(79, 19)
+        Me.SocioToolStripMenuItem.Size = New System.Drawing.Size(88, 19)
         Me.SocioToolStripMenuItem.Text = "Renta"
         '
         'ProveedorToolStripMenuItem
         '
         Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
-        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(79, 19)
+        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(88, 19)
         Me.ProveedorToolStripMenuItem.Text = "Compra"
         '
         'RegistrarToolStripMenuItem
         '
         Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SocioToolStripMenuItem1, Me.UsuarioToolStripMenuItem1, Me.ProveedorToolStripMenuItem1})
         Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
-        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(79, 19)
+        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(88, 19)
         Me.RegistrarToolStripMenuItem.Text = "Registrar"
         '
         'SocioToolStripMenuItem1
@@ -98,7 +98,7 @@ Partial Class Form1
         '
         Me.ActualizarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SocioToolStripMenuItem2, Me.UsuarioToolStripMenuItem2, Me.ProveedorToolStripMenuItem2})
         Me.ActualizarToolStripMenuItem.Name = "ActualizarToolStripMenuItem"
-        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(79, 19)
+        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(88, 19)
         Me.ActualizarToolStripMenuItem.Text = "Actualizar"
         '
         'SocioToolStripMenuItem2
@@ -123,19 +123,19 @@ Partial Class Form1
         '
         Me.MembresíasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaToolStripMenuItem, Me.RenovaciónToolStripMenuItem})
         Me.MembresíasToolStripMenuItem.Name = "MembresíasToolStripMenuItem"
-        Me.MembresíasToolStripMenuItem.Size = New System.Drawing.Size(79, 19)
+        Me.MembresíasToolStripMenuItem.Size = New System.Drawing.Size(88, 19)
         Me.MembresíasToolStripMenuItem.Text = "Membresías"
         '
         'NuevaToolStripMenuItem
         '
         Me.NuevaToolStripMenuItem.Name = "NuevaToolStripMenuItem"
-        Me.NuevaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevaToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
         Me.NuevaToolStripMenuItem.Text = "Nueva"
         '
         'RenovaciónToolStripMenuItem
         '
         Me.RenovaciónToolStripMenuItem.Name = "RenovaciónToolStripMenuItem"
-        Me.RenovaciónToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RenovaciónToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
         Me.RenovaciónToolStripMenuItem.Text = "Renovación"
         '
         'Form1
