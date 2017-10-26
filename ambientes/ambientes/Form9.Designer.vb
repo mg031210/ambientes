@@ -35,13 +35,11 @@ Partial Class Form9
         Me.Nombre = New System.Windows.Forms.Label()
         Me.nom = New System.Windows.Forms.TextBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Peliculas = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -49,9 +47,11 @@ Partial Class Form9
         Me.Clasificación = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Categoria = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Synopsis = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox9
@@ -170,16 +170,6 @@ Partial Class Form9
         Me.ComboBox2.Size = New System.Drawing.Size(149, 21)
         Me.ComboBox2.TabIndex = 99
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(156, 134)
-        Me.PictureBox1.TabIndex = 100
-        Me.PictureBox1.TabStop = False
-        '
         'TextBox6
         '
         Me.TextBox6.AccessibleName = "nom"
@@ -227,14 +217,6 @@ Partial Class Form9
         Me.ComboBox3.Size = New System.Drawing.Size(149, 21)
         Me.ComboBox3.TabIndex = 101
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Location = New System.Drawing.Point(550, 234)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(89, 74)
-        Me.PictureBox2.TabIndex = 102
-        Me.PictureBox2.TabStop = False
-        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(652, 260)
@@ -278,6 +260,24 @@ Partial Class Form9
         Me.Synopsis.HeaderText = "Sinospis"
         Me.Synopsis.Name = "Synopsis"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Location = New System.Drawing.Point(550, 234)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(89, 74)
+        Me.PictureBox2.TabIndex = 102
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(156, 134)
+        Me.PictureBox1.TabIndex = 100
+        Me.PictureBox1.TabStop = False
+        '
         'Form9
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -307,9 +307,9 @@ Partial Class Form9
         Me.Controls.Add(Me.nom)
         Me.Name = "Form9"
         Me.Text = "Compra Película"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -327,7 +327,6 @@ Partial Class Form9
     Friend WithEvents Nombre As Label
     Friend WithEvents nom As TextBox
     Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label2 As Label
@@ -341,4 +340,5 @@ Partial Class Form9
     Friend WithEvents Clasificación As DataGridViewTextBoxColumn
     Friend WithEvents Categoria As DataGridViewTextBoxColumn
     Friend WithEvents Synopsis As DataGridViewTextBoxColumn
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
