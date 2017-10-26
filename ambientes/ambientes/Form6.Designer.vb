@@ -41,11 +41,11 @@ Partial Class Form6
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -229,27 +229,6 @@ Partial Class Form6
         Me.TextBox6.Size = New System.Drawing.Size(177, 20)
         Me.TextBox6.TabIndex = 104
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 19)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(118, 83)
-        Me.PictureBox1.TabIndex = 101
-        Me.PictureBox1.TabStop = False
-        '
-        'Button2
-        '
-        Me.Button2.BackgroundImage = Global.ambientes.My.Resources.Resources.search_148820_960_720
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(545, 34)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(47, 38)
-        Me.Button2.TabIndex = 51
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'TextBox10
         '
         Me.TextBox10.AccessibleName = "nom"
@@ -279,6 +258,27 @@ Partial Class Form6
         Me.Label7.Size = New System.Drawing.Size(24, 20)
         Me.Label7.TabIndex = 107
         Me.Label7.Text = "..."
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 19)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(118, 83)
+        Me.PictureBox1.TabIndex = 101
+        Me.PictureBox1.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.BackgroundImage = Global.ambientes.My.Resources.Resources.search_148820_960_720
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(545, 34)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(47, 38)
+        Me.Button2.TabIndex = 51
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Form6
         '

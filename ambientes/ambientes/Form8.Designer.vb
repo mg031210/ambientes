@@ -81,7 +81,7 @@ Partial Class Form8
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(47, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(65, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(206, 134)
         Me.PictureBox1.TabIndex = 67
