@@ -23,10 +23,8 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -39,15 +37,15 @@ Partial Class Form3
         Me.nom = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(359, 59)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(236, 20)
-        Me.TextBox6.TabIndex = 50
         '
         'Button1
         '
@@ -68,14 +66,6 @@ Partial Class Form3
         Me.Label5.Size = New System.Drawing.Size(86, 20)
         Me.Label5.TabIndex = 48
         Me.Label5.Text = "No. Socio"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.AccessibleName = "nom"
-        Me.TextBox5.Location = New System.Drawing.Point(331, 135)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(68, 20)
-        Me.TextBox5.TabIndex = 47
         '
         'Label4
         '
@@ -177,7 +167,7 @@ Partial Class Form3
         Me.Button2.BackgroundImage = Global.ambientes.My.Resources.Resources.search_148820_960_720
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(601, 49)
+        Me.Button2.Location = New System.Drawing.Point(545, 34)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(47, 38)
         Me.Button2.TabIndex = 51
@@ -187,11 +177,74 @@ Partial Class Form3
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(16, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(9, 16)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(156, 134)
+        Me.PictureBox1.Size = New System.Drawing.Size(130, 101)
         Me.PictureBox1.TabIndex = 101
         Me.PictureBox1.TabStop = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.TextBox7)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 9)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(692, 125)
+        Me.GroupBox1.TabIndex = 102
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label6.Location = New System.Drawing.Point(201, 34)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(86, 20)
+        Me.Label6.TabIndex = 106
+        Me.Label6.Text = "No. Socio"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.AccessibleName = "nom"
+        Me.TextBox6.Location = New System.Drawing.Point(319, 34)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(68, 20)
+        Me.TextBox6.TabIndex = 105
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label7.Location = New System.Drawing.Point(216, 75)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(71, 20)
+        Me.Label7.TabIndex = 104
+        Me.Label7.Text = "Nombre"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.AccessibleName = "nom"
+        Me.TextBox7.Location = New System.Drawing.Point(319, 75)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(177, 20)
+        Me.TextBox7.TabIndex = 103
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label8.Location = New System.Drawing.Point(328, 140)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(16, 13)
+        Me.Label8.TabIndex = 103
+        Me.Label8.Text = "..."
         '
         'Form3
         '
@@ -199,12 +252,10 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(716, 469)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label3)
@@ -218,15 +269,15 @@ Partial Class Form3
         Me.Name = "Form3"
         Me.Text = "Actualizar Socio"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label3 As Label
@@ -238,4 +289,10 @@ Partial Class Form3
     Friend WithEvents Nombre As Label
     Friend WithEvents nom As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
 End Class

@@ -89,7 +89,7 @@ Partial Class Form5
         Me.TextBox7.AccessibleName = "nom"
         Me.TextBox7.Location = New System.Drawing.Point(317, 300)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(127, 20)
+        Me.TextBox7.Size = New System.Drawing.Size(68, 20)
         Me.TextBox7.TabIndex = 72
         '
         'Label6
@@ -128,7 +128,7 @@ Partial Class Form5
         Me.TextBox5.AccessibleName = "nom"
         Me.TextBox5.Location = New System.Drawing.Point(317, 50)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(68, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(177, 20)
         Me.TextBox5.TabIndex = 68
         '
         'Label4
@@ -166,7 +166,7 @@ Partial Class Form5
         Me.TextBox3.AccessibleName = "nom"
         Me.TextBox3.Location = New System.Drawing.Point(317, 216)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(300, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(177, 20)
         Me.TextBox3.TabIndex = 64
         '
         'Label2

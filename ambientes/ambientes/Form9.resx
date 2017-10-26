@@ -121,7 +121,7 @@
   <data name="PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATYAAADwCAYAAACKeki0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAPnBJREFUeF7tnQmYndP9x82S2TIzyWQyS2ZJJskkEgSRIAgiSGyxNEWaVEyLUpSi
+        DQAACw0B7QfALAAAPnBJREFUeF7tnQmYndP9x82S2TIzyWQyS2ZJJskkEgSRIAgiSGyxNEWaVEyLUpSi
         Vfq3laq9ttZSS2straLWrtReVS1Kq4pSrVIaRauWcv7fz7nnvXnvve+9c+8kksHv+zzfJ3PPe973Lp7z
         9Tu/7axiMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaD
         wWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoNhReOL
@@ -390,4 +390,19 @@
         YDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAzLEaus8v9rV2MBq1LBrgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="Peliculas.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Duración.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Clasificación.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Categoria.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Synopsis.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

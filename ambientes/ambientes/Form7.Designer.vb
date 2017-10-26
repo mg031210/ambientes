@@ -36,6 +36,16 @@ Partial Class Form7
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,7 +64,7 @@ Partial Class Form7
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CheckBox1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.CheckBox1.Location = New System.Drawing.Point(203, 114)
+        Me.CheckBox1.Location = New System.Drawing.Point(170, 114)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
         Me.CheckBox1.TabIndex = 69
@@ -66,7 +76,7 @@ Partial Class Form7
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(398, 110)
+        Me.Label5.Location = New System.Drawing.Point(365, 110)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(268, 20)
         Me.Label5.TabIndex = 75
@@ -77,7 +87,7 @@ Partial Class Form7
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(398, 258)
+        Me.Label1.Location = New System.Drawing.Point(365, 258)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(268, 20)
         Me.Label1.TabIndex = 78
@@ -88,7 +98,7 @@ Partial Class Form7
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CheckBox2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.CheckBox2.Location = New System.Drawing.Point(203, 262)
+        Me.CheckBox2.Location = New System.Drawing.Point(170, 262)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(81, 17)
         Me.CheckBox2.TabIndex = 76
@@ -100,7 +110,7 @@ Partial Class Form7
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(398, 401)
+        Me.Label2.Location = New System.Drawing.Point(365, 401)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(268, 20)
         Me.Label2.TabIndex = 81
@@ -111,7 +121,7 @@ Partial Class Form7
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CheckBox3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.CheckBox3.Location = New System.Drawing.Point(203, 405)
+        Me.CheckBox3.Location = New System.Drawing.Point(170, 405)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(81, 17)
         Me.CheckBox3.TabIndex = 79
@@ -120,18 +130,18 @@ Partial Class Form7
         '
         'Button1
         '
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.Location = New System.Drawing.Point(594, 443)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(97, 35)
         Me.Button1.TabIndex = 82
+        Me.Button1.Text = "Aceptar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(255, 364)
+        Me.PictureBox3.Location = New System.Drawing.Point(222, 364)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(115, 108)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -141,7 +151,7 @@ Partial Class Form7
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(255, 221)
+        Me.PictureBox2.Location = New System.Drawing.Point(222, 221)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(115, 108)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -151,7 +161,7 @@ Partial Class Form7
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(255, 73)
+        Me.PictureBox1.Location = New System.Drawing.Point(222, 73)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(115, 108)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -175,9 +185,101 @@ Partial Class Form7
         Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox4.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(156, 134)
+        Me.PictureBox4.Size = New System.Drawing.Size(118, 118)
         Me.PictureBox4.TabIndex = 101
         Me.PictureBox4.TabStop = False
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(665, 115)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(20, 23)
+        Me.Button3.TabIndex = 102
+        Me.Button3.Text = "+"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(691, 117)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(25, 20)
+        Me.TextBox1.TabIndex = 104
+        '
+        'Button5
+        '
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Location = New System.Drawing.Point(722, 114)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(20, 23)
+        Me.Button5.TabIndex = 105
+        Me.Button5.Text = "-"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(722, 398)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(20, 23)
+        Me.Button7.TabIndex = 111
+        Me.Button7.Text = "-"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(691, 401)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(25, 20)
+        Me.TextBox3.TabIndex = 110
+        '
+        'Button8
+        '
+        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(665, 399)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(20, 23)
+        Me.Button8.TabIndex = 109
+        Me.Button8.Text = "+"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(722, 255)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(20, 23)
+        Me.Button4.TabIndex = 114
+        Me.Button4.Text = "-"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(691, 258)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(25, 20)
+        Me.TextBox2.TabIndex = 113
+        '
+        'Button6
+        '
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(665, 256)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(20, 23)
+        Me.Button6.TabIndex = 112
+        Me.Button6.Text = "+"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.Location = New System.Drawing.Point(316, 33)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(71, 20)
+        Me.Label3.TabIndex = 115
+        Me.Label3.Text = "Nombre"
         '
         'Form7
         '
@@ -185,6 +287,16 @@ Partial Class Form7
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(764, 490)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
@@ -199,7 +311,7 @@ Partial Class Form7
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox6)
         Me.Name = "Form7"
-        Me.Text = "Buscar Pelicula"
+        Me.Text = " "
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -222,4 +334,14 @@ Partial Class Form7
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Label3 As Label
 End Class

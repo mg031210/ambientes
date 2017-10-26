@@ -81,9 +81,9 @@ Partial Class Form8
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(84, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(47, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(156, 134)
+        Me.PictureBox1.Size = New System.Drawing.Size(206, 134)
         Me.PictureBox1.TabIndex = 67
         Me.PictureBox1.TabStop = False
         '
@@ -99,6 +99,7 @@ Partial Class Form8
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
+        Me.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Name = "Form8"
         Me.Text = "Iniciar Sesión"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
