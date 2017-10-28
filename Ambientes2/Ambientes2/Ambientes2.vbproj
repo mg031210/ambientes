@@ -76,6 +76,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizar.Designer.vb">
+      <DependentUpon>Actualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devolucion.Designer.vb">
+      <DependentUpon>Devolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Devolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -97,8 +109,32 @@
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Registro.Designer.vb">
+      <DependentUpon>Registro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renta.Designer.vb">
+      <DependentUpon>Renta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Renta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.vb">
+      <DependentUpon>Venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Actualizar.resx">
+      <DependentUpon>Actualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolucion.resx">
+      <DependentUpon>Devolucion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -107,6 +143,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renta.resx">
+      <DependentUpon>Renta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
