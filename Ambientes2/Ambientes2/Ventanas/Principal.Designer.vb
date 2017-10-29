@@ -23,8 +23,8 @@ Partial Class formPrinc
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation4 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation3 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPrinc))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Menu = New System.Windows.Forms.Panel()
@@ -79,7 +79,7 @@ Partial Class formPrinc
         Me.BtnMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.PanelAni2.SetDecoration(Me.BtnMenu, BunifuAnimatorNS.DecorationType.None)
         Me.PanelAni.SetDecoration(Me.BtnMenu, BunifuAnimatorNS.DecorationType.None)
-        Me.BtnMenu.Image = CType(resources.GetObject("BtnMenu.Image"), System.Drawing.Image)
+        Me.BtnMenu.Image = Global.Ambientes2.My.Resources.Resources.icons8_Menu_96px_3
         Me.BtnMenu.ImageActive = Nothing
         Me.BtnMenu.Location = New System.Drawing.Point(157, 3)
         Me.BtnMenu.Name = "BtnMenu"
@@ -101,7 +101,7 @@ Partial Class formPrinc
         Me.PanelAni.SetDecoration(Me.btnNuevo, BunifuAnimatorNS.DecorationType.None)
         Me.btnNuevo.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
         Me.btnNuevo.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnNuevo.Iconimage = CType(resources.GetObject("btnNuevo.Iconimage"), System.Drawing.Image)
+        Me.btnNuevo.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Add_User_Male_96px
         Me.btnNuevo.Iconimage_right = Nothing
         Me.btnNuevo.Iconimage_right_Selected = Nothing
         Me.btnNuevo.Iconimage_Selected = Nothing
@@ -138,7 +138,7 @@ Partial Class formPrinc
         Me.PanelAni.SetDecoration(Me.btnActu, BunifuAnimatorNS.DecorationType.None)
         Me.btnActu.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
         Me.btnActu.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnActu.Iconimage = CType(resources.GetObject("btnActu.Iconimage"), System.Drawing.Image)
+        Me.btnActu.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Settings_96px_1
         Me.btnActu.Iconimage_right = Nothing
         Me.btnActu.Iconimage_right_Selected = Nothing
         Me.btnActu.Iconimage_Selected = Nothing
@@ -175,7 +175,7 @@ Partial Class formPrinc
         Me.PanelAni.SetDecoration(Me.btnDevol, BunifuAnimatorNS.DecorationType.None)
         Me.btnDevol.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
         Me.btnDevol.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnDevol.Iconimage = CType(resources.GetObject("btnDevol.Iconimage"), System.Drawing.Image)
+        Me.btnDevol.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Restart_96px_1
         Me.btnDevol.Iconimage_right = Nothing
         Me.btnDevol.Iconimage_right_Selected = Nothing
         Me.btnDevol.Iconimage_Selected = Nothing
@@ -212,7 +212,7 @@ Partial Class formPrinc
         Me.PanelAni.SetDecoration(Me.btnRenta, BunifuAnimatorNS.DecorationType.None)
         Me.btnRenta.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
         Me.btnRenta.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnRenta.Iconimage = CType(resources.GetObject("btnRenta.Iconimage"), System.Drawing.Image)
+        Me.btnRenta.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Right_Arrow_96px
         Me.btnRenta.Iconimage_right = Nothing
         Me.btnRenta.Iconimage_right_Selected = Nothing
         Me.btnRenta.Iconimage_Selected = Nothing
@@ -249,7 +249,7 @@ Partial Class formPrinc
         Me.PanelAni.SetDecoration(Me.btnVenta, BunifuAnimatorNS.DecorationType.None)
         Me.btnVenta.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
         Me.btnVenta.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnVenta.Iconimage = CType(resources.GetObject("btnVenta.Iconimage"), System.Drawing.Image)
+        Me.btnVenta.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Paper_Money_96px
         Me.btnVenta.Iconimage_right = Nothing
         Me.btnVenta.Iconimage_right_Selected = Nothing
         Me.btnVenta.Iconimage_Selected = Nothing
@@ -286,7 +286,7 @@ Partial Class formPrinc
         Me.PanelAni.SetDecoration(Me.btnInicio, BunifuAnimatorNS.DecorationType.None)
         Me.btnInicio.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
         Me.btnInicio.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnInicio.Iconimage = CType(resources.GetObject("btnInicio.Iconimage"), System.Drawing.Image)
+        Me.btnInicio.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Home_96px_1
         Me.btnInicio.Iconimage_right = Nothing
         Me.btnInicio.Iconimage_right_Selected = Nothing
         Me.btnInicio.Iconimage_Selected = Nothing
@@ -344,7 +344,7 @@ Partial Class formPrinc
         Me.BunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.PanelAni2.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
         Me.PanelAni.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
+        Me.BunifuImageButton2.Image = Global.Ambientes2.My.Resources.Resources.icons8_Minimize_Window_96px_1
         Me.BunifuImageButton2.ImageActive = Nothing
         Me.BunifuImageButton2.Location = New System.Drawing.Point(994, 0)
         Me.BunifuImageButton2.Name = "BunifuImageButton2"
@@ -360,7 +360,7 @@ Partial Class formPrinc
         Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.PanelAni2.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
         Me.PanelAni.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.Image = Global.Ambientes2.My.Resources.Resources.icons8_Delete_96px_1
         Me.BunifuImageButton1.ImageActive = Nothing
         Me.BunifuImageButton1.Location = New System.Drawing.Point(1035, 0)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
@@ -381,22 +381,22 @@ Partial Class formPrinc
         '
         Me.PanelAni.AnimationType = BunifuAnimatorNS.AnimationType.Particles
         Me.PanelAni.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 1
-        Animation2.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
-        Animation2.RotateCoeff = 0!
-        Animation2.RotateLimit = 0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 2.0!
-        Animation2.TransparencyCoeff = 0!
-        Me.PanelAni.DefaultAnimation = Animation2
+        Animation4.AnimateOnlyDifferences = True
+        Animation4.BlindCoeff = CType(resources.GetObject("Animation4.BlindCoeff"), System.Drawing.PointF)
+        Animation4.LeafCoeff = 0!
+        Animation4.MaxTime = 1.0!
+        Animation4.MinTime = 0!
+        Animation4.MosaicCoeff = CType(resources.GetObject("Animation4.MosaicCoeff"), System.Drawing.PointF)
+        Animation4.MosaicShift = CType(resources.GetObject("Animation4.MosaicShift"), System.Drawing.PointF)
+        Animation4.MosaicSize = 1
+        Animation4.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
+        Animation4.RotateCoeff = 0!
+        Animation4.RotateLimit = 0!
+        Animation4.ScaleCoeff = CType(resources.GetObject("Animation4.ScaleCoeff"), System.Drawing.PointF)
+        Animation4.SlideCoeff = CType(resources.GetObject("Animation4.SlideCoeff"), System.Drawing.PointF)
+        Animation4.TimeCoeff = 2.0!
+        Animation4.TransparencyCoeff = 0!
+        Me.PanelAni.DefaultAnimation = Animation4
         '
         'PanelPrinc
         '
@@ -412,22 +412,22 @@ Partial Class formPrinc
         '
         Me.PanelAni2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
         Me.PanelAni2.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 0
-        Animation1.Padding = New System.Windows.Forms.Padding(0)
-        Animation1.RotateCoeff = 0!
-        Animation1.RotateLimit = 0!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 0!
-        Animation1.TransparencyCoeff = 0!
-        Me.PanelAni2.DefaultAnimation = Animation1
+        Animation3.AnimateOnlyDifferences = True
+        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
+        Animation3.LeafCoeff = 0!
+        Animation3.MaxTime = 1.0!
+        Animation3.MinTime = 0!
+        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
+        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
+        Animation3.MosaicSize = 0
+        Animation3.Padding = New System.Windows.Forms.Padding(0)
+        Animation3.RotateCoeff = 0!
+        Animation3.RotateLimit = 0!
+        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
+        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
+        Animation3.TimeCoeff = 0!
+        Animation3.TransparencyCoeff = 0!
+        Me.PanelAni2.DefaultAnimation = Animation3
         '
         'formPrinc
         '
