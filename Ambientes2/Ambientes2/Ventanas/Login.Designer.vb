@@ -30,8 +30,8 @@ Partial Class Login
         Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuMaterialTextbox1 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.BunifuMaterialTextbox2 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.txtUser = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.txtPass = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnVenta = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -116,77 +116,77 @@ Partial Class Login
         Me.BunifuFlatButton1.IconRightVisible = True
         Me.BunifuFlatButton1.IconRightZoom = 0R
         Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 50.0R
+        Me.BunifuFlatButton1.IconZoom = 200.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(103, 69)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(114, 65)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(131, 131)
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(113, 113)
         Me.BunifuFlatButton1.TabIndex = 3
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'BunifuMaterialTextbox1
+        'txtUser
         '
-        Me.BunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMaterialTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White
-        Me.BunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox1.HintText = ""
-        Me.BunifuMaterialTextbox1.isPassword = False
-        Me.BunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.White
-        Me.BunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray
-        Me.BunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Silver
-        Me.BunifuMaterialTextbox1.LineThickness = 3
-        Me.BunifuMaterialTextbox1.Location = New System.Drawing.Point(13, 231)
-        Me.BunifuMaterialTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMaterialTextbox1.Name = "BunifuMaterialTextbox1"
-        Me.BunifuMaterialTextbox1.Size = New System.Drawing.Size(306, 33)
-        Me.BunifuMaterialTextbox1.TabIndex = 4
-        Me.BunifuMaterialTextbox1.Text = "usuario"
-        Me.BunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtUser.ForeColor = System.Drawing.Color.White
+        Me.txtUser.HintForeColor = System.Drawing.Color.Empty
+        Me.txtUser.HintText = ""
+        Me.txtUser.isPassword = False
+        Me.txtUser.LineFocusedColor = System.Drawing.Color.White
+        Me.txtUser.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtUser.LineMouseHoverColor = System.Drawing.Color.Silver
+        Me.txtUser.LineThickness = 3
+        Me.txtUser.Location = New System.Drawing.Point(13, 185)
+        Me.txtUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.Size = New System.Drawing.Size(306, 33)
+        Me.txtUser.TabIndex = 4
+        Me.txtUser.Text = "Numero"
+        Me.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'BunifuMaterialTextbox2
+        'txtPass
         '
-        Me.BunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMaterialTextbox2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMaterialTextbox2.ForeColor = System.Drawing.Color.White
-        Me.BunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox2.HintText = ""
-        Me.BunifuMaterialTextbox2.isPassword = True
-        Me.BunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.White
-        Me.BunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray
-        Me.BunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Silver
-        Me.BunifuMaterialTextbox2.LineThickness = 3
-        Me.BunifuMaterialTextbox2.Location = New System.Drawing.Point(13, 298)
-        Me.BunifuMaterialTextbox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMaterialTextbox2.Name = "BunifuMaterialTextbox2"
-        Me.BunifuMaterialTextbox2.Size = New System.Drawing.Size(306, 33)
-        Me.BunifuMaterialTextbox2.TabIndex = 4
-        Me.BunifuMaterialTextbox2.Text = "Hola"
-        Me.BunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtPass.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtPass.ForeColor = System.Drawing.Color.White
+        Me.txtPass.HintForeColor = System.Drawing.Color.Empty
+        Me.txtPass.HintText = ""
+        Me.txtPass.isPassword = True
+        Me.txtPass.LineFocusedColor = System.Drawing.Color.White
+        Me.txtPass.LineIdleColor = System.Drawing.Color.Gray
+        Me.txtPass.LineMouseHoverColor = System.Drawing.Color.Silver
+        Me.txtPass.LineThickness = 3
+        Me.txtPass.Location = New System.Drawing.Point(13, 252)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(306, 33)
+        Me.txtPass.TabIndex = 4
+        Me.txtPass.Text = "Hola"
+        Me.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(12, 220)
+        Me.Label2.Location = New System.Drawing.Point(12, 174)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(56, 16)
+        Me.Label2.Size = New System.Drawing.Size(155, 16)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Usuario"
+        Me.Label2.Text = "Numero de trabajador"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(12, 288)
+        Me.Label3.Location = New System.Drawing.Point(12, 242)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(83, 16)
         Me.Label3.TabIndex = 6
@@ -195,7 +195,7 @@ Partial Class Login
         'btnVenta
         '
         Me.btnVenta.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.btnVenta.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.btnVenta.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
         Me.btnVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnVenta.BorderRadius = 0
         Me.btnVenta.ButtonText = "Iniciar Sesion"
@@ -213,10 +213,10 @@ Partial Class Login
         Me.btnVenta.IconVisible = True
         Me.btnVenta.IconZoom = 90.0R
         Me.btnVenta.IsTab = True
-        Me.btnVenta.Location = New System.Drawing.Point(150, 379)
+        Me.btnVenta.Location = New System.Drawing.Point(150, 333)
         Me.btnVenta.Margin = New System.Windows.Forms.Padding(5)
         Me.btnVenta.Name = "btnVenta"
-        Me.btnVenta.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.btnVenta.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
         Me.btnVenta.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.btnVenta.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
         Me.btnVenta.selected = False
@@ -232,12 +232,12 @@ Partial Class Login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(332, 441)
+        Me.ClientSize = New System.Drawing.Size(332, 398)
         Me.Controls.Add(Me.btnVenta)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.BunifuMaterialTextbox2)
-        Me.Controls.Add(Me.BunifuMaterialTextbox1)
+        Me.Controls.Add(Me.txtPass)
+        Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.BunifuFlatButton1)
         Me.Controls.Add(Me.Barra)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -260,9 +260,9 @@ Partial Class Login
     Friend WithEvents BunifuImageButton2 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuMaterialTextbox1 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtUser As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents BunifuMaterialTextbox2 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtPass As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents btnVenta As Bunifu.Framework.UI.BunifuFlatButton
 End Class

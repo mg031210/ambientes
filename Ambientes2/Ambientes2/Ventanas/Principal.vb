@@ -1,7 +1,7 @@
 ﻿Public Class formPrinc
-
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
         Me.Close()
+        Login.Show()
     End Sub
 
     Private Sub BtnMenu_Click_1(sender As Object, e As EventArgs) Handles BtnMenu.Click
