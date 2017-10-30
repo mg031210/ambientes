@@ -35,6 +35,7 @@ Partial Class Login
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnVenta = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.msg = New System.Windows.Forms.Label()
         Me.Barra.SuspendLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -227,12 +228,25 @@ Partial Class Login
         Me.btnVenta.Textcolor = System.Drawing.Color.White
         Me.btnVenta.TextFont = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'msg
+        '
+        Me.msg.AutoSize = True
+        Me.msg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.msg.ForeColor = System.Drawing.Color.White
+        Me.msg.Location = New System.Drawing.Point(42, 303)
+        Me.msg.Name = "msg"
+        Me.msg.Size = New System.Drawing.Size(249, 16)
+        Me.msg.TabIndex = 8
+        Me.msg.Text = "Usuario o Contraseña Equivocado!"
+        Me.msg.Visible = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(332, 398)
+        Me.Controls.Add(Me.msg)
         Me.Controls.Add(Me.btnVenta)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -265,4 +279,5 @@ Partial Class Login
     Friend WithEvents Label2 As Label
     Friend WithEvents txtPass As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents btnVenta As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents msg As Label
 End Class

@@ -20,14 +20,15 @@ Public Class Login
         End Using
         DT = con.selectStr("SELECT * FROM trabajador where numtrabajador='" & txtUser.Text & "' && contrasena='" & HashedPass & "' && estado='A' ;")
         If DT.Rows.Count = 1 Then
-            txtUser.Text = ""
-            txtPass.Text = ""
+            txtUser.Text = "Numero"
+            txtPass.Text = "Contrasena"
             session = DT.Rows(0)
-            'MessageBox.Show("Bienvenido " & session.Item(1))
+            'MessageBox.Show("Bienvenido " & session.Item(4))
+            msg.Visible = False
             formPrinc.Show()
             Me.Hide()
         Else
-            MessageBox.Show("Usuario o contraseña incorrecto!")
+            msg.Visible = True
         End If
         con.close()
     End Sub

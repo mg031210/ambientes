@@ -28,7 +28,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        LabelUser.Text = session(4).ToString
     End Sub
 
     Private Sub btnRenta_Click(sender As Object, e As EventArgs) Handles btnRenta.Click
@@ -68,4 +68,5 @@
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
         Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
     End Sub
+
 End Class
