@@ -99,10 +99,22 @@
     <Compile Include="Clases\ClasePrincipal.vb" />
     <Compile Include="Globales\Conexion.vb" />
     <Compile Include="Globales\Variables.vb" />
-    <Compile Include="Ventanas\Actualizar.Designer.vb">
-      <DependentUpon>Actualizar.vb</DependentUpon>
+    <Compile Include="Ventanas\addProvee.Designer.vb">
+      <DependentUpon>addProvee.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\Actualizar.vb">
+    <Compile Include="Ventanas\addProvee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\addSocio.Designer.vb">
+      <DependentUpon>addSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\addSocio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\addTraba.Designer.vb">
+      <DependentUpon>addTraba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\addTraba.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventanas\Devolucion.Designer.vb">
@@ -132,16 +144,34 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Ventanas\modProvee.Designer.vb">
+      <DependentUpon>modProvee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\modProvee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\modSocio.Designer.vb">
+      <DependentUpon>modSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\modSocio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\modTraba.Designer.vb">
+      <DependentUpon>modTraba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\modTraba.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventanas\Principal.Designer.vb">
       <DependentUpon>Principal.vb</DependentUpon>
     </Compile>
     <Compile Include="Ventanas\Principal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\Registro.Designer.vb">
-      <DependentUpon>Registro.vb</DependentUpon>
+    <Compile Include="Ventanas\Intermedio.Designer.vb">
+      <DependentUpon>Intermedio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\Registro.vb">
+    <Compile Include="Ventanas\Intermedio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventanas\Renta.Designer.vb">
@@ -158,8 +188,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Ventanas\Actualizar.resx">
-      <DependentUpon>Actualizar.vb</DependentUpon>
+    <EmbeddedResource Include="Ventanas\addProvee.resx">
+      <DependentUpon>addProvee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\addSocio.resx">
+      <DependentUpon>addSocio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\addTraba.resx">
+      <DependentUpon>addTraba.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\Devolucion.resx">
       <DependentUpon>Devolucion.vb</DependentUpon>
@@ -173,11 +209,20 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\modProvee.resx">
+      <DependentUpon>modProvee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\modSocio.resx">
+      <DependentUpon>modSocio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\modTraba.resx">
+      <DependentUpon>modTraba.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\Registro.resx">
-      <DependentUpon>Registro.vb</DependentUpon>
+    <EmbeddedResource Include="Ventanas\Intermedio.resx">
+      <DependentUpon>Intermedio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\Renta.resx">
       <DependentUpon>Renta.vb</DependentUpon>
@@ -251,6 +296,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_Settings_96px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Contacts_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Name_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Name_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Password_100px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
