@@ -212,7 +212,7 @@ Partial Class Login
         Me.btnVenta.IconRightVisible = True
         Me.btnVenta.IconRightZoom = 0R
         Me.btnVenta.IconVisible = True
-        Me.btnVenta.IconZoom = 90.0R
+        Me.btnVenta.IconZoom = 70.0R
         Me.btnVenta.IsTab = True
         Me.btnVenta.Location = New System.Drawing.Point(150, 333)
         Me.btnVenta.Margin = New System.Windows.Forms.Padding(5)

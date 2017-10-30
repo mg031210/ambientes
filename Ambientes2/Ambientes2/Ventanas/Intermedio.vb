@@ -63,4 +63,20 @@
             modTrab.Show()
         End If
     End Sub
+
+    Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
+        If (esregistro) Then
+            Dim addPel As New addPeli
+            addPel.TopLevel = False
+            Me.PanelInter.Controls.Clear()
+            Me.PanelInter.Controls.Add(addPel)
+            addPel.Show()
+        Else
+            Dim modPel As New modPeli
+            modPel.TopLevel = False
+            Me.PanelInter.Controls.Clear()
+            Me.PanelInter.Controls.Add(modPel)
+            modPel.Show()
+        End If
+    End Sub
 End Class

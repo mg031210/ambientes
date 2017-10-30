@@ -10,12 +10,16 @@
             Menu.Width = 200
             '1070, 573
             Me.Width = 1070
+            LabelUser.Visible = True
+            Label2.Visible = True
             PanelAni2.ShowSync(Menu)
 
         Else
             Menu.Visible = False
             Menu.Width = 50
             Me.Width = 1070 - 150
+            LabelUser.Visible = False
+            Label2.Visible = False
             PanelAni.ShowSync(Menu)
         End If
     End Sub
@@ -28,7 +32,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LabelUser.Text = session(4).ToString
+        'LabelUser.Text = session(4).ToString
     End Sub
 
     Private Sub btnRenta_Click(sender As Object, e As EventArgs) Handles btnRenta.Click

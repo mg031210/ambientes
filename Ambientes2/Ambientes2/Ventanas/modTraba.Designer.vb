@@ -23,7 +23,7 @@ Partial Class modTraba
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.dgvPelis = New System.Windows.Forms.DataGridView()
@@ -35,12 +35,31 @@ Partial Class modTraba
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton5 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuCustomTextbox1 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.BunifuCheckbox1 = New Bunifu.Framework.UI.BunifuCheckbox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.BunifuCustomTextbox10 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuCustomTextbox9 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuCustomTextbox8 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.BunifuCustomTextbox7 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.BunifuCustomTextbox6 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.BunifuCustomTextbox5 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.BunifuCustomTextbox4 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.BunifuCustomTextbox3 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.BunifuCustomTextbox1 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvPelis, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -50,12 +69,25 @@ Partial Class modTraba
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.GroupBox3)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox8)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox7)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox6)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox5)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox4)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox3)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox1)
+        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.dgvPelis)
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton3)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton5)
-        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox1)
-        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
@@ -66,8 +98,8 @@ Partial Class modTraba
         '
         'dgvPelis
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvPelis.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvPelis.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvPelis.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvPelis.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvPelis.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -230,25 +262,6 @@ Partial Class modTraba
         Me.BunifuFlatButton5.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton5.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'BunifuCustomTextbox1
-        '
-        Me.BunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox1.Location = New System.Drawing.Point(89, 218)
-        Me.BunifuCustomTextbox1.Name = "BunifuCustomTextbox1"
-        Me.BunifuCustomTextbox1.Size = New System.Drawing.Size(95, 20)
-        Me.BunifuCustomTextbox1.TabIndex = 35
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(10, 217)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 21)
-        Me.Label4.TabIndex = 34
-        Me.Label4.Text = "Nombre"
-        '
         'BunifuFlatButton1
         '
         Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
@@ -283,6 +296,208 @@ Partial Class modTraba
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Label10)
+        Me.GroupBox3.Controls.Add(Me.BunifuCheckbox1)
+        Me.GroupBox3.Controls.Add(Me.Label9)
+        Me.GroupBox3.Controls.Add(Me.BunifuCustomTextbox10)
+        Me.GroupBox3.Controls.Add(Me.BunifuCustomTextbox9)
+        Me.GroupBox3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.Color.White
+        Me.GroupBox3.Location = New System.Drawing.Point(362, 289)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(316, 107)
+        Me.GroupBox3.TabIndex = 87
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Crear  Usuario"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label10.Location = New System.Drawing.Point(8, 26)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(66, 21)
+        Me.Label10.TabIndex = 69
+        Me.Label10.Tag = ""
+        Me.Label10.Text = "Usuario"
+        '
+        'BunifuCheckbox1
+        '
+        Me.BunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(117, Byte), Integer))
+        Me.BunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.BunifuCheckbox1.Checked = True
+        Me.BunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(117, Byte), Integer))
+        Me.BunifuCheckbox1.ForeColor = System.Drawing.Color.White
+        Me.BunifuCheckbox1.Location = New System.Drawing.Point(121, 0)
+        Me.BunifuCheckbox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuCheckbox1.Name = "BunifuCheckbox1"
+        Me.BunifuCheckbox1.Size = New System.Drawing.Size(20, 20)
+        Me.BunifuCheckbox1.TabIndex = 68
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label9.Location = New System.Drawing.Point(8, 67)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(103, 21)
+        Me.Label9.TabIndex = 66
+        Me.Label9.Tag = ""
+        Me.Label9.Text = "Contraseña"
+        '
+        'BunifuCustomTextbox10
+        '
+        Me.BunifuCustomTextbox10.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox10.Location = New System.Drawing.Point(117, 26)
+        Me.BunifuCustomTextbox10.Name = "BunifuCustomTextbox10"
+        Me.BunifuCustomTextbox10.Size = New System.Drawing.Size(180, 27)
+        Me.BunifuCustomTextbox10.TabIndex = 70
+        '
+        'BunifuCustomTextbox9
+        '
+        Me.BunifuCustomTextbox9.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox9.Location = New System.Drawing.Point(117, 67)
+        Me.BunifuCustomTextbox9.Name = "BunifuCustomTextbox9"
+        Me.BunifuCustomTextbox9.Size = New System.Drawing.Size(180, 27)
+        Me.BunifuCustomTextbox9.TabIndex = 67
+        '
+        'BunifuCustomTextbox8
+        '
+        Me.BunifuCustomTextbox8.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox8.Location = New System.Drawing.Point(429, 258)
+        Me.BunifuCustomTextbox8.Name = "BunifuCustomTextbox8"
+        Me.BunifuCustomTextbox8.Size = New System.Drawing.Size(138, 20)
+        Me.BunifuCustomTextbox8.TabIndex = 86
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label8.Location = New System.Drawing.Point(358, 258)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(65, 21)
+        Me.Label8.TabIndex = 85
+        Me.Label8.Text = "Celular"
+        '
+        'BunifuCustomTextbox7
+        '
+        Me.BunifuCustomTextbox7.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox7.Location = New System.Drawing.Point(442, 213)
+        Me.BunifuCustomTextbox7.Name = "BunifuCustomTextbox7"
+        Me.BunifuCustomTextbox7.Size = New System.Drawing.Size(374, 20)
+        Me.BunifuCustomTextbox7.TabIndex = 84
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label7.Location = New System.Drawing.Point(358, 213)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(78, 21)
+        Me.Label7.TabIndex = 83
+        Me.Label7.Text = "Dirrecion"
+        '
+        'BunifuCustomTextbox6
+        '
+        Me.BunifuCustomTextbox6.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox6.Location = New System.Drawing.Point(117, 389)
+        Me.BunifuCustomTextbox6.Name = "BunifuCustomTextbox6"
+        Me.BunifuCustomTextbox6.Size = New System.Drawing.Size(132, 20)
+        Me.BunifuCustomTextbox6.TabIndex = 82
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label6.Location = New System.Drawing.Point(35, 388)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(76, 21)
+        Me.Label6.TabIndex = 81
+        Me.Label6.Text = "Telefono"
+        '
+        'BunifuCustomTextbox5
+        '
+        Me.BunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox5.Location = New System.Drawing.Point(183, 345)
+        Me.BunifuCustomTextbox5.Name = "BunifuCustomTextbox5"
+        Me.BunifuCustomTextbox5.Size = New System.Drawing.Size(140, 20)
+        Me.BunifuCustomTextbox5.TabIndex = 80
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Location = New System.Drawing.Point(35, 345)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(146, 21)
+        Me.Label5.TabIndex = 79
+        Me.Label5.Text = "Apellido Materno"
+        '
+        'BunifuCustomTextbox4
+        '
+        Me.BunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox4.Location = New System.Drawing.Point(183, 302)
+        Me.BunifuCustomTextbox4.Name = "BunifuCustomTextbox4"
+        Me.BunifuCustomTextbox4.Size = New System.Drawing.Size(140, 20)
+        Me.BunifuCustomTextbox4.TabIndex = 78
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.Location = New System.Drawing.Point(35, 302)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(140, 21)
+        Me.Label3.TabIndex = 77
+        Me.Label3.Text = "Apellido Paterno"
+        '
+        'BunifuCustomTextbox3
+        '
+        Me.BunifuCustomTextbox3.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox3.Location = New System.Drawing.Point(127, 258)
+        Me.BunifuCustomTextbox3.Name = "BunifuCustomTextbox3"
+        Me.BunifuCustomTextbox3.Size = New System.Drawing.Size(196, 20)
+        Me.BunifuCustomTextbox3.TabIndex = 76
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Location = New System.Drawing.Point(35, 258)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(73, 21)
+        Me.Label4.TabIndex = 75
+        Me.Label4.Text = "Nombre"
+        '
+        'BunifuCustomTextbox1
+        '
+        Me.BunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomTextbox1.Location = New System.Drawing.Point(228, 216)
+        Me.BunifuCustomTextbox1.Name = "BunifuCustomTextbox1"
+        Me.BunifuCustomTextbox1.Size = New System.Drawing.Size(95, 20)
+        Me.BunifuCustomTextbox1.TabIndex = 74
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label11.Location = New System.Drawing.Point(35, 216)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(187, 21)
+        Me.Label11.TabIndex = 73
+        Me.Label11.Text = "Numero de Trabajador"
+        '
         'modTraba
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -298,6 +513,8 @@ Partial Class modTraba
         CType(Me.dgvPelis, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -313,7 +530,25 @@ Partial Class modTraba
     Friend WithEvents Label1 As Label
     Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton5 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuCustomTextbox1 As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents Label4 As Label
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents BunifuCheckbox1 As Bunifu.Framework.UI.BunifuCheckbox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents BunifuCustomTextbox10 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents BunifuCustomTextbox9 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents BunifuCustomTextbox8 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents BunifuCustomTextbox7 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents BunifuCustomTextbox6 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents BunifuCustomTextbox5 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents BunifuCustomTextbox4 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents BunifuCustomTextbox3 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents BunifuCustomTextbox1 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents Label11 As Label
 End Class

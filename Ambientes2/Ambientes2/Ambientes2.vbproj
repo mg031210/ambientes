@@ -99,6 +99,12 @@
     <Compile Include="Clases\ClasePrincipal.vb" />
     <Compile Include="Globales\Conexion.vb" />
     <Compile Include="Globales\Variables.vb" />
+    <Compile Include="Ventanas\addPeli.Designer.vb">
+      <DependentUpon>addPeli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\addPeli.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventanas\addProvee.Designer.vb">
       <DependentUpon>addProvee.vb</DependentUpon>
     </Compile>
@@ -144,6 +150,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Ventanas\modPeli.Designer.vb">
+      <DependentUpon>modPeli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\modPeli.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventanas\modProvee.Designer.vb">
       <DependentUpon>modProvee.vb</DependentUpon>
     </Compile>
@@ -188,6 +200,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ventanas\addPeli.resx">
+      <DependentUpon>addPeli.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\addProvee.resx">
       <DependentUpon>addProvee.vb</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +223,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\modPeli.resx">
+      <DependentUpon>modPeli.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\modProvee.resx">
       <DependentUpon>modProvee.vb</DependentUpon>
