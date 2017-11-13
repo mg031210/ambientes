@@ -1,13 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class ClasePeli
-
-    Dim columnas As String = "idpelicula as CodigoBarras, nombre as Titulo, tipopelicula as Tipo, clasificacion as Clasificacion, cantidad as Cantidad"
-    Dim columnasmod As String = "idpelicula as CodigoBarras, nombre as Titulo, tipopelicula as Tipo, clasificacion as Clasificacion, duracion as Duracion, categoria as Categoria"
-    Dim tabla As String = "pelicula"
-    Dim nombreid As String = "idpelicula"
+Public Class ClaseProvee
+    Dim tabla As String = "proveedor"
+    Dim columnas As String = "nombre as Nombre,rfc as RFC,telefono1 as Telefono1, telefono2 as Telefono2, fax as Fax, direccion as Direccion, codigopostal as CodigoPostal, email as Email, personacontacto as Contacto"
+    Dim nombreid As String = "rfc"
     Public Sub New()
     End Sub
-
     Public Function consultaID(ByVal id As String, ByVal dtg As DataGridView) As Boolean
         Dim con As New Conexion
         Dim DA As MySqlDataAdapter
@@ -34,7 +31,7 @@ Public Class ClasePeli
         Dim DT As DataTable
         titulo = LCase(titulo)
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(Nombre) like '%" & titulo & "%'", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(nombre) like '%" & titulo & "%'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -45,7 +42,7 @@ Public Class ClasePeli
             Return False
         End Try
     End Function
-    Public Function selectAll(ByVal dtg As DataGridView) As Boolean
+    Public Function selectAllmod(ByVal dtg As DataGridView) As Boolean
         Dim con As New Conexion
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
@@ -61,40 +58,24 @@ Public Class ClasePeli
             Return False
         End Try
     End Function
-
-    Public Sub inserta(ByVal id As String, ByVal clas As String, ByVal duracion As String, ByVal tit As String, ByVal cat As String, ByVal tipo As String)
+    Public Sub inserta(ByVal nombre As String, ByVal rfc As String, ByVal tel1 As String, ByVal tel2 As String, ByVal fax As String, ByVal direccion As String, ByVal codigopostal As String, ByVal email As String, ByVal contacto As String)
         Dim strSql As String
-        strSql = "INSERT INTO " & tabla & " (idpelicula,nombre,tipopelicula,duracion,clasificacion,categoria) VALUES('" & id & "','" & tit & "','" & tipo & "','" & duracion & "','" & clas & "','" & cat & "');"
+        strSql = "INSERT INTO " & tabla & " (nombre,rfc,telefono1,telefono2,fax,direccion,codigopostal,email,personacontacto) " &
+            "VALUES('" & nombre & "','" & rfc & "','" & tel1 & "','" & tel2 & "','" & fax & "','" & direccion & "','" & codigopostal & "','" & email & "','" & contacto & "');"
         Dim xCnx As New Conexion
         xCnx.queryStr(strSql)
         MessageBox.Show("Registro insertado!")
         cnx.Close()
     End Sub
-    Public Function selectAllMod(ByVal dtg As DataGridView) As Boolean
-        Dim con As New Conexion
-        Dim DA As MySqlDataAdapter
-        Dim DT As DataTable
-        Try
-            DA = New MySqlDataAdapter("Select " & columnasmod & " from " & tabla & " ", cnx)
-            DT = New DataTable
-            DA.Fill(DT)
-            dtg.DataSource = DT
-            con.close()
-            Return True
-        Catch ex As Exception
-            Throw New Exception("Error: " & ex.Message)
-            Return False
-        End Try
-    End Function
 
-    Public Function actualiza(ByVal id As String, ByVal titulo As String, ByVal clas As String, ByVal cat As String, ByVal dur As String, ByVal tipo As String) As Boolean
+    Public Function actualiza(ByVal nombre As String, ByVal newrfc As String, ByVal tel1 As String, ByVal tel2 As String, ByVal fax As String, ByVal dir As String, ByVal codigo As String, ByVal email As String, ByVal contacto As String, ByVal oldrfc As String) As Boolean
         Dim strSql As String
         Dim xCnx As New Conexion
-        strSql = "UPDATE " & tabla & " SET nombre = '" & titulo & "',categoria = '" & cat & "',tipopelicula = '" & tipo & "',duracion = '" & dur & "',clasificacion = '" & clas & "' WHERE idpelicula = '" & id & "';"
+
+        strSql = "UPDATE " & tabla & " SET nombre = '" & nombre & "',telefono1 = '" & tel1 & "',fax = '" & fax & "',telefono2 = '" & tel2 & "',rfc = '" & newrfc & "',email = '" & email & "',personacontacto = '" & contacto & "',codigopostal = '" & codigo & "' WHERE " & nombreid & " = '" & oldrfc & "';"
         xCnx.queryStr(strSql)
         MsgBox("Registro modificado")
         cnx.Close()
         Return True
     End Function
 End Class
-

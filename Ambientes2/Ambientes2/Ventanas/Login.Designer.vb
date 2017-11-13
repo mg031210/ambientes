@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,12 @@ Partial Class Login
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
-        Me.Barra = New System.Windows.Forms.Panel()
+        Me.Barra1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
@@ -36,7 +36,10 @@ Partial Class Login
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnVenta = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.msg = New System.Windows.Forms.Label()
-        Me.Barra.SuspendLayout()
+        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.BunifuDragControl2 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.PageSetupDialog1 = New System.Windows.Forms.PageSetupDialog()
+        Me.Barra1.SuspendLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -46,17 +49,16 @@ Partial Class Login
         Me.BunifuElipse1.ElipseRadius = 5
         Me.BunifuElipse1.TargetControl = Me
         '
-        'Barra
+        'Barra1
         '
-        Me.Barra.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.Barra.Controls.Add(Me.Label1)
-        Me.Barra.Controls.Add(Me.BunifuImageButton2)
-        Me.Barra.Controls.Add(Me.BunifuImageButton1)
-        Me.Barra.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Barra.Location = New System.Drawing.Point(0, 0)
-        Me.Barra.Name = "Barra"
-        Me.Barra.Size = New System.Drawing.Size(332, 40)
-        Me.Barra.TabIndex = 2
+        Me.Barra1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.Barra1.Controls.Add(Me.Label1)
+        Me.Barra1.Controls.Add(Me.BunifuImageButton2)
+        Me.Barra1.Controls.Add(Me.BunifuImageButton1)
+        Me.Barra1.Location = New System.Drawing.Point(0, 0)
+        Me.Barra1.Name = "Barra1"
+        Me.Barra1.Size = New System.Drawing.Size(332, 40)
+        Me.Barra1.TabIndex = 2
         '
         'Label1
         '
@@ -235,10 +237,24 @@ Partial Class Login
         Me.msg.ForeColor = System.Drawing.Color.White
         Me.msg.Location = New System.Drawing.Point(42, 303)
         Me.msg.Name = "msg"
-        Me.msg.Size = New System.Drawing.Size(249, 16)
+        Me.msg.Size = New System.Drawing.Size(257, 16)
         Me.msg.TabIndex = 8
         Me.msg.Text = "Usuario o Contraseña Equivocado!"
         Me.msg.Visible = False
+        '
+        'BunifuDragControl1
+        '
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Me.Barra1
+        Me.BunifuDragControl1.Vertical = True
+        '
+        'BunifuDragControl2
+        '
+        Me.BunifuDragControl2.Fixed = True
+        Me.BunifuDragControl2.Horizontal = True
+        Me.BunifuDragControl2.TargetControl = Me.Label1
+        Me.BunifuDragControl2.Vertical = True
         '
         'Login
         '
@@ -253,13 +269,13 @@ Partial Class Login
         Me.Controls.Add(Me.txtPass)
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.BunifuFlatButton1)
-        Me.Controls.Add(Me.Barra)
+        Me.Controls.Add(Me.Barra1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
-        Me.Barra.ResumeLayout(False)
-        Me.Barra.PerformLayout()
+        Me.Barra1.ResumeLayout(False)
+        Me.Barra1.PerformLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -269,7 +285,7 @@ Partial Class Login
 
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents ColorDialog1 As ColorDialog
-    Friend WithEvents Barra As Panel
+    Friend WithEvents Barra1 As Panel
     Protected Friend WithEvents Label1 As Label
     Friend WithEvents BunifuImageButton2 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
@@ -280,4 +296,7 @@ Partial Class Login
     Friend WithEvents txtPass As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents btnVenta As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents msg As Label
+    Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
+    Friend WithEvents BunifuDragControl2 As Bunifu.Framework.UI.BunifuDragControl
+    Friend WithEvents PageSetupDialog1 As PageSetupDialog
 End Class

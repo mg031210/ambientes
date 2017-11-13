@@ -73,4 +73,11 @@
         Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
     End Sub
 
+    Private Sub LabelUser_Click(sender As Object, e As EventArgs) Handles LabelUser.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
 End Class

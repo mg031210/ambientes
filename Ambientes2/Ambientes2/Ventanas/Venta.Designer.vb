@@ -33,17 +33,22 @@ Partial Class Venta
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtBId = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuCustomTextbox1 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.total = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.BunifuCustomTextbox2 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.pago = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.btnok = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.dgvVenta = New System.Windows.Forms.DataGridView()
+        Me.codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.titulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clasi = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cant = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
         CType(Me.dgvPelis, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -55,12 +60,13 @@ Partial Class Venta
         '
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvPelis.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvPelis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPelis.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvPelis.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvPelis.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgvPelis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvPelis.Location = New System.Drawing.Point(16, 17)
         Me.dgvPelis.Name = "dgvPelis"
+        Me.dgvPelis.ReadOnly = True
         Me.dgvPelis.Size = New System.Drawing.Size(548, 150)
         Me.dgvPelis.TabIndex = 2
         '
@@ -148,19 +154,6 @@ Partial Class Venta
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "CodigoBarras"
         '
-        'DataGridView1
-        '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 208)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(835, 210)
-        Me.DataGridView1.TabIndex = 4
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -172,39 +165,128 @@ Partial Class Venta
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Venta"
         '
-        'BunifuFlatButton2
+        'total
         '
-        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton2.BorderRadius = 0
-        Me.BunifuFlatButton2.ButtonText = "  Finalizar"
-        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton2.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Checkmark_96px
-        Me.BunifuFlatButton2.Iconimage_right = Nothing
-        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton2.IconMarginLeft = 0
-        Me.BunifuFlatButton2.IconMarginRight = 0
-        Me.BunifuFlatButton2.IconRightVisible = True
-        Me.BunifuFlatButton2.IconRightZoom = 0R
-        Me.BunifuFlatButton2.IconVisible = True
-        Me.BunifuFlatButton2.IconZoom = 80.0R
-        Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(728, 468)
-        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
-        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.selected = False
-        Me.BunifuFlatButton2.Size = New System.Drawing.Size(106, 38)
-        Me.BunifuFlatButton2.TabIndex = 7
-        Me.BunifuFlatButton2.Text = "  Finalizar"
-        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.total.BorderColor = System.Drawing.Color.SeaGreen
+        Me.total.Location = New System.Drawing.Point(201, 477)
+        Me.total.Name = "total"
+        Me.total.ReadOnly = True
+        Me.total.Size = New System.Drawing.Size(95, 20)
+        Me.total.TabIndex = 10
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Location = New System.Drawing.Point(76, 476)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(119, 21)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Total a  Pagar"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Location = New System.Drawing.Point(340, 477)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(51, 21)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Pago"
+        '
+        'pago
+        '
+        Me.pago.BorderColor = System.Drawing.Color.SeaGreen
+        Me.pago.Location = New System.Drawing.Point(395, 477)
+        Me.pago.Name = "pago"
+        Me.pago.Size = New System.Drawing.Size(95, 20)
+        Me.pago.TabIndex = 10
+        '
+        'btnok
+        '
+        Me.btnok.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnok.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnok.BorderRadius = 0
+        Me.btnok.ButtonText = "  Finalizar"
+        Me.btnok.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnok.DisabledColor = System.Drawing.Color.Gray
+        Me.btnok.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnok.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Checkmark_96px
+        Me.btnok.Iconimage_right = Nothing
+        Me.btnok.Iconimage_right_Selected = Nothing
+        Me.btnok.Iconimage_Selected = Nothing
+        Me.btnok.IconMarginLeft = 0
+        Me.btnok.IconMarginRight = 0
+        Me.btnok.IconRightVisible = True
+        Me.btnok.IconRightZoom = 0R
+        Me.btnok.IconVisible = True
+        Me.btnok.IconZoom = 80.0R
+        Me.btnok.IsTab = False
+        Me.btnok.Location = New System.Drawing.Point(728, 468)
+        Me.btnok.Name = "btnok"
+        Me.btnok.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnok.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnok.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnok.selected = False
+        Me.btnok.Size = New System.Drawing.Size(106, 38)
+        Me.btnok.TabIndex = 7
+        Me.btnok.Text = "  Finalizar"
+        Me.btnok.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnok.Textcolor = System.Drawing.Color.White
+        Me.btnok.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'dgvVenta
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvVenta.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvVenta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvVenta.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvVenta.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvVenta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvVenta.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codigo, Me.titulo, Me.tipo, Me.clasi, Me.cant})
+        Me.dgvVenta.Location = New System.Drawing.Point(16, 208)
+        Me.dgvVenta.Name = "dgvVenta"
+        Me.dgvVenta.Size = New System.Drawing.Size(835, 210)
+        Me.dgvVenta.TabIndex = 4
+        '
+        'codigo
+        '
+        Me.codigo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.codigo.HeaderText = "CodigoBarras"
+        Me.codigo.Name = "codigo"
+        Me.codigo.ReadOnly = True
+        '
+        'titulo
+        '
+        Me.titulo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.titulo.HeaderText = "Titulo"
+        Me.titulo.Name = "titulo"
+        Me.titulo.ReadOnly = True
+        '
+        'tipo
+        '
+        Me.tipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.tipo.HeaderText = "Tipo"
+        Me.tipo.Name = "tipo"
+        Me.tipo.ReadOnly = True
+        '
+        'clasi
+        '
+        Me.clasi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.clasi.HeaderText = "Clasificacion"
+        Me.clasi.Name = "clasi"
+        Me.clasi.ReadOnly = True
+        '
+        'cant
+        '
+        Me.cant.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.cant.HeaderText = "Cantidad"
+        Me.cant.Name = "cant"
+        Me.cant.ReadOnly = True
         '
         'BunifuFlatButton3
         '
@@ -234,49 +316,11 @@ Partial Class Venta
         Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton3.selected = False
         Me.BunifuFlatButton3.Size = New System.Drawing.Size(106, 38)
-        Me.BunifuFlatButton3.TabIndex = 8
+        Me.BunifuFlatButton3.TabIndex = 17
         Me.BunifuFlatButton3.Text = "  Cancelar"
         Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'BunifuCustomTextbox1
-        '
-        Me.BunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox1.Location = New System.Drawing.Point(201, 477)
-        Me.BunifuCustomTextbox1.Name = "BunifuCustomTextbox1"
-        Me.BunifuCustomTextbox1.Size = New System.Drawing.Size(95, 20)
-        Me.BunifuCustomTextbox1.TabIndex = 10
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(76, 476)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(119, 21)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Total a  Pagar"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(340, 477)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 21)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Pago"
-        '
-        'BunifuCustomTextbox2
-        '
-        Me.BunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox2.Location = New System.Drawing.Point(395, 477)
-        Me.BunifuCustomTextbox2.Name = "BunifuCustomTextbox2"
-        Me.BunifuCustomTextbox2.Size = New System.Drawing.Size(95, 20)
-        Me.BunifuCustomTextbox2.TabIndex = 10
         '
         'Venta
         '
@@ -284,14 +328,14 @@ Partial Class Venta
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(870, 533)
-        Me.Controls.Add(Me.BunifuCustomTextbox2)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.BunifuCustomTextbox1)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BunifuFlatButton3)
+        Me.Controls.Add(Me.pago)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.total)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.BunifuFlatButton2)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.btnok)
+        Me.Controls.Add(Me.dgvVenta)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgvPelis)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -301,7 +345,7 @@ Partial Class Venta
         CType(Me.dgvPelis, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -316,11 +360,16 @@ Partial Class Venta
     Friend WithEvents txtBId As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuCustomTextbox2 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents btnok As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents pago As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label5 As Label
-    Friend WithEvents BunifuCustomTextbox1 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents total As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label4 As Label
+    Friend WithEvents dgvVenta As DataGridView
+    Friend WithEvents codigo As DataGridViewTextBoxColumn
+    Friend WithEvents titulo As DataGridViewTextBoxColumn
+    Friend WithEvents tipo As DataGridViewTextBoxColumn
+    Friend WithEvents clasi As DataGridViewTextBoxColumn
+    Friend WithEvents cant As DataGridViewTextBoxColumn
+    Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
 End Class

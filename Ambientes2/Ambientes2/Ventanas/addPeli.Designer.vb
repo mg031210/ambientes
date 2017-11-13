@@ -25,22 +25,22 @@ Partial Class addPeli
         Me.components = New System.ComponentModel.Container()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuFlatButton5 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuCustomTextbox1 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.radiocat = New System.Windows.Forms.RadioButton()
+        Me.radioestreno = New System.Windows.Forms.RadioButton()
+        Me.txtcategoria = New System.Windows.Forms.ComboBox()
+        Me.txtclas = New System.Windows.Forms.ComboBox()
+        Me.txtcodigo = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtdur = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btncancel = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnok = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.txttitulo = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.BunifuCustomTextbox2 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.BunifuCustomTextbox5 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,20 +51,20 @@ Partial Class addPeli
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox5)
-        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox2)
+        Me.GroupBox1.Controls.Add(Me.radiocat)
+        Me.GroupBox1.Controls.Add(Me.radioestreno)
+        Me.GroupBox1.Controls.Add(Me.txtcategoria)
+        Me.GroupBox1.Controls.Add(Me.txtclas)
+        Me.GroupBox1.Controls.Add(Me.txtcodigo)
+        Me.GroupBox1.Controls.Add(Me.txtdur)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton3)
-        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton5)
-        Me.GroupBox1.Controls.Add(Me.BunifuCustomTextbox1)
+        Me.GroupBox1.Controls.Add(Me.btncancel)
+        Me.GroupBox1.Controls.Add(Me.btnok)
+        Me.GroupBox1.Controls.Add(Me.txttitulo)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
@@ -74,81 +74,196 @@ Partial Class addPeli
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
-        'BunifuFlatButton3
+        'radiocat
         '
-        Me.BunifuFlatButton3.Activecolor = System.Drawing.Color.Red
-        Me.BunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.BunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton3.BorderRadius = 0
-        Me.BunifuFlatButton3.ButtonText = "  Cancelar"
-        Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton3.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Delete_96px_1
-        Me.BunifuFlatButton3.Iconimage_right = Nothing
-        Me.BunifuFlatButton3.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton3.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton3.IconMarginLeft = 0
-        Me.BunifuFlatButton3.IconMarginRight = 0
-        Me.BunifuFlatButton3.IconRightVisible = True
-        Me.BunifuFlatButton3.IconRightZoom = 0R
-        Me.BunifuFlatButton3.IconVisible = True
-        Me.BunifuFlatButton3.IconZoom = 80.0R
-        Me.BunifuFlatButton3.IsTab = False
-        Me.BunifuFlatButton3.Location = New System.Drawing.Point(595, 402)
-        Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
-        Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.BunifuFlatButton3.OnHovercolor = System.Drawing.Color.Red
-        Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.selected = False
-        Me.BunifuFlatButton3.Size = New System.Drawing.Size(106, 38)
-        Me.BunifuFlatButton3.TabIndex = 37
-        Me.BunifuFlatButton3.Text = "  Cancelar"
-        Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radiocat.AutoSize = True
+        Me.radiocat.Checked = True
+        Me.radiocat.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radiocat.ForeColor = System.Drawing.Color.White
+        Me.radiocat.Location = New System.Drawing.Point(440, 210)
+        Me.radiocat.Name = "radiocat"
+        Me.radiocat.Size = New System.Drawing.Size(104, 25)
+        Me.radiocat.TabIndex = 51
+        Me.radiocat.TabStop = True
+        Me.radiocat.Text = "Catalogo"
+        Me.radiocat.UseVisualStyleBackColor = True
         '
-        'BunifuFlatButton5
+        'radioestreno
         '
-        Me.BunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton5.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.BunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton5.BorderRadius = 0
-        Me.BunifuFlatButton5.ButtonText = "  Finalizar"
-        Me.BunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton5.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Checkmark_96px
-        Me.BunifuFlatButton5.Iconimage_right = Nothing
-        Me.BunifuFlatButton5.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton5.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton5.IconMarginLeft = 0
-        Me.BunifuFlatButton5.IconMarginRight = 0
-        Me.BunifuFlatButton5.IconRightVisible = True
-        Me.BunifuFlatButton5.IconRightZoom = 0R
-        Me.BunifuFlatButton5.IconVisible = True
-        Me.BunifuFlatButton5.IconZoom = 80.0R
-        Me.BunifuFlatButton5.IsTab = False
-        Me.BunifuFlatButton5.Location = New System.Drawing.Point(725, 402)
-        Me.BunifuFlatButton5.Name = "BunifuFlatButton5"
-        Me.BunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.BunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton5.selected = False
-        Me.BunifuFlatButton5.Size = New System.Drawing.Size(106, 38)
-        Me.BunifuFlatButton5.TabIndex = 36
-        Me.BunifuFlatButton5.Text = "  Finalizar"
-        Me.BunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton5.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton5.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radioestreno.AutoSize = True
+        Me.radioestreno.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radioestreno.ForeColor = System.Drawing.Color.White
+        Me.radioestreno.Location = New System.Drawing.Point(440, 241)
+        Me.radioestreno.Name = "radioestreno"
+        Me.radioestreno.Size = New System.Drawing.Size(85, 25)
+        Me.radioestreno.TabIndex = 50
+        Me.radioestreno.Text = "Estreno"
+        Me.radioestreno.UseVisualStyleBackColor = True
         '
-        'BunifuCustomTextbox1
+        'txtcategoria
         '
-        Me.BunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox1.Location = New System.Drawing.Point(440, 113)
-        Me.BunifuCustomTextbox1.Name = "BunifuCustomTextbox1"
-        Me.BunifuCustomTextbox1.Size = New System.Drawing.Size(358, 20)
-        Me.BunifuCustomTextbox1.TabIndex = 35
+        Me.txtcategoria.FormattingEnabled = True
+        Me.txtcategoria.Items.AddRange(New Object() {"Ficcion", "Miedo", "Accion", "Aventura", "Comedia", "Drama", "Musical", "Misterio", "Romance", "Deportes", "Animacion"})
+        Me.txtcategoria.Location = New System.Drawing.Point(480, 160)
+        Me.txtcategoria.Name = "txtcategoria"
+        Me.txtcategoria.Size = New System.Drawing.Size(138, 21)
+        Me.txtcategoria.TabIndex = 49
+        '
+        'txtclas
+        '
+        Me.txtclas.FormattingEnabled = True
+        Me.txtclas.Items.AddRange(New Object() {"AA", "A", "B", "B15", "C", "D"})
+        Me.txtclas.Location = New System.Drawing.Point(195, 159)
+        Me.txtclas.Name = "txtclas"
+        Me.txtclas.Size = New System.Drawing.Size(138, 21)
+        Me.txtclas.TabIndex = 48
+        '
+        'txtcodigo
+        '
+        Me.txtcodigo.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtcodigo.Location = New System.Drawing.Point(195, 113)
+        Me.txtcodigo.Name = "txtcodigo"
+        Me.txtcodigo.Size = New System.Drawing.Size(138, 20)
+        Me.txtcodigo.TabIndex = 46
+        '
+        'txtdur
+        '
+        Me.txtdur.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtdur.Location = New System.Drawing.Point(132, 209)
+        Me.txtdur.Name = "txtdur"
+        Me.txtdur.Size = New System.Drawing.Size(95, 20)
+        Me.txtdur.TabIndex = 43
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label6.Location = New System.Drawing.Point(45, 112)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(144, 21)
+        Me.Label6.TabIndex = 42
+        Me.Label6.Text = "Codigo de Barras"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Location = New System.Drawing.Point(383, 160)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(91, 21)
+        Me.Label5.TabIndex = 41
+        Me.Label5.Text = "Categoria"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.Location = New System.Drawing.Point(45, 163)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(108, 21)
+        Me.Label3.TabIndex = 40
+        Me.Label3.Text = "Clasificacion"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label2.Location = New System.Drawing.Point(383, 212)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(42, 21)
+        Me.Label2.TabIndex = 39
+        Me.Label2.Text = "Tipo"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.Location = New System.Drawing.Point(45, 209)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(81, 21)
+        Me.Label1.TabIndex = 38
+        Me.Label1.Text = "Duracion"
+        '
+        'btncancel
+        '
+        Me.btncancel.Activecolor = System.Drawing.Color.Red
+        Me.btncancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btncancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btncancel.BorderRadius = 0
+        Me.btncancel.ButtonText = "  Cancelar"
+        Me.btncancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btncancel.DisabledColor = System.Drawing.Color.Gray
+        Me.btncancel.Iconcolor = System.Drawing.Color.Transparent
+        Me.btncancel.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Delete_96px_1
+        Me.btncancel.Iconimage_right = Nothing
+        Me.btncancel.Iconimage_right_Selected = Nothing
+        Me.btncancel.Iconimage_Selected = Nothing
+        Me.btncancel.IconMarginLeft = 0
+        Me.btncancel.IconMarginRight = 0
+        Me.btncancel.IconRightVisible = True
+        Me.btncancel.IconRightZoom = 0R
+        Me.btncancel.IconVisible = True
+        Me.btncancel.IconZoom = 80.0R
+        Me.btncancel.IsTab = False
+        Me.btncancel.Location = New System.Drawing.Point(595, 402)
+        Me.btncancel.Name = "btncancel"
+        Me.btncancel.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btncancel.OnHovercolor = System.Drawing.Color.Red
+        Me.btncancel.OnHoverTextColor = System.Drawing.Color.White
+        Me.btncancel.selected = False
+        Me.btncancel.Size = New System.Drawing.Size(106, 38)
+        Me.btncancel.TabIndex = 37
+        Me.btncancel.Text = "  Cancelar"
+        Me.btncancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btncancel.Textcolor = System.Drawing.Color.White
+        Me.btncancel.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'btnok
+        '
+        Me.btnok.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnok.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnok.BorderRadius = 0
+        Me.btnok.ButtonText = "  Finalizar"
+        Me.btnok.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnok.DisabledColor = System.Drawing.Color.Gray
+        Me.btnok.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnok.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Checkmark_96px
+        Me.btnok.Iconimage_right = Nothing
+        Me.btnok.Iconimage_right_Selected = Nothing
+        Me.btnok.Iconimage_Selected = Nothing
+        Me.btnok.IconMarginLeft = 0
+        Me.btnok.IconMarginRight = 0
+        Me.btnok.IconRightVisible = True
+        Me.btnok.IconRightZoom = 0R
+        Me.btnok.IconVisible = True
+        Me.btnok.IconZoom = 80.0R
+        Me.btnok.IsTab = False
+        Me.btnok.Location = New System.Drawing.Point(725, 402)
+        Me.btnok.Name = "btnok"
+        Me.btnok.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnok.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnok.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnok.selected = False
+        Me.btnok.Size = New System.Drawing.Size(106, 38)
+        Me.btnok.TabIndex = 36
+        Me.btnok.Text = "  Finalizar"
+        Me.btnok.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnok.Textcolor = System.Drawing.Color.White
+        Me.btnok.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'txttitulo
+        '
+        Me.txttitulo.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txttitulo.Location = New System.Drawing.Point(440, 113)
+        Me.txttitulo.Name = "txttitulo"
+        Me.txttitulo.Size = New System.Drawing.Size(358, 20)
+        Me.txttitulo.TabIndex = 35
         '
         'Label4
         '
@@ -167,7 +282,7 @@ Partial Class addPeli
         Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "Nuevo Pelicula"
+        Me.BunifuFlatButton1.ButtonText = "Nueva Pelicula"
         Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
@@ -190,123 +305,10 @@ Partial Class addPeli
         Me.BunifuFlatButton1.selected = False
         Me.BunifuFlatButton1.Size = New System.Drawing.Size(847, 38)
         Me.BunifuFlatButton1.TabIndex = 5
-        Me.BunifuFlatButton1.Text = "Nuevo Pelicula"
+        Me.BunifuFlatButton1.Text = "Nueva Pelicula"
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(45, 209)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 21)
-        Me.Label1.TabIndex = 38
-        Me.Label1.Text = "Duracion"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(383, 212)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(42, 21)
-        Me.Label2.TabIndex = 39
-        Me.Label2.Text = "Tipo"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(45, 163)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 21)
-        Me.Label3.TabIndex = 40
-        Me.Label3.Text = "Clasificacion"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(383, 160)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(91, 21)
-        Me.Label5.TabIndex = 41
-        Me.Label5.Text = "Categoria"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(45, 112)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(144, 21)
-        Me.Label6.TabIndex = 42
-        Me.Label6.Text = "Codigo de Barras"
-        '
-        'BunifuCustomTextbox2
-        '
-        Me.BunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox2.Location = New System.Drawing.Point(132, 209)
-        Me.BunifuCustomTextbox2.Name = "BunifuCustomTextbox2"
-        Me.BunifuCustomTextbox2.Size = New System.Drawing.Size(95, 20)
-        Me.BunifuCustomTextbox2.TabIndex = 43
-        '
-        'BunifuCustomTextbox5
-        '
-        Me.BunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomTextbox5.Location = New System.Drawing.Point(195, 113)
-        Me.BunifuCustomTextbox5.Name = "BunifuCustomTextbox5"
-        Me.BunifuCustomTextbox5.Size = New System.Drawing.Size(138, 20)
-        Me.BunifuCustomTextbox5.TabIndex = 46
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(195, 159)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(138, 21)
-        Me.ComboBox1.TabIndex = 48
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(480, 160)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(138, 21)
-        Me.ComboBox2.TabIndex = 49
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.ForeColor = System.Drawing.Color.White
-        Me.RadioButton1.Location = New System.Drawing.Point(440, 241)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(85, 25)
-        Me.RadioButton1.TabIndex = 50
-        Me.RadioButton1.Text = "Estreno"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Checked = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.ForeColor = System.Drawing.Color.White
-        Me.RadioButton2.Location = New System.Drawing.Point(440, 210)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(104, 25)
-        Me.RadioButton2.TabIndex = 51
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Catalogo"
-        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'addPeli
         '
@@ -326,20 +328,20 @@ Partial Class addPeli
 
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuFlatButton5 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuCustomTextbox1 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents btncancel As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnok As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents txttitulo As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label4 As Label
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuCustomTextbox5 As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents BunifuCustomTextbox2 As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtcodigo As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtdur As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents radiocat As RadioButton
+    Friend WithEvents radioestreno As RadioButton
+    Friend WithEvents txtcategoria As ComboBox
+    Friend WithEvents txtclas As ComboBox
 End Class

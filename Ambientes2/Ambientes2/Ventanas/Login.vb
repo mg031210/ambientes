@@ -26,7 +26,7 @@ Public Class Login
         '    'MessageBox.Show("Bienvenido " & session.Item(4))
         '    msg.Visible = False
         formPrinc.Show()
-        Me.Hide()
+            Me.Hide()
         'Else
         '    msg.Visible = True
         'End If
@@ -34,6 +34,10 @@ Public Class Login
     End Sub
 
     Private Sub txtUser_OnValueChanged(sender As Object, e As EventArgs) Handles txtUser.OnValueChanged
+
+    End Sub
+
+    Private Sub txtPass_OnValueChanged(sender As Object, e As EventArgs) Handles txtPass.OnValueChanged
 
     End Sub
 End Class

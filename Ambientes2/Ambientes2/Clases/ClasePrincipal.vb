@@ -154,20 +154,24 @@ Public Class ClasePrincipal
         Return nombre
     End Function
 
-    Public Function consultaID(ByVal id As String, ByVal dtg As DataGridView, ByVal tabla As String, ByVal columnas As String) As Boolean
+    Public Function consultaID(ByVal id As String, ByVal dtg As DataGridView, ByVal tabla As String, ByVal columnas As String, ByVal Nombreid As String) As Boolean
         Dim con As New Conexion
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
+        Dim query As String = "Select " & columnas & " from " & tabla & " where " & Nombreid & " like '" & id & "%'"
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " where idPelicula like '%" & id & "%'", cnx)
+            DA = New MySqlDataAdapter(query, cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
             con.close()
-            Return True
+            If DT.Rows.Count = 1 Then
+                Return True
+            Else
+                Return False
+            End If
         Catch ex As Exception
             Throw New Exception("Error: " & ex.Message)
-            Return False
         End Try
     End Function
     Public Function consultaTitulo(ByVal titulo As String, ByVal dtg As DataGridView, ByVal tabla As String, ByVal columnas As String) As Boolean
