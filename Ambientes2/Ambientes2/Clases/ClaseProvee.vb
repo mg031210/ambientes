@@ -9,7 +9,7 @@ Public Class ClaseProvee
         Dim con As New Conexion
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
-        Dim query As String = "Select " & columnas & " from " & tabla & " where " & nombreid & " like '" & id & "%'"
+        Dim query As String = "Select " & columnas & " from " & tabla & " where " & nombreid & " like '" & id & "%' and estado = 'A'"
         Try
             DA = New MySqlDataAdapter(query, cnx)
             DT = New DataTable
@@ -31,7 +31,7 @@ Public Class ClaseProvee
         Dim DT As DataTable
         titulo = LCase(titulo)
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(nombre) like '%" & titulo & "%'", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(nombre) like '%" & titulo & "%' and estado = 'A'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -47,7 +47,7 @@ Public Class ClaseProvee
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " ", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " where estado = 'A'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -75,6 +75,17 @@ Public Class ClaseProvee
         strSql = "UPDATE " & tabla & " SET nombre = '" & nombre & "',telefono1 = '" & tel1 & "',fax = '" & fax & "',telefono2 = '" & tel2 & "',rfc = '" & newrfc & "',email = '" & email & "',personacontacto = '" & contacto & "',codigopostal = '" & codigo & "' WHERE " & nombreid & " = '" & oldrfc & "';"
         xCnx.queryStr(strSql)
         MsgBox("Registro modificado")
+        cnx.Close()
+        Return True
+    End Function
+
+    Public Function elimina(ByVal oldrfc As String) As Boolean
+        Dim strSql As String
+        Dim xCnx As New Conexion
+
+        strSql = "UPDATE " & tabla & " SET estado = 'I' WHERE " & nombreid & " = '" & oldrfc & "';"
+        xCnx.queryStr(strSql)
+        MsgBox("Registro Eliminado")
         cnx.Close()
         Return True
     End Function

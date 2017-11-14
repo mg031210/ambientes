@@ -32,7 +32,12 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'LabelUser.Text = session(4).ToString
+        LabelUser.Text = session(5).ToString
+        If session(11).ToString = "1" Then
+            isadmin = True
+            btnActu.Visible = True
+            Btninven.Visible = True
+        End If
     End Sub
 
     Private Sub btnRenta_Click(sender As Object, e As EventArgs) Handles btnRenta.Click
@@ -73,11 +78,15 @@
         Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
     End Sub
 
-    Private Sub LabelUser_Click(sender As Object, e As EventArgs) Handles LabelUser.Click
-
+    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles Btninven.Click
+        Dim nuevo As New inventario
+        nuevo.TopLevel = False
+        Me.PanelPrinc.Controls.Clear()
+        Me.PanelPrinc.Controls.Add(nuevo)
+        nuevo.Show()
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub LabelUser_Click(sender As Object, e As EventArgs) Handles LabelUser.Click
 
     End Sub
 End Class

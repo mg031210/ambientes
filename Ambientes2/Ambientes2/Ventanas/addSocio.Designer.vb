@@ -110,16 +110,16 @@ Partial Class addSocio
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label11.Location = New System.Drawing.Point(360, 90)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(78, 21)
+        Me.Label11.Size = New System.Drawing.Size(83, 21)
         Me.Label11.TabIndex = 83
-        Me.Label11.Text = "Dirrecion"
+        Me.Label11.Text = "Direccion"
         '
         'txttel
         '
         Me.txttel.BorderColor = System.Drawing.Color.SeaGreen
         Me.txttel.Location = New System.Drawing.Point(442, 133)
         Me.txttel.Name = "txttel"
-        Me.txttel.Size = New System.Drawing.Size(132, 20)
+        Me.txttel.Size = New System.Drawing.Size(138, 20)
         Me.txttel.TabIndex = 82
         '
         'Label12

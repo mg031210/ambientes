@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class ClaseSocio
     Dim columnas As String = "numsocio, CONCAT(nombre, ' ', apellidop) As Nombre"
+    Dim columnas2 As String = "numsocio as Socio,nombre as Nombre,apellidop as Paterno, apellidom as Materno, telefono as Telefono, celular as Celular, direccion as Direccion"
     Dim columnasDevol As String = "FechaRenta as Renta,fechaentrega as Entrega,fechaentregado as Hoy, CONCAT(s.nombre, ' ', s.apellidop) As Nombre, p.nombre as Pelicula, p.tipopelicula as TipoPel"
     Dim tabsocio As String = "socio"
     Dim tablamen As String = "menbresia"
@@ -15,7 +16,7 @@ Public Class ClaseSocio
         If id = "" Then
             id = 0
         End If
-        Dim query As String = "Select " & columnas & " from " & tabsocio & " where " & nombreid & " like '" & id & "'"
+        Dim query As String = "Select " & columnas & " from " & tabsocio & " where " & nombreid & " like '" & id & "' and estado = 'A'"
         Try
             DA = New MySqlDataAdapter(query, cnx)
             DT = New DataTable
@@ -39,7 +40,7 @@ Public Class ClaseSocio
         If id = "" Then
             id = 0
         End If
-        Dim query As String = "Select vigencia from socio s,menbresia m where s.idsocio = m." & nombreid & "  and s." & nombreid & "='" & id & "'"
+        Dim query As String = "Select vigencia from socio s,menbresia m where s.idsocio = m." & nombreid & "  and s." & nombreid & "='" & id & "' and estado = 'A'"
         Try
             DA = New MySqlDataAdapter(query, cnx)
             DT = New DataTable
@@ -61,7 +62,7 @@ Public Class ClaseSocio
         Dim DT As DataTable
         titulo = LCase(titulo)
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabsocio & "  where lower(Nombre) like '%" & titulo & "%'", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabsocio & "  where lower(Nombre) like '%" & titulo & "%' and estado = 'A'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -77,7 +78,24 @@ Public Class ClaseSocio
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabsocio & " ", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabsocio & " where estado = 'A'", cnx)
+            DT = New DataTable
+            DA.Fill(DT)
+            dtg.DataSource = DT
+            con.close()
+            Return True
+        Catch ex As Exception
+            Throw New Exception("Error: " & ex.Message)
+            Return False
+        End Try
+    End Function
+
+    Public Function selectAllmod(ByVal dtg As DataGridView) As Boolean
+        Dim con As New Conexion
+        Dim DA As MySqlDataAdapter
+        Dim DT As DataTable
+        Try
+            DA = New MySqlDataAdapter("Select " & columnas2 & " from " & tabsocio & " where estado = 'A'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -96,7 +114,7 @@ Public Class ClaseSocio
             id = 0
         End If
         'SELECT * FROM renta r,socio s,pelicula p WHERE r.idsocio=s.numsocio and p.idpelicula=r.idpelicula and r.idsocio=1 and fechaentregado is null
-        Dim query As String = "SELECT " & columnasDevol & " FROM renta r,socio s,pelicula p WHERE r.idsocio=s.numsocio and p.idpelicula=r.idpelicula and r.idsocio='" & id & "%' and fechaentregado is null"
+        Dim query As String = "SELECT " & columnasDevol & " FROM renta r,socio s,pelicula p WHERE r.idsocio=s.numsocio and p.idpelicula=r.idpelicula and r.idsocio='" & id & "%' and fechaentregado is null "
         Try
             DA = New MySqlDataAdapter(query, cnx)
             DT = New DataTable
@@ -123,15 +141,74 @@ Public Class ClaseSocio
         Dim xCnx As New Conexion
         xCnx.queryStr(strSql)
 
-        strSql1 = "Select idsocio from " & tabsocio & " where numsocio='" & id & "';"
+        strSql1 = "Select idsocio from " & tabsocio & " where numsocio='" & id & " and estado = 'A'';"
         DA = New MySqlDataAdapter(strSql1, cnx)
         DT = New DataTable
         DA.Fill(DT)
 
-        strSql2 = "INSERT INTO " & tablamen & " (vigencia,fechaingreso,numsocio,idusuario) VALUES('" & hoy.AddYears(1).ToString("yyyy'/'MM'/'dd") & "','" & hoy.ToString("yyyy'/'MM'/'dd") & "','" & DT.Rows(0).Item(0) & "','1');"
-        ','" & session.item(0) & "');"
+        strSql2 = "INSERT INTO " & tablamen & " (vigencia,fechaingreso,numsocio,idusuario) VALUES('" & hoy.AddYears(1).ToString("yyyy'/'MM'/'dd") & "','" & hoy.ToString("yyyy'/'MM'/'dd") & "','" & DT.Rows(0).Item(0) & "','" & session.item(0) & "');"
         xCnx.queryStr(strSql2)
         MessageBox.Show("Registro insertado!")
         cnx.Close()
     End Sub
+    Public Function consultaIDmod(ByVal id As String, ByVal dtg As DataGridView) As Boolean
+        Dim con As New Conexion
+        Dim DA As MySqlDataAdapter
+        Dim DT As DataTable
+        Dim query As String = "Select " & columnas2 & " from " & tabsocio & " where " & nombreid & " like '" & id & "%' and estado = 'A'"
+        Try
+            DA = New MySqlDataAdapter(query, cnx)
+            DT = New DataTable
+            DA.Fill(DT)
+            dtg.DataSource = DT
+            con.close()
+            If DT.Rows.Count = 1 Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            Throw New Exception("Error: " & ex.Message)
+        End Try
+    End Function
+
+    Public Function consultaTitulmod(ByVal titulo As String, ByVal dtg As DataGridView) As Boolean
+        Dim con As New Conexion
+        Dim DA As MySqlDataAdapter
+        Dim DT As DataTable
+        titulo = LCase(titulo)
+        Dim query As String = "Select " & columnas2 & " from " & tabsocio & "  where lower(nombre) like '%" & titulo & "%' and estado = 'A'"
+        Try
+            DA = New MySqlDataAdapter(query, cnx)
+            DT = New DataTable
+            DA.Fill(DT)
+            dtg.DataSource = DT
+            con.close()
+            Return True
+        Catch ex As Exception
+            Throw New Exception("Error: " & ex.Message)
+            Return False
+        End Try
+    End Function
+
+    Public Function actualiza(ByVal nombre As String, ByVal cel As String, ByVal apep As String, ByVal tel As String, ByVal apem As String, ByVal dir As String, ByVal newsocio As String, ByVal oldsocio As String) As Boolean
+        Dim strSql As String
+        Dim xCnx As New Conexion
+
+        strSql = "UPDATE " & tabsocio & " SET nombre = '" & nombre & "',apellidop = '" & apep & "',apellidom = '" & apem & "',telefono = '" & tel & "',celular = '" & cel & "',direccion = '" & dir & "',numsocio = '" & newsocio & "' WHERE " & nombreid & " = '" & oldsocio & "';"
+        xCnx.queryStr(strSql)
+        MsgBox("Registro modificado")
+        cnx.Close()
+        Return True
+    End Function
+    Public Function elimina(ByVal oldsocio As String) As Boolean
+        Dim strSql As String
+        Dim xCnx As New Conexion
+
+        strSql = "UPDATE " & tabsocio & " SET estado= 'I' WHERE " & nombreid & " = '" & oldsocio & "';"
+        xCnx.queryStr(strSql)
+        MsgBox("Registro eliminado")
+        cnx.Close()
+        Return True
+    End Function
 End Class

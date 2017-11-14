@@ -9,4 +9,6 @@ Module Variables
     Public tipoCat As String = "C"
     Public tipoEst As String = "E"
     Public CostoMembresia As Integer = 100
+    Public isadmin As Boolean = False
+
 End Module

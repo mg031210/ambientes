@@ -23,7 +23,7 @@ Partial Class modPeli
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.radiocat = New System.Windows.Forms.RadioButton()
@@ -223,14 +223,17 @@ Partial Class modPeli
         '
         'dgvPelis
         '
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvPelis.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvPelis.AllowUserToAddRows = False
+        Me.dgvPelis.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvPelis.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvPelis.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvPelis.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvPelis.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.dgvPelis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvPelis.Location = New System.Drawing.Point(6, 44)
         Me.dgvPelis.Name = "dgvPelis"
+        Me.dgvPelis.ReadOnly = True
         Me.dgvPelis.Size = New System.Drawing.Size(557, 150)
         Me.dgvPelis.TabIndex = 38
         '

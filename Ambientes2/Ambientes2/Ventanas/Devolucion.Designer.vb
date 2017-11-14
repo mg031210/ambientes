@@ -23,9 +23,9 @@ Partial Class Devolucion
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.dgvDevol = New System.Windows.Forms.DataGridView()
         Me.txtBId = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
@@ -34,6 +34,8 @@ Partial Class Devolucion
         Me.dgvvigencia = New System.Windows.Forms.DataGridView()
         Me.dgvSocio = New System.Windows.Forms.DataGridView()
         Me.Btncheck = New Bunifu.Framework.UI.BunifuCheckbox()
+        Me.BtnRenovar = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.txtPago = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtRentas = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
@@ -46,8 +48,6 @@ Partial Class Devolucion
         Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnok = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BtnRenovar = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         CType(Me.dgvDevol, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvvigencia, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,8 +61,10 @@ Partial Class Devolucion
         '
         'dgvDevol
         '
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvDevol.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        Me.dgvDevol.AllowUserToAddRows = False
+        Me.dgvDevol.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvDevol.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvDevol.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvDevol.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvDevol.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -70,6 +72,7 @@ Partial Class Devolucion
         Me.dgvDevol.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDevol.Location = New System.Drawing.Point(21, 52)
         Me.dgvDevol.Name = "dgvDevol"
+        Me.dgvDevol.ReadOnly = True
         Me.dgvDevol.Size = New System.Drawing.Size(548, 384)
         Me.dgvDevol.TabIndex = 13
         '
@@ -109,35 +112,41 @@ Partial Class Devolucion
         '
         'dgvvigencia
         '
+        Me.dgvvigencia.AllowUserToAddRows = False
+        Me.dgvvigencia.AllowUserToDeleteRows = False
         Me.dgvvigencia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvvigencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvvigencia.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvvigencia.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvvigencia.Location = New System.Drawing.Point(15, 180)
         Me.dgvvigencia.Name = "dgvvigencia"
+        Me.dgvvigencia.ReadOnly = True
         Me.dgvvigencia.Size = New System.Drawing.Size(239, 44)
         Me.dgvvigencia.TabIndex = 37
         '
         'dgvSocio
         '
+        Me.dgvSocio.AllowUserToAddRows = False
+        Me.dgvSocio.AllowUserToDeleteRows = False
         Me.dgvSocio.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvSocio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvSocio.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvSocio.DefaultCellStyle = DataGridViewCellStyle3
         Me.dgvSocio.Location = New System.Drawing.Point(15, 130)
         Me.dgvSocio.Name = "dgvSocio"
+        Me.dgvSocio.ReadOnly = True
         Me.dgvSocio.Size = New System.Drawing.Size(239, 44)
         Me.dgvSocio.TabIndex = 36
         '
@@ -153,6 +162,75 @@ Partial Class Devolucion
         Me.Btncheck.Name = "Btncheck"
         Me.Btncheck.Size = New System.Drawing.Size(20, 20)
         Me.Btncheck.TabIndex = 26
+        '
+        'BtnRenovar
+        '
+        Me.BtnRenovar.Activecolor = System.Drawing.Color.Red
+        Me.BtnRenovar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.BtnRenovar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnRenovar.BorderRadius = 0
+        Me.BtnRenovar.ButtonText = "Renovar"
+        Me.BtnRenovar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnRenovar.DisabledColor = System.Drawing.Color.Gray
+        Me.BtnRenovar.Enabled = False
+        Me.BtnRenovar.Iconcolor = System.Drawing.Color.Transparent
+        Me.BtnRenovar.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Delete_96px_1
+        Me.BtnRenovar.Iconimage_right = Nothing
+        Me.BtnRenovar.Iconimage_right_Selected = Nothing
+        Me.BtnRenovar.Iconimage_Selected = Nothing
+        Me.BtnRenovar.IconMarginLeft = 0
+        Me.BtnRenovar.IconMarginRight = 0
+        Me.BtnRenovar.IconRightVisible = True
+        Me.BtnRenovar.IconRightZoom = 0R
+        Me.BtnRenovar.IconVisible = False
+        Me.BtnRenovar.IconZoom = 80.0R
+        Me.BtnRenovar.IsTab = False
+        Me.BtnRenovar.Location = New System.Drawing.Point(109, 243)
+        Me.BtnRenovar.Name = "BtnRenovar"
+        Me.BtnRenovar.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.BtnRenovar.OnHovercolor = System.Drawing.Color.Red
+        Me.BtnRenovar.OnHoverTextColor = System.Drawing.Color.White
+        Me.BtnRenovar.selected = False
+        Me.BtnRenovar.Size = New System.Drawing.Size(62, 22)
+        Me.BtnRenovar.TabIndex = 25
+        Me.BtnRenovar.Text = "Renovar"
+        Me.BtnRenovar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnRenovar.Textcolor = System.Drawing.Color.White
+        Me.BtnRenovar.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'BunifuFlatButton1
+        '
+        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton1.BorderRadius = 0
+        Me.BunifuFlatButton1.ButtonText = "Buscar"
+        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Search_96px_1
+        Me.BunifuFlatButton1.Iconimage_right = Nothing
+        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton1.IconMarginLeft = 0
+        Me.BunifuFlatButton1.IconMarginRight = 0
+        Me.BunifuFlatButton1.IconRightVisible = True
+        Me.BunifuFlatButton1.IconRightZoom = 0R
+        Me.BunifuFlatButton1.IconVisible = True
+        Me.BunifuFlatButton1.IconZoom = 80.0R
+        Me.BunifuFlatButton1.IsTab = False
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(0, 6)
+        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
+        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.selected = False
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(275, 38)
+        Me.BunifuFlatButton1.TabIndex = 4
+        Me.BunifuFlatButton1.Text = "Buscar"
+        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'txtPago
         '
@@ -370,75 +448,6 @@ Partial Class Devolucion
         Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'BtnRenovar
-        '
-        Me.BtnRenovar.Activecolor = System.Drawing.Color.Red
-        Me.BtnRenovar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.BtnRenovar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnRenovar.BorderRadius = 0
-        Me.BtnRenovar.ButtonText = "Renovar"
-        Me.BtnRenovar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnRenovar.DisabledColor = System.Drawing.Color.Gray
-        Me.BtnRenovar.Enabled = False
-        Me.BtnRenovar.Iconcolor = System.Drawing.Color.Transparent
-        Me.BtnRenovar.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Delete_96px_1
-        Me.BtnRenovar.Iconimage_right = Nothing
-        Me.BtnRenovar.Iconimage_right_Selected = Nothing
-        Me.BtnRenovar.Iconimage_Selected = Nothing
-        Me.BtnRenovar.IconMarginLeft = 0
-        Me.BtnRenovar.IconMarginRight = 0
-        Me.BtnRenovar.IconRightVisible = True
-        Me.BtnRenovar.IconRightZoom = 0R
-        Me.BtnRenovar.IconVisible = False
-        Me.BtnRenovar.IconZoom = 80.0R
-        Me.BtnRenovar.IsTab = False
-        Me.BtnRenovar.Location = New System.Drawing.Point(109, 243)
-        Me.BtnRenovar.Name = "BtnRenovar"
-        Me.BtnRenovar.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.BtnRenovar.OnHovercolor = System.Drawing.Color.Red
-        Me.BtnRenovar.OnHoverTextColor = System.Drawing.Color.White
-        Me.BtnRenovar.selected = False
-        Me.BtnRenovar.Size = New System.Drawing.Size(62, 22)
-        Me.BtnRenovar.TabIndex = 25
-        Me.BtnRenovar.Text = "Renovar"
-        Me.BtnRenovar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnRenovar.Textcolor = System.Drawing.Color.White
-        Me.BtnRenovar.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'BunifuFlatButton1
-        '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "Buscar"
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Search_96px_1
-        Me.BunifuFlatButton1.Iconimage_right = Nothing
-        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton1.IconMarginLeft = 0
-        Me.BunifuFlatButton1.IconMarginRight = 0
-        Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0R
-        Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 80.0R
-        Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(0, 6)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(275, 38)
-        Me.BunifuFlatButton1.TabIndex = 4
-        Me.BunifuFlatButton1.Text = "Buscar"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'Devolucion
         '

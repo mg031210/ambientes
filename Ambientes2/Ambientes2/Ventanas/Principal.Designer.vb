@@ -23,12 +23,12 @@ Partial Class formPrinc
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation5 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPrinc))
+        Dim Animation6 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Menu = New System.Windows.Forms.Panel()
-        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.Btninven = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.LabelUser = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BtnMenu = New Bunifu.Framework.UI.BunifuImageButton()
@@ -61,7 +61,7 @@ Partial Class formPrinc
         'Menu
         '
         Me.Menu.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Menu.Controls.Add(Me.BunifuFlatButton1)
+        Me.Menu.Controls.Add(Me.Btninven)
         Me.Menu.Controls.Add(Me.LabelUser)
         Me.Menu.Controls.Add(Me.Label2)
         Me.Menu.Controls.Add(Me.BtnMenu)
@@ -79,42 +79,43 @@ Partial Class formPrinc
         Me.Menu.Size = New System.Drawing.Size(200, 533)
         Me.Menu.TabIndex = 0
         '
-        'BunifuFlatButton1
+        'Btninven
         '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "       Inventario"
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PanelAni2.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
-        Me.PanelAni.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Increase_104px
-        Me.BunifuFlatButton1.Iconimage_right = Nothing
-        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton1.IconMarginLeft = 0
-        Me.BunifuFlatButton1.IconMarginRight = 0
-        Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0R
-        Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 90.0R
-        Me.BunifuFlatButton1.IsTab = True
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(0, 463)
-        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(223, 48)
-        Me.BunifuFlatButton1.TabIndex = 8
-        Me.BunifuFlatButton1.Text = "       Inventario"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btninven.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.Btninven.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Btninven.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Btninven.BorderRadius = 0
+        Me.Btninven.ButtonText = "       Inventario"
+        Me.Btninven.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PanelAni2.SetDecoration(Me.Btninven, BunifuAnimatorNS.DecorationType.None)
+        Me.PanelAni.SetDecoration(Me.Btninven, BunifuAnimatorNS.DecorationType.None)
+        Me.Btninven.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.Btninven.Iconcolor = System.Drawing.Color.Transparent
+        Me.Btninven.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Increase_104px
+        Me.Btninven.Iconimage_right = Nothing
+        Me.Btninven.Iconimage_right_Selected = Nothing
+        Me.Btninven.Iconimage_Selected = Nothing
+        Me.Btninven.IconMarginLeft = 0
+        Me.Btninven.IconMarginRight = 0
+        Me.Btninven.IconRightVisible = True
+        Me.Btninven.IconRightZoom = 0R
+        Me.Btninven.IconVisible = True
+        Me.Btninven.IconZoom = 90.0R
+        Me.Btninven.IsTab = True
+        Me.Btninven.Location = New System.Drawing.Point(0, 463)
+        Me.Btninven.Margin = New System.Windows.Forms.Padding(5)
+        Me.Btninven.Name = "Btninven"
+        Me.Btninven.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Btninven.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Btninven.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.Btninven.selected = False
+        Me.Btninven.Size = New System.Drawing.Size(223, 48)
+        Me.Btninven.TabIndex = 8
+        Me.Btninven.Text = "       Inventario"
+        Me.Btninven.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btninven.Textcolor = System.Drawing.Color.White
+        Me.Btninven.TextFont = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btninven.Visible = False
         '
         'LabelUser
         '
@@ -181,7 +182,7 @@ Partial Class formPrinc
         Me.btnNuevo.IconVisible = True
         Me.btnNuevo.IconZoom = 90.0R
         Me.btnNuevo.IsTab = True
-        Me.btnNuevo.Location = New System.Drawing.Point(0, 405)
+        Me.btnNuevo.Location = New System.Drawing.Point(0, 347)
         Me.btnNuevo.Margin = New System.Windows.Forms.Padding(5)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
@@ -218,7 +219,7 @@ Partial Class formPrinc
         Me.btnActu.IconVisible = True
         Me.btnActu.IconZoom = 90.0R
         Me.btnActu.IsTab = True
-        Me.btnActu.Location = New System.Drawing.Point(0, 347)
+        Me.btnActu.Location = New System.Drawing.Point(0, 405)
         Me.btnActu.Margin = New System.Windows.Forms.Padding(5)
         Me.btnActu.Name = "btnActu"
         Me.btnActu.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer))
@@ -231,6 +232,7 @@ Partial Class formPrinc
         Me.btnActu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnActu.Textcolor = System.Drawing.Color.White
         Me.btnActu.TextFont = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnActu.Visible = False
         '
         'btnDevol
         '
@@ -450,22 +452,22 @@ Partial Class formPrinc
         '
         Me.PanelAni.AnimationType = BunifuAnimatorNS.AnimationType.Particles
         Me.PanelAni.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 1
-        Animation2.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
-        Animation2.RotateCoeff = 0!
-        Animation2.RotateLimit = 0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 2.0!
-        Animation2.TransparencyCoeff = 0!
-        Me.PanelAni.DefaultAnimation = Animation2
+        Animation5.AnimateOnlyDifferences = True
+        Animation5.BlindCoeff = CType(resources.GetObject("Animation5.BlindCoeff"), System.Drawing.PointF)
+        Animation5.LeafCoeff = 0!
+        Animation5.MaxTime = 1.0!
+        Animation5.MinTime = 0!
+        Animation5.MosaicCoeff = CType(resources.GetObject("Animation5.MosaicCoeff"), System.Drawing.PointF)
+        Animation5.MosaicShift = CType(resources.GetObject("Animation5.MosaicShift"), System.Drawing.PointF)
+        Animation5.MosaicSize = 1
+        Animation5.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
+        Animation5.RotateCoeff = 0!
+        Animation5.RotateLimit = 0!
+        Animation5.ScaleCoeff = CType(resources.GetObject("Animation5.ScaleCoeff"), System.Drawing.PointF)
+        Animation5.SlideCoeff = CType(resources.GetObject("Animation5.SlideCoeff"), System.Drawing.PointF)
+        Animation5.TimeCoeff = 2.0!
+        Animation5.TransparencyCoeff = 0!
+        Me.PanelAni.DefaultAnimation = Animation5
         '
         'PanelPrinc
         '
@@ -481,22 +483,22 @@ Partial Class formPrinc
         '
         Me.PanelAni2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
         Me.PanelAni2.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 0
-        Animation1.Padding = New System.Windows.Forms.Padding(0)
-        Animation1.RotateCoeff = 0!
-        Animation1.RotateLimit = 0!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 0!
-        Animation1.TransparencyCoeff = 0!
-        Me.PanelAni2.DefaultAnimation = Animation1
+        Animation6.AnimateOnlyDifferences = True
+        Animation6.BlindCoeff = CType(resources.GetObject("Animation6.BlindCoeff"), System.Drawing.PointF)
+        Animation6.LeafCoeff = 0!
+        Animation6.MaxTime = 1.0!
+        Animation6.MinTime = 0!
+        Animation6.MosaicCoeff = CType(resources.GetObject("Animation6.MosaicCoeff"), System.Drawing.PointF)
+        Animation6.MosaicShift = CType(resources.GetObject("Animation6.MosaicShift"), System.Drawing.PointF)
+        Animation6.MosaicSize = 0
+        Animation6.Padding = New System.Windows.Forms.Padding(0)
+        Animation6.RotateCoeff = 0!
+        Animation6.RotateLimit = 0!
+        Animation6.ScaleCoeff = CType(resources.GetObject("Animation6.ScaleCoeff"), System.Drawing.PointF)
+        Animation6.SlideCoeff = CType(resources.GetObject("Animation6.SlideCoeff"), System.Drawing.PointF)
+        Animation6.TimeCoeff = 0!
+        Animation6.TransparencyCoeff = 0!
+        Me.PanelAni2.DefaultAnimation = Animation6
         '
         'formPrinc
         '
@@ -544,5 +546,5 @@ Partial Class formPrinc
     Friend WithEvents PanelPrinc As Panel
     Protected Friend WithEvents LabelUser As Label
     Protected Friend WithEvents Label2 As Label
-    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents Btninven As Bunifu.Framework.UI.BunifuFlatButton
 End Class

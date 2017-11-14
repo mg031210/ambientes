@@ -58,6 +58,8 @@ Partial Class Venta
         '
         'dgvPelis
         '
+        Me.dgvPelis.AllowUserToAddRows = False
+        Me.dgvPelis.AllowUserToDeleteRows = False
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvPelis.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvPelis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -240,6 +242,8 @@ Partial Class Venta
         '
         'dgvVenta
         '
+        Me.dgvVenta.AllowUserToAddRows = False
+        Me.dgvVenta.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvVenta.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvVenta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -250,6 +254,7 @@ Partial Class Venta
         Me.dgvVenta.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codigo, Me.titulo, Me.tipo, Me.clasi, Me.cant})
         Me.dgvVenta.Location = New System.Drawing.Point(16, 208)
         Me.dgvVenta.Name = "dgvVenta"
+        Me.dgvVenta.ReadOnly = True
         Me.dgvVenta.Size = New System.Drawing.Size(835, 210)
         Me.dgvVenta.TabIndex = 4
         '

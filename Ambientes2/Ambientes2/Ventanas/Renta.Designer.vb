@@ -168,6 +168,8 @@ Partial Class Renta
         '
         'dgvPelis
         '
+        Me.dgvPelis.AllowUserToAddRows = False
+        Me.dgvPelis.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvPelis.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvPelis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -301,6 +303,8 @@ Partial Class Renta
         '
         'dgvVenta
         '
+        Me.dgvVenta.AllowUserToAddRows = False
+        Me.dgvVenta.AllowUserToDeleteRows = False
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvVenta.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvVenta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -311,6 +315,7 @@ Partial Class Renta
         Me.dgvVenta.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codigo, Me.titulo, Me.tipo, Me.clasi, Me.cant})
         Me.dgvVenta.Location = New System.Drawing.Point(17, 210)
         Me.dgvVenta.Name = "dgvVenta"
+        Me.dgvVenta.ReadOnly = True
         Me.dgvVenta.Size = New System.Drawing.Size(835, 210)
         Me.dgvVenta.TabIndex = 27
         '
@@ -401,19 +406,25 @@ Partial Class Renta
         '
         'dgvSocio
         '
+        Me.dgvSocio.AllowUserToAddRows = False
+        Me.dgvSocio.AllowUserToDeleteRows = False
         Me.dgvSocio.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvSocio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSocio.Location = New System.Drawing.Point(400, 435)
         Me.dgvSocio.Name = "dgvSocio"
+        Me.dgvSocio.ReadOnly = True
         Me.dgvSocio.Size = New System.Drawing.Size(305, 44)
         Me.dgvSocio.TabIndex = 35
         '
         'dgvvigencia
         '
+        Me.dgvvigencia.AllowUserToAddRows = False
+        Me.dgvvigencia.AllowUserToDeleteRows = False
         Me.dgvvigencia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvvigencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvvigencia.Location = New System.Drawing.Point(705, 435)
         Me.dgvvigencia.Name = "dgvvigencia"
+        Me.dgvvigencia.ReadOnly = True
         Me.dgvvigencia.Size = New System.Drawing.Size(147, 44)
         Me.dgvvigencia.TabIndex = 36
         '

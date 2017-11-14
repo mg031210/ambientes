@@ -235,11 +235,11 @@ Partial Class Login
         Me.msg.AutoSize = True
         Me.msg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.msg.ForeColor = System.Drawing.Color.White
-        Me.msg.Location = New System.Drawing.Point(42, 303)
+        Me.msg.Location = New System.Drawing.Point(105, 301)
         Me.msg.Name = "msg"
-        Me.msg.Size = New System.Drawing.Size(257, 16)
+        Me.msg.Size = New System.Drawing.Size(134, 16)
         Me.msg.TabIndex = 8
-        Me.msg.Text = "Usuario o Contraseña Equivocado!"
+        Me.msg.Text = "Datos Incorrectos!"
         Me.msg.Visible = False
         '
         'BunifuDragControl1

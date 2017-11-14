@@ -16,15 +16,51 @@
     End Sub
 
     Private Sub dgvProvee_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvProvee.CellContentDoubleClick
-        txtnombre.Text = dgvProvee(0, dgvProvee.CurrentRow.Index).Value
-        txtrfc.Text = dgvProvee(1, dgvProvee.CurrentRow.Index).Value
-        txttel1.Text = dgvProvee(2, dgvProvee.CurrentRow.Index).Value
-        txttel2.Text = dgvProvee(3, dgvProvee.CurrentRow.Index).Value
-        txtfax.Text = dgvProvee(4, dgvProvee.CurrentRow.Index).Value
-        txtdir.Text = dgvProvee(5, dgvProvee.CurrentRow.Index).Value
-        txtcodigo.Text = dgvProvee(6, dgvProvee.CurrentRow.Index).Value
-        txtemail.Text = dgvProvee(7, dgvProvee.CurrentRow.Index).Value
-        txtcontacto.Text = dgvProvee(8, dgvProvee.CurrentRow.Index).Value
+        If dgvProvee(0, dgvProvee.CurrentRow.Index).Value IsNot DBNull.Value Then
+            txtnombre.Text = dgvProvee(0, dgvProvee.CurrentRow.Index).Value
+        Else
+            txtnombre.Text = ""
+        End If
+        If dgvProvee(1, dgvProvee.CurrentRow.Index).Value IsNot DBNull.Value Then
+            txtrfc.Text = dgvProvee(1, dgvProvee.CurrentRow.Index).Value
+        Else
+            txtrfc.Text = ""
+        End If
+        If dgvProvee(2, dgvProvee.CurrentRow.Index).Value IsNot DBNull.Value Then
+            txttel1.Text = dgvProvee(2, dgvProvee.CurrentRow.Index).Value
+        Else
+            txttel1.Text = ""
+        End If
+        If dgvProvee(3, dgvProvee.CurrentRow.Index).Value IsNot DBNull.Value Then
+            txttel2.Text = dgvProvee(3, dgvProvee.CurrentRow.Index).Value
+        Else
+            txttel2.Text = ""
+        End If
+        If dgvProvee(4, dgvProvee.CurrentRow.Index).Value IsNot DBNull.Value Then
+            txtfax.Text = dgvProvee(4, dgvProvee.CurrentRow.Index).Value
+        Else
+            txtfax.Text = ""
+        End If
+        If dgvProvee(5, dgvProvee.CurrentRow.Index).Value IsNot DBNull.Value Then
+            txtdir.Text = dgvProvee(5, dgvProvee.CurrentRow.Index).Value
+        Else
+            txtdir.Text = ""
+        End If
+        If dgvProvee(6, dgvProvee.CurrentRow.Index).Value IsNot DBNull.Value Then
+            txtcodigo.Text = dgvProvee(6, dgvProvee.CurrentRow.Index).Value
+        Else
+            txtcodigo.Text = ""
+        End If
+        If dgvProvee(7, dgvProvee.CurrentRow.Index).Value IsNot DBNull.Value Then
+            txtemail.Text = dgvProvee(7, dgvProvee.CurrentRow.Index).Value
+        Else
+            txtemail.Text = ""
+        End If
+        If dgvProvee(8, dgvProvee.CurrentRow.Index).Value IsNot DBNull.Value Then
+            txtcontacto.Text = dgvProvee(8, dgvProvee.CurrentRow.Index).Value
+        Else
+            txtcontacto.Text = ""
+        End If
     End Sub
 
     Private Sub limpiar()
@@ -71,13 +107,6 @@
             End If
         End If
     End Sub
-    Private Sub txtBId_LostFocus(sender As Object, e As EventArgs) Handles txtBId.LostFocus
-        txtBId.Text = ""
-    End Sub
-
-    Private Sub txtBTitulo_LostFocus(sender As Object, e As EventArgs) Handles txtBTitulo.LostFocus
-        txtBTitulo.Text = ""
-    End Sub
 
     Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
         Dim provee As New ClaseProvee
@@ -86,6 +115,15 @@
     End Sub
 
     Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
-        ''elminar
+        Dim provee As New ClaseProvee
+        provee.elimina(dgvProvee(1, dgvProvee.CurrentRow.Index).Value)
+        limpiar()
+    End Sub
+    Private Sub txtBId_GotFocus(sender As Object, e As EventArgs) Handles txtBId.GotFocus
+        txtBTitulo.Text = ""
+    End Sub
+
+    Private Sub txtBTitulo_GotFocus(sender As Object, e As EventArgs) Handles txtBTitulo.GotFocus
+        txtBId.Text = ""
     End Sub
 End Class

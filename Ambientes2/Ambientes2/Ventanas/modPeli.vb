@@ -12,16 +12,34 @@
     Private Sub dgvPelis_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles dgvPelis.MouseDoubleClick
         If dgvPelis(0, dgvPelis.CurrentRow.Index).Value IsNot DBNull.Value Then
             txtcodigo.Text = dgvPelis(0, dgvPelis.CurrentRow.Index).Value
+        Else
+            txtcodigo.Text = ""
+        End If
+        If dgvPelis(3, dgvPelis.CurrentRow.Index).Value IsNot DBNull.Value Then
             txtclas.Text = dgvPelis(3, dgvPelis.CurrentRow.Index).Value
+        Else
+            txtclas.Text = ""
+        End If
+        If dgvPelis(4, dgvPelis.CurrentRow.Index).Value IsNot DBNull.Value Then
             txtdur.Text = dgvPelis(4, dgvPelis.CurrentRow.Index).Value
+        Else
+            txtdur.Text = ""
+        End If
+        If dgvPelis(1, dgvPelis.CurrentRow.Index).Value IsNot DBNull.Value Then
             txttitulo.Text = dgvPelis(1, dgvPelis.CurrentRow.Index).Value
+        Else
+            txttitulo.Text = ""
+        End If
+        If dgvPelis(5, dgvPelis.CurrentRow.Index).Value IsNot DBNull.Value Then
             txtcategoria.Text = dgvPelis(5, dgvPelis.CurrentRow.Index).Value
-            Dim check As String = dgvPelis(2, dgvPelis.CurrentRow.Index).Value
-            If check = tipoCat Then
-                radiocat.Checked = True
-            ElseIf check = tipoEst Then
-                radioestreno.Checked = True
-            End If
+        Else
+            txtcategoria.Text = ""
+        End If
+        Dim check As String = dgvPelis(2, dgvPelis.CurrentRow.Index).Value
+        If check = tipoCat Then
+            radiocat.Checked = True
+        ElseIf check = tipoEst Then
+            radioestreno.Checked = True
         End If
     End Sub
 
@@ -58,16 +76,19 @@
         limpiar()
 
     End Sub
-    Private Sub txtBId_LostFocus(sender As Object, e As EventArgs) Handles txtBId.LostFocus
-        txtBId.Text = ""
-    End Sub
 
-    Private Sub txtBTitulo_LostFocus(sender As Object, e As EventArgs) Handles txtBTitulo.LostFocus
+    Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
+        Dim peli As New ClasePeli
+        peli.elimina(dgvPelis(0, dgvPelis.CurrentRow.Index).Value)
+        limpiar()
+
+    End Sub
+    Private Sub txtBId_GotFocus(sender As Object, e As EventArgs) Handles txtBId.GotFocus
         txtBTitulo.Text = ""
     End Sub
 
-    Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
-        limpiar()
-        ''eliminar
+    Private Sub txtBTitulo_GotFocus(sender As Object, e As EventArgs) Handles txtBTitulo.GotFocus
+        txtBId.Text = ""
     End Sub
+
 End Class

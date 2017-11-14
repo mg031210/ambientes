@@ -12,7 +12,7 @@ Public Class ClasePeli
         Dim con As New Conexion
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
-        Dim query As String = "Select " & columnas & " from " & tabla & " where " & nombreid & " like '" & id & "%'"
+        Dim query As String = "Select " & columnas & " from " & tabla & " where " & nombreid & " like '" & id & "%' and estado = 'A'"
         Try
             DA = New MySqlDataAdapter(query, cnx)
             DT = New DataTable
@@ -34,7 +34,7 @@ Public Class ClasePeli
         Dim DT As DataTable
         titulo = LCase(titulo)
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(Nombre) like '%" & titulo & "%'", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(Nombre) like '%" & titulo & "%' and estado = 'A'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -50,7 +50,7 @@ Public Class ClasePeli
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " ", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " where estado = 'A'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -75,7 +75,7 @@ Public Class ClasePeli
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
         Try
-            DA = New MySqlDataAdapter("Select " & columnasmod & " from " & tabla & " ", cnx)
+            DA = New MySqlDataAdapter("Select " & columnasmod & " from " & tabla & " where estado = 'A'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -90,9 +90,18 @@ Public Class ClasePeli
     Public Function actualiza(ByVal id As String, ByVal titulo As String, ByVal clas As String, ByVal cat As String, ByVal dur As String, ByVal tipo As String) As Boolean
         Dim strSql As String
         Dim xCnx As New Conexion
-        strSql = "UPDATE " & tabla & " SET nombre = '" & titulo & "',categoria = '" & cat & "',tipopelicula = '" & tipo & "',duracion = '" & dur & "',clasificacion = '" & clas & "' WHERE idpelicula = '" & id & "';"
+        strSql = "UPDATE " & tabla & " SET nombre = '" & titulo & "',categoria = '" & cat & "',tipopelicula = '" & tipo & "',duracion = '" & dur & "',clasificacion = '" & clas & "' WHERE " & nombreid & " = '" & id & "';"
         xCnx.queryStr(strSql)
         MsgBox("Registro modificado")
+        cnx.Close()
+        Return True
+    End Function
+    Public Function elimina(ByVal id As String) As Boolean
+        Dim strSql As String
+        Dim xCnx As New Conexion
+        strSql = "UPDATE " & tabla & " SET estado = 'I' WHERE " & nombreid & " = '" & id & "';"
+        xCnx.queryStr(strSql)
+        MsgBox("Registro eliminado")
         cnx.Close()
         Return True
     End Function
