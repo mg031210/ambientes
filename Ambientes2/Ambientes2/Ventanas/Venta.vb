@@ -108,4 +108,30 @@
     Private Sub pago_TextChanged(sender As Object, e As EventArgs) Handles pago.TextChanged
 
     End Sub
+
+    Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
+        Dim det As New Detalle
+        Dim panel As New Panel
+        Dim totalcal, tipodepeli As String
+        panel = Me.Parent
+        det.TopLevel = False
+        For Each row As DataGridViewRow In dgvVenta.Rows
+            If row.Cells(2).Value = tipoCat Then
+                totalcal = row.Cells(4).Value * costoCat
+                tipodepeli = costoCat
+            ElseIf row.Cells(2).Value = tipoEst Then
+                totalcal = row.Cells(4).Value * costoEst
+                tipodepeli = costoEst
+            Else
+                totalcal = 0
+                tipodepeli = 0
+            End If
+            det.dgvdet.Rows.Add(row.Cells(1).Value, row.Cells(4).Value, tipodepeli, totalcal)
+        Next
+        det.txttotal.Text = total.Text.ToString
+        det.txtpago.Text = pago.Text.ToString
+        panel.Controls.Clear()
+        panel.Controls.Add(det)
+        det.Show()
+    End Sub
 End Class

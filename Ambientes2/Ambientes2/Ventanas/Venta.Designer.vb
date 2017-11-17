@@ -215,6 +215,7 @@ Partial Class Venta
         Me.btnok.ButtonText = "  Finalizar"
         Me.btnok.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnok.DisabledColor = System.Drawing.Color.Gray
+        Me.btnok.Enabled = False
         Me.btnok.Iconcolor = System.Drawing.Color.Transparent
         Me.btnok.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Checkmark_96px
         Me.btnok.Iconimage_right = Nothing

@@ -107,7 +107,9 @@
         '1/1/0001 12:00:00 AM
         socio.consultaID(txtSocio.Text, dgvSocio)
         socio.consultaVigencia(txtSocio.Text, dgvvigencia)
-        fechavigencia = CType(dgvvigencia.Rows(0).Cells(0).Value, Date)
+        If dgvvigencia.Rows.Count <> 0 Then
+            fechavigencia = CType(dgvvigencia.Rows(0).Cells(0).Value, Date)
+        End If
         If fechavigencia > DateTime.Now.ToString("yyyy-MM-dd") Then
             btncheck.Visible = True
             btnRenovar.Enabled = False
@@ -131,4 +133,13 @@
         txtBTitulo.Text = ""
     End Sub
 
+    Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
+        Dim det As New Detalle
+        Dim panel As New Panel
+        panel = Me.Parent
+        det.TopLevel = False
+        panel.Controls.Clear()
+        panel.Controls.Add(det)
+        det.Show()
+    End Sub
 End Class

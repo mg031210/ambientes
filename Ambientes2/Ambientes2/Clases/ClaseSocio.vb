@@ -40,7 +40,7 @@ Public Class ClaseSocio
         If id = "" Then
             id = 0
         End If
-        Dim query As String = "Select vigencia from socio s,menbresia m where s.idsocio = m." & nombreid & "  and s." & nombreid & "='" & id & "' and estado = 'A'"
+        Dim query As String = "Select vigencia from socio s,menbresia m where s.idsocio = m." & nombreid & "  and s." & nombreid & "='" & id & "' and m.estado = 'A'"
         Try
             DA = New MySqlDataAdapter(query, cnx)
             DT = New DataTable
