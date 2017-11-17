@@ -25,10 +25,11 @@
     End Sub
 
     Private Sub btnVenta_Click(sender As Object, e As EventArgs) Handles btnVenta.Click
-        Dim venta As New Venta
-        venta.TopLevel = False
-        Me.PanelPrinc.Controls.Add(venta)
-        venta.Show()
+        Dim compra As New Compra
+        compra.TopLevel = False
+        Me.PanelPrinc.Controls.Clear()
+        Me.PanelPrinc.Controls.Add(compra)
+        compra.Show()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -88,5 +89,12 @@
 
     Private Sub LabelUser_Click(sender As Object, e As EventArgs) Handles LabelUser.Click
 
+    End Sub
+
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+        Dim venta As New Venta
+        venta.TopLevel = False
+        Me.PanelPrinc.Controls.Add(venta)
+        venta.Show()
     End Sub
 End Class

@@ -141,6 +141,18 @@
     <Compile Include="Ventanas\addTraba.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ventanas\Compra.Designer.vb">
+      <DependentUpon>Compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\Compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\Detalle.Designer.vb">
+      <DependentUpon>Detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\Detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventanas\Devolucion.Designer.vb">
       <DependentUpon>Devolucion.vb</DependentUpon>
     </Compile>
@@ -242,6 +254,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\addTraba.resx">
       <DependentUpon>addTraba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\Compra.resx">
+      <DependentUpon>Compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\Detalle.resx">
+      <DependentUpon>Detalle.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\Devolucion.resx">
       <DependentUpon>Devolucion.vb</DependentUpon>
@@ -380,6 +398,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_Delete_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Increase_104px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Long_Arrow_Left_96px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

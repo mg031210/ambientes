@@ -12,7 +12,7 @@ Public Class ClasePeli
         Dim con As New Conexion
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
-        Dim query As String = "Select " & columnas & " from " & tabla & " where " & nombreid & " like '" & id & "%' and estado = 'A'"
+        Dim query As String = "Select " & columnas & " from " & tabla & " where " & nombreid & " like '" & id & "%' and estado = 'A' and cantidad <> 0 "
         Try
             DA = New MySqlDataAdapter(query, cnx)
             DT = New DataTable
@@ -34,7 +34,7 @@ Public Class ClasePeli
         Dim DT As DataTable
         titulo = LCase(titulo)
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(Nombre) like '%" & titulo & "%' and estado = 'A'", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(Nombre) like '%" & titulo & "%' and estado = 'A' and cantidad <> 0", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -50,7 +50,7 @@ Public Class ClasePeli
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " where estado = 'A'", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " where estado = 'A' and cantidad <> 0 ", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -104,6 +104,59 @@ Public Class ClasePeli
         MsgBox("Registro eliminado")
         cnx.Close()
         Return True
+    End Function
+    Public Function consultaIDcompra(ByVal id As String, ByVal dtg As DataGridView) As Boolean
+        Dim con As New Conexion
+        Dim DA As MySqlDataAdapter
+        Dim DT As DataTable
+        Dim query As String = "Select " & columnas & " from " & tabla & " where " & nombreid & " like '" & id & "%' and estado = 'A' "
+        Try
+            DA = New MySqlDataAdapter(query, cnx)
+            DT = New DataTable
+            DA.Fill(DT)
+            dtg.DataSource = DT
+            con.close()
+            If DT.Rows.Count = 1 Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            Throw New Exception("Error: " & ex.Message)
+        End Try
+    End Function
+    Public Function consultaTitulocompra(ByVal titulo As String, ByVal dtg As DataGridView) As Boolean
+        Dim con As New Conexion
+        Dim DA As MySqlDataAdapter
+        Dim DT As DataTable
+        titulo = LCase(titulo)
+        Try
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(Nombre) like '%" & titulo & "%' and estado = 'A' ", cnx)
+            DT = New DataTable
+            DA.Fill(DT)
+            dtg.DataSource = DT
+            con.close()
+            Return True
+        Catch ex As Exception
+            Throw New Exception("Error: " & ex.Message)
+            Return False
+        End Try
+    End Function
+    Public Function selectAllcompra(ByVal dtg As DataGridView) As Boolean
+        Dim con As New Conexion
+        Dim DA As MySqlDataAdapter
+        Dim DT As DataTable
+        Try
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " where estado = 'A' ", cnx)
+            DT = New DataTable
+            DA.Fill(DT)
+            dtg.DataSource = DT
+            con.close()
+            Return True
+        Catch ex As Exception
+            Throw New Exception("Error: " & ex.Message)
+            Return False
+        End Try
     End Function
 End Class
 

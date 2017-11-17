@@ -7,6 +7,9 @@
         Dim fechavigencia As Date
         socio.consultaID(txtBId.Text, dgvSocio)
         socio.consultaVigencia(txtBId.Text, dgvvigencia)
+        If dgvvigencia.Rows.Count <> 0 Then
+            fechavigencia = CType(dgvvigencia.Rows(0).Cells(0).Value, Date)
+        End If
         If socio.consultaDevol(txtBId.Text, dgvDevol) Then
             Dim contC, contE As Integer
             For Each fila As DataGridViewRow In dgvDevol.Rows
@@ -22,7 +25,7 @@
             Next
             txtRentas.Text = calcularRenta(contC, contE)
         End If
-        fechavigencia = CType(dgvvigencia.Rows(0).Cells(0).Value, Date)
+        'fechavigencia = CType(dgvvigencia.Rows(0).Cells(0).Value, Date)
         If fechavigencia > DateTime.Now.ToString("yyyy/MM/dd") Then
             Btncheck.Visible = True
             BtnRenovar.Enabled = False
@@ -105,5 +108,15 @@
 
     Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
         txtMembre.Text = "0"
+    End Sub
+
+    Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
+        Dim det As New Detalle
+        Dim panel As New Panel
+        panel = Me.Parent
+        det.TopLevel = False
+        panel.Controls.Clear()
+        panel.Controls.Add(det)
+        det.Show()
     End Sub
 End Class
