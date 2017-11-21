@@ -28,18 +28,18 @@ Partial Class inventario
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(inventario))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
-        Me.dgvTrab = New System.Windows.Forms.DataGridView()
+        Me.dgvrenta = New System.Windows.Forms.DataGridView()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.dgvventa = New System.Windows.Forms.DataGridView()
+        Me.dgvcompra = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
-        CType(Me.dgvTrab, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvrenta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvventa, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvcompra, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -47,21 +47,21 @@ Partial Class inventario
         Me.BunifuElipse1.ElipseRadius = 5
         Me.BunifuElipse1.TargetControl = Me
         '
-        'dgvTrab
+        'dgvrenta
         '
-        Me.dgvTrab.AllowUserToAddRows = False
-        Me.dgvTrab.AllowUserToDeleteRows = False
+        Me.dgvrenta.AllowUserToAddRows = False
+        Me.dgvrenta.AllowUserToDeleteRows = False
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvTrab.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
-        Me.dgvTrab.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.dgvTrab.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgvTrab.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgvTrab.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvTrab.Location = New System.Drawing.Point(48, 76)
-        Me.dgvTrab.Name = "dgvTrab"
-        Me.dgvTrab.ReadOnly = True
-        Me.dgvTrab.Size = New System.Drawing.Size(250, 299)
-        Me.dgvTrab.TabIndex = 39
+        Me.dgvrenta.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvrenta.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvrenta.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvrenta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvrenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvrenta.Location = New System.Drawing.Point(48, 76)
+        Me.dgvrenta.Name = "dgvrenta"
+        Me.dgvrenta.ReadOnly = True
+        Me.dgvrenta.Size = New System.Drawing.Size(250, 299)
+        Me.dgvrenta.TabIndex = 39
         '
         'Label7
         '
@@ -75,37 +75,37 @@ Partial Class inventario
         Me.Label7.Tag = ""
         Me.Label7.Text = "Inventario"
         '
-        'DataGridView1
+        'dgvventa
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.dgvventa.AllowUserToAddRows = False
+        Me.dgvventa.AllowUserToDeleteRows = False
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(304, 76)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(250, 299)
-        Me.DataGridView1.TabIndex = 85
+        Me.dgvventa.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvventa.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvventa.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvventa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvventa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvventa.Location = New System.Drawing.Point(304, 76)
+        Me.dgvventa.Name = "dgvventa"
+        Me.dgvventa.ReadOnly = True
+        Me.dgvventa.Size = New System.Drawing.Size(250, 299)
+        Me.dgvventa.TabIndex = 85
         '
-        'DataGridView2
+        'dgvcompra
         '
-        Me.DataGridView2.AllowUserToAddRows = False
-        Me.DataGridView2.AllowUserToDeleteRows = False
+        Me.dgvcompra.AllowUserToAddRows = False
+        Me.dgvcompra.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DataGridView2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridView2.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(560, 76)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.ReadOnly = True
-        Me.DataGridView2.Size = New System.Drawing.Size(250, 299)
-        Me.DataGridView2.TabIndex = 86
+        Me.dgvcompra.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvcompra.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvcompra.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvcompra.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvcompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvcompra.Location = New System.Drawing.Point(560, 76)
+        Me.dgvcompra.Name = "dgvcompra"
+        Me.dgvcompra.ReadOnly = True
+        Me.dgvcompra.Size = New System.Drawing.Size(250, 299)
+        Me.dgvcompra.TabIndex = 86
         '
         'Label1
         '
@@ -219,28 +219,28 @@ Partial Class inventario
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DataGridView2)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvcompra)
+        Me.Controls.Add(Me.dgvventa)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.dgvTrab)
+        Me.Controls.Add(Me.dgvrenta)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "inventario"
         Me.Text = "inventario"
-        CType(Me.dgvTrab, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvrenta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvventa, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvcompra, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
-    Friend WithEvents dgvTrab As DataGridView
+    Friend WithEvents dgvrenta As DataGridView
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvcompra As DataGridView
+    Friend WithEvents dgvventa As DataGridView
     Friend WithEvents Label7 As Label
     Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton

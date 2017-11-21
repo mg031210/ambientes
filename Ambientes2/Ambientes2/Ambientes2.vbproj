@@ -105,11 +105,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ClaseCompra.vb" />
     <Compile Include="Clases\ClasePeli.vb" />
     <Compile Include="Clases\ClasePrincipal.vb" />
     <Compile Include="Clases\ClaseProvee.vb" />
+    <Compile Include="Clases\ClaseRenta.vb" />
     <Compile Include="Clases\ClaseSocio.vb" />
     <Compile Include="Clases\ClaseTrabajador.vb" />
+    <Compile Include="Clases\ClaseVenta.vb" />
     <Compile Include="Globales\Conexion.vb" />
     <Compile Include="Globales\Variables.vb" />
     <Compile Include="mydbDataSet1.Designer.vb">

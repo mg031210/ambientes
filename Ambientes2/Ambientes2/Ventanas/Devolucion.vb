@@ -1,8 +1,9 @@
 ﻿Public Class Devolucion
+    Dim hoy As Date = DateTime.Now.ToString("yyyy/MM/dd")
     Private Sub txtBId_TextChanged(sender As Object, e As EventArgs) Handles txtBId.TextChanged
-        txtPago.Text = ""
+        txtPago.Text = "0"
         txtRentas.Text = "0"
-        txtTotal.Text = ""
+        txtTotal.Text = "0"
         Dim socio As New ClaseSocio
         Dim fechavigencia As Date
         socio.consultaID(txtBId.Text, dgvSocio)
@@ -13,10 +14,10 @@
         If socio.consultaDevol(txtBId.Text, dgvDevol) Then
             Dim contC, contE As Integer
             For Each fila As DataGridViewRow In dgvDevol.Rows
-                If fila.Index = dgvDevol.Rows.Count - 1 Then
-                    Exit For
-                End If
-                fila.Cells("Hoy").Value = DateTime.Now.ToString("yyyy/MM/dd")
+                'If fila.Index = dgvDevol.Rows.Count - 1 Then
+                '    Exit For
+                'End If
+                'fila.Cells("Hoy").Value = DateTime.Now.ToString("yyyy/MM/dd")
                 If fila.Cells("TipoPel").Value = tipoCat Then
                     contC += 1
                 ElseIf fila.Cells("TipoPel").Value = tipoEst Then
@@ -45,9 +46,9 @@
 
     Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
         txtBId.Text = ""
-        txtPago.Text = ""
+        txtPago.Text = "0"
         txtRentas.Text = "0"
-        txtTotal.Text = ""
+        txtTotal.Text = "0"
     End Sub
 
     Private Sub BtnRenovar_Click(sender As Object, e As EventArgs) Handles BtnRenovar.Click
@@ -87,7 +88,28 @@
     End Sub
 
     Private Function calcularRenta(ByVal contC As Integer, ByVal contE As Integer)
-        Return (contC * costoCat) + (contE * costoEst)
+        Dim total As Integer = 0
+        For Each fila As DataGridViewRow In dgvDevol.Rows
+            If fila.Cells(1).Value < hoy Then
+                'por cada dia se carga el costo de tipo
+                Dim diff As Integer = 0
+                diff = CInt(DateDiff(DateInterval.Day, fila.Cells(1).Value, hoy))
+                'MsgBox(diff)
+                If fila.Cells(5).Value = tipoCat Then
+                    total = total + (costoCat * diff)
+                ElseIf fila.Cells(5).Value = tipoEst Then
+                    total = total + (costoEst * diff)
+                End If
+                'Else
+                '   no se carga nada por lo que estan entro del plazo
+                '    If fila.Cells(5).Value = tipoCat Then
+                '        total = total + costoCat
+                '    ElseIf fila.Cells(5).Value = tipoEst Then
+                '        total = total + costoEst
+                '    End If
+            End If
+        Next
+        Return total
     End Function
 
     Private Sub checarpago()
@@ -111,12 +133,65 @@
     End Sub
 
     Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
+        'Dim det As New Detalle
+        'Dim panel As New Panel
+        'panel = Me.Parent
+        'det.TopLevel = False
+        'panel.Controls.Clear()
+        'panel.Controls.Add(det)
+        'det.Show()
         Dim det As New Detalle
         Dim panel As New Panel
+        Dim totalcal As String = 0
+        Dim tipodepeli As String
         panel = Me.Parent
         det.TopLevel = False
+
+        For Each fila As DataGridViewRow In dgvDevol.Rows
+            Dim diff As Integer = 0
+            diff = CInt(DateDiff(DateInterval.Day, fila.Cells(1).Value, hoy))
+            If diff > 0 Then
+                If fila.Cells(5).Value = tipoCat Then
+                    totalcal = (costoCat * diff)
+                    tipodepeli = costoCat
+                ElseIf fila.Cells(5).Value = tipoEst Then
+                    totalcal = (costoEst * diff)
+                    tipodepeli = costoEst
+                Else
+                    totalcal = 0
+                    tipodepeli = 0
+                End If
+                det.dgvdet.Rows.Add(fila.Cells(2).Value, fila.Cells(4).Value, 1, tipodepeli, totalcal)
+            ElseIf diff <= 0 Then
+                If fila.Cells(5).Value = tipoCat Then
+                    totalcal = costoCat
+                    tipodepeli = costoCat
+                ElseIf fila.Cells(5).Value = tipoEst Then
+                    totalcal = costoEst
+                    tipodepeli = costoEst
+                Else
+                    totalcal = 0
+                    tipodepeli = 0
+                End If
+                det.dgvdet.Rows.Add(fila.Cells(2).Value, fila.Cells(4).Value, 1, tipodepeli, totalcal)
+            End If
+
+            'revisar id columna 1
+        Next
+        det.txttotal.Text = txtTotal.Text.ToString
+        det.txtpago.Text = txtPago.Text.ToString
         panel.Controls.Clear()
         panel.Controls.Add(det)
         det.Show()
+    End Sub
+
+    Private Sub dgvDevol_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDevol.CellContentClick
+
+    End Sub
+
+    Private Sub txtTotal_TextChanged(sender As Object, e As EventArgs) Handles txtTotal.TextChanged
+        If txtTotal.Text = "0" Then
+            txtPago.Text = "0"
+        End If
     End Sub
 End Class

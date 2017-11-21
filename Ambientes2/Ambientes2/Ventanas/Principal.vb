@@ -24,12 +24,16 @@
         End If
     End Sub
 
-    Private Sub btnVenta_Click(sender As Object, e As EventArgs) Handles btnVenta.Click
+    Private Sub btnVenta_Click(sender As Object, e As EventArgs) Handles btnCompra.Click
         Dim compra As New Compra
         compra.TopLevel = False
         Me.PanelPrinc.Controls.Clear()
         Me.PanelPrinc.Controls.Add(compra)
         compra.Show()
+        isventa = False
+        isrenta = False
+        isdevol = False
+        iscompra = True
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -38,6 +42,7 @@
             isadmin = True
             btnActu.Visible = True
             Btninven.Visible = True
+            btnCompra.Visible = True
         End If
     End Sub
 
@@ -47,6 +52,10 @@
         Me.PanelPrinc.Controls.Clear()
         Me.PanelPrinc.Controls.Add(renta)
         renta.Show()
+        isventa = False
+        isrenta = True
+        isdevol = False
+        iscompra = False
     End Sub
 
     Private Sub btnDevol_Click(sender As Object, e As EventArgs) Handles btnDevol.Click
@@ -55,6 +64,10 @@
         Me.PanelPrinc.Controls.Clear()
         Me.PanelPrinc.Controls.Add(devol)
         devol.Show()
+        isventa = False
+        isrenta = False
+        isdevol = True
+        iscompra = False
     End Sub
 
     Private Sub btnActu_Click(sender As Object, e As EventArgs) Handles btnActu.Click
@@ -91,10 +104,14 @@
 
     End Sub
 
-    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnVenta.Click
         Dim venta As New Venta
         venta.TopLevel = False
         Me.PanelPrinc.Controls.Add(venta)
         venta.Show()
+        isventa = True
+        isrenta = False
+        isdevol = False
+        iscompra = False
     End Sub
 End Class
