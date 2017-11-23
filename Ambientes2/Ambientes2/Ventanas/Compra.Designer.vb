@@ -26,14 +26,16 @@ Partial Class Compra
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
-        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.pago = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.total = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.btncancel = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnok = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.dgvVenta = New System.Windows.Forms.DataGridView()
+        Me.dgvCompra = New System.Windows.Forms.DataGridView()
+        Me.codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.titulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clasi = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cant = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.costo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.txtBTitulo = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
@@ -41,12 +43,7 @@ Partial Class Compra
         Me.txtBId = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvPelis = New System.Windows.Forms.DataGridView()
-        Me.cant = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.clasi = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.titulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvCompra, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvPelis, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -56,78 +53,39 @@ Partial Class Compra
         Me.BunifuElipse1.ElipseRadius = 5
         Me.BunifuElipse1.TargetControl = Me
         '
-        'BunifuFlatButton3
+        'btncancel
         '
-        Me.BunifuFlatButton3.Activecolor = System.Drawing.Color.Red
-        Me.BunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.BunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton3.BorderRadius = 0
-        Me.BunifuFlatButton3.ButtonText = "  Cancelar"
-        Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton3.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Delete_96px_1
-        Me.BunifuFlatButton3.Iconimage_right = Nothing
-        Me.BunifuFlatButton3.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton3.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton3.IconMarginLeft = 0
-        Me.BunifuFlatButton3.IconMarginRight = 0
-        Me.BunifuFlatButton3.IconRightVisible = True
-        Me.BunifuFlatButton3.IconRightZoom = 0R
-        Me.BunifuFlatButton3.IconVisible = True
-        Me.BunifuFlatButton3.IconZoom = 80.0R
-        Me.BunifuFlatButton3.IsTab = False
-        Me.BunifuFlatButton3.Location = New System.Drawing.Point(600, 476)
-        Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
-        Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.BunifuFlatButton3.OnHovercolor = System.Drawing.Color.Red
-        Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.selected = False
-        Me.BunifuFlatButton3.Size = New System.Drawing.Size(106, 38)
-        Me.BunifuFlatButton3.TabIndex = 27
-        Me.BunifuFlatButton3.Text = "  Cancelar"
-        Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'pago
-        '
-        Me.pago.BorderColor = System.Drawing.Color.SeaGreen
-        Me.pago.Location = New System.Drawing.Point(397, 485)
-        Me.pago.Name = "pago"
-        Me.pago.Size = New System.Drawing.Size(95, 20)
-        Me.pago.TabIndex = 25
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(342, 485)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 21)
-        Me.Label5.TabIndex = 23
-        Me.Label5.Text = "Pago"
-        '
-        'total
-        '
-        Me.total.BorderColor = System.Drawing.Color.SeaGreen
-        Me.total.Location = New System.Drawing.Point(203, 485)
-        Me.total.Name = "total"
-        Me.total.ReadOnly = True
-        Me.total.Size = New System.Drawing.Size(95, 20)
-        Me.total.TabIndex = 26
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(78, 484)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(119, 21)
-        Me.Label4.TabIndex = 24
-        Me.Label4.Text = "Total a  Pagar"
+        Me.btncancel.Activecolor = System.Drawing.Color.Red
+        Me.btncancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btncancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btncancel.BorderRadius = 0
+        Me.btncancel.ButtonText = "  Cancelar"
+        Me.btncancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btncancel.DisabledColor = System.Drawing.Color.Gray
+        Me.btncancel.Iconcolor = System.Drawing.Color.Transparent
+        Me.btncancel.Iconimage = Global.Ambientes2.My.Resources.Resources.icons8_Delete_96px_1
+        Me.btncancel.Iconimage_right = Nothing
+        Me.btncancel.Iconimage_right_Selected = Nothing
+        Me.btncancel.Iconimage_Selected = Nothing
+        Me.btncancel.IconMarginLeft = 0
+        Me.btncancel.IconMarginRight = 0
+        Me.btncancel.IconRightVisible = True
+        Me.btncancel.IconRightZoom = 0R
+        Me.btncancel.IconVisible = True
+        Me.btncancel.IconZoom = 80.0R
+        Me.btncancel.IsTab = False
+        Me.btncancel.Location = New System.Drawing.Point(600, 476)
+        Me.btncancel.Name = "btncancel"
+        Me.btncancel.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btncancel.OnHovercolor = System.Drawing.Color.Red
+        Me.btncancel.OnHoverTextColor = System.Drawing.Color.White
+        Me.btncancel.selected = False
+        Me.btncancel.Size = New System.Drawing.Size(106, 38)
+        Me.btncancel.TabIndex = 27
+        Me.btncancel.Text = "  Cancelar"
+        Me.btncancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btncancel.Textcolor = System.Drawing.Color.White
+        Me.btncancel.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'Label3
         '
@@ -136,9 +94,9 @@ Partial Class Compra
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label3.Location = New System.Drawing.Point(418, 190)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(71, 23)
+        Me.Label3.Size = New System.Drawing.Size(92, 23)
         Me.Label3.TabIndex = 21
-        Me.Label3.Text = "Venta"
+        Me.Label3.Text = "Compra"
         '
         'btnok
         '
@@ -174,23 +132,61 @@ Partial Class Compra
         Me.btnok.Textcolor = System.Drawing.Color.White
         Me.btnok.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'dgvVenta
+        'dgvCompra
         '
-        Me.dgvVenta.AllowUserToAddRows = False
-        Me.dgvVenta.AllowUserToDeleteRows = False
+        Me.dgvCompra.AllowUserToAddRows = False
+        Me.dgvCompra.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvVenta.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgvVenta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvVenta.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.dgvVenta.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgvVenta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgvVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvVenta.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codigo, Me.titulo, Me.tipo, Me.clasi, Me.cant})
-        Me.dgvVenta.Location = New System.Drawing.Point(18, 216)
-        Me.dgvVenta.Name = "dgvVenta"
-        Me.dgvVenta.ReadOnly = True
-        Me.dgvVenta.Size = New System.Drawing.Size(835, 210)
-        Me.dgvVenta.TabIndex = 20
+        Me.dgvCompra.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvCompra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvCompra.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvCompra.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvCompra.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCompra.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codigo, Me.titulo, Me.tipo, Me.clasi, Me.cant, Me.costo})
+        Me.dgvCompra.Location = New System.Drawing.Point(18, 216)
+        Me.dgvCompra.Name = "dgvCompra"
+        Me.dgvCompra.Size = New System.Drawing.Size(835, 210)
+        Me.dgvCompra.TabIndex = 20
+        '
+        'codigo
+        '
+        Me.codigo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.codigo.HeaderText = "CodigoBarras"
+        Me.codigo.Name = "codigo"
+        Me.codigo.ReadOnly = True
+        '
+        'titulo
+        '
+        Me.titulo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.titulo.HeaderText = "Titulo"
+        Me.titulo.Name = "titulo"
+        Me.titulo.ReadOnly = True
+        '
+        'tipo
+        '
+        Me.tipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.tipo.HeaderText = "Tipo"
+        Me.tipo.Name = "tipo"
+        Me.tipo.ReadOnly = True
+        '
+        'clasi
+        '
+        Me.clasi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.clasi.HeaderText = "Clasificacion"
+        Me.clasi.Name = "clasi"
+        Me.clasi.ReadOnly = True
+        '
+        'cant
+        '
+        Me.cant.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.cant.HeaderText = "Cantidad"
+        Me.cant.Name = "cant"
+        '
+        'costo
+        '
+        Me.costo.HeaderText = "Costo Unitario"
+        Me.costo.Name = "costo"
         '
         'GroupBox1
         '
@@ -292,61 +288,22 @@ Partial Class Compra
         Me.dgvPelis.Size = New System.Drawing.Size(548, 150)
         Me.dgvPelis.TabIndex = 18
         '
-        'cant
-        '
-        Me.cant.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.cant.HeaderText = "Cantidad"
-        Me.cant.Name = "cant"
-        Me.cant.ReadOnly = True
-        '
-        'clasi
-        '
-        Me.clasi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.clasi.HeaderText = "Clasificacion"
-        Me.clasi.Name = "clasi"
-        Me.clasi.ReadOnly = True
-        '
-        'tipo
-        '
-        Me.tipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.tipo.HeaderText = "Tipo"
-        Me.tipo.Name = "tipo"
-        Me.tipo.ReadOnly = True
-        '
-        'titulo
-        '
-        Me.titulo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.titulo.HeaderText = "Titulo"
-        Me.titulo.Name = "titulo"
-        Me.titulo.ReadOnly = True
-        '
-        'codigo
-        '
-        Me.codigo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.codigo.HeaderText = "CodigoBarras"
-        Me.codigo.Name = "codigo"
-        Me.codigo.ReadOnly = True
-        '
         'Compra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(870, 533)
-        Me.Controls.Add(Me.BunifuFlatButton3)
-        Me.Controls.Add(Me.pago)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.total)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.btncancel)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnok)
-        Me.Controls.Add(Me.dgvVenta)
+        Me.Controls.Add(Me.dgvCompra)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgvPelis)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Compra"
         Me.Text = "Compra"
-        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvCompra, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.dgvPelis, System.ComponentModel.ISupportInitialize).EndInit()
@@ -356,14 +313,10 @@ Partial Class Compra
     End Sub
 
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
-    Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents pago As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents total As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents btncancel As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents Label3 As Label
     Friend WithEvents btnok As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents dgvVenta As DataGridView
+    Friend WithEvents dgvCompra As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents txtBTitulo As WindowsFormsControlLibrary1.BunifuCustomTextbox
@@ -376,4 +329,5 @@ Partial Class Compra
     Friend WithEvents tipo As DataGridViewTextBoxColumn
     Friend WithEvents clasi As DataGridViewTextBoxColumn
     Friend WithEvents cant As DataGridViewTextBoxColumn
+    Friend WithEvents costo As DataGridViewTextBoxColumn
 End Class

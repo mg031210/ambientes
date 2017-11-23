@@ -158,5 +158,71 @@ Public Class ClasePeli
             Return False
         End Try
     End Function
+
+    Public Function stockintrenta(ByVal newcant As String, ByVal idrenta As String) As Boolean
+        Dim strSql As String
+        Dim xCnx As New Conexion
+        Dim DA As MySqlDataAdapter
+        Dim DT As DataTable
+        Dim dtg As DataGridView
+
+        DA = New MySqlDataAdapter("Select idpelicula from renta where idrenta = '" & idrenta & "';", cnx)
+        DT = New DataTable
+        DA.Fill(DT)
+
+        Dim idpel As String = DT.Rows(0).Item(0)
+
+        DA = New MySqlDataAdapter("Select cantidad from " & tabla & " where " & nombreid & " = '" & idpel & "';", cnx)
+        DT = New DataTable
+        DA.Fill(DT)
+
+        Dim cant As String = DT.Rows(0).Item(0) + newcant
+
+        strSql = "UPDATE " & tabla & " SET cantidad = '" & cant & "' WHERE " & nombreid & " = '" & idpel & "';"
+        xCnx.queryStr(strSql)
+        'MsgBox("stock cambiado")
+        cnx.Close()
+        Return True
+    End Function
+    Public Function stockout(ByVal newcant As String, ByVal id As String) As Boolean
+        Dim strSql As String
+        Dim xCnx As New Conexion
+        Dim DA As MySqlDataAdapter
+        Dim DT As DataTable
+        Dim dtg As DataGridView
+
+        DA = New MySqlDataAdapter("Select cantidad from " & tabla & " where " & nombreid & " = '" & id & "';", cnx)
+        DT = New DataTable
+        DA.Fill(DT)
+
+        Dim cant As String = DT.Rows(0).Item(0) - newcant
+
+        strSql = "UPDATE " & tabla & " SET cantidad = '" & cant & "' WHERE " & nombreid & " = '" & id & "';"
+        xCnx.queryStr(strSql)
+        'MsgBox("stock cambiado")
+        cnx.Close()
+        Return True
+    End Function
+
+    Public Function stockin(ByVal newcant As String, ByVal id As String) As Boolean
+        Dim strSql As String
+        Dim xCnx As New Conexion
+        Dim DA As MySqlDataAdapter
+        Dim DT As DataTable
+        Dim dtg As DataGridView
+
+        DA = New MySqlDataAdapter("Select cantidad from " & tabla & " where " & nombreid & " = '" & id & "';", cnx)
+        DT = New DataTable
+        DA.Fill(DT)
+
+        Dim cant As String = DT.Rows(0).Item(0) + newcant
+
+        strSql = "UPDATE " & tabla & " SET cantidad = '" & cant & "' WHERE " & nombreid & " = '" & id & "';"
+        xCnx.queryStr(strSql)
+        'MsgBox("stock cambiado")
+        cnx.Close()
+        Return True
+    End Function
+
 End Class
 

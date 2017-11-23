@@ -1,4 +1,7 @@
 ﻿Public Class Renta
+    Dim sociover As Boolean = False
+    Dim pagover As Boolean = False
+    Dim hoy As Date = DateTime.Now.ToString("yyyy/MM/dd")
     Private Sub Renta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim peli As New ClasePeli
         dgvPelis.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
@@ -77,9 +80,9 @@
         Dim totalval As Integer = 0
         For Each fila As DataGridViewRow In dgvVenta.Rows
             If fila.Cells(2).Value = tipoCat Then
-                totalval += (fila.Cells(4).Value * costoEst)
-            ElseIf fila.Cells(2).Value = tipoEst Then
                 totalval += (fila.Cells(4).Value * costoCat)
+            ElseIf fila.Cells(2).Value = tipoEst Then
+                totalval += (fila.Cells(4).Value * costoEst)
             End If
         Next
         total.Text = totalval
@@ -113,16 +116,21 @@
         If fechavigencia > DateTime.Now.ToString("yyyy-MM-dd") Then
             btncheck.Visible = True
             btnRenovar.Enabled = False
-            btnok.Enabled = True
+            'btnok.Enabled = True
+            sociover = True
         ElseIf fechavigencia = "1/1/0001 12:00:00 AM" Then
             btnRenovar.Enabled = False
             btncheck.Visible = False
-            btnok.Enabled = False
+            'btnok.Enabled = False
+            sociover = False
         Else
             btnRenovar.Enabled = True
             btncheck.Visible = False
-            btnok.Enabled = False
+            'btnok.Enabled = False
+            sociover = False
         End If
+        validar()
+
     End Sub
 
     Private Sub txtBId_LostFocus(sender As Object, e As EventArgs) Handles txtBId.LostFocus
@@ -134,12 +142,60 @@
     End Sub
 
     Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
+        'Dim det As New Detalle
+        'Dim panel As New Panel
+        'panel = Me.Parent
+        'det.TopLevel = False
+        'panel.Controls.Clear()
+        'panel.Controls.Add(det)
+        'det.Show()
         Dim det As New Detalle
         Dim panel As New Panel
+        Dim totalcal, tipodepeli As String
         panel = Me.Parent
         det.TopLevel = False
+        For Each row As DataGridViewRow In dgvVenta.Rows
+            If row.Cells(2).Value = tipoCat Then
+                totalcal = row.Cells(4).Value * costoCat
+                tipodepeli = costoCat
+            ElseIf row.Cells(2).Value = tipoEst Then
+                totalcal = row.Cells(4).Value * costoEst
+                tipodepeli = costoEst
+            Else
+                totalcal = 0
+                tipodepeli = 0
+            End If
+            det.dgvdet.Rows.Add(row.Cells(0).Value, row.Cells(1).Value, row.Cells(4).Value, tipodepeli, totalcal)
+        Next
+        det.txttotal.Text = total.Text.ToString
+        det.txtpago.Text = pago.Text.ToString
+        det.socio = txtSocio.Text.ToString
         panel.Controls.Clear()
         panel.Controls.Add(det)
         det.Show()
+    End Sub
+    Private Sub pago_TextChanged(sender As Object, e As EventArgs) Handles pago.TextChanged
+        If pago.Text.ToString <> "" Then
+            If total.Text.ToString <> "" And total.Text.ToString <> Nothing And CInt(pago.Text.ToString) >= CInt(total.Text.ToString) And dgvVenta.RowCount <> 0 Then
+                'btnok.Enabled = True
+                pagover = True
+            Else
+                'btnok.Enabled = False
+                pagover = False
+            End If
+            validar()
+        End If
+
+    End Sub
+    Private Sub validar()
+        If sociover = True And pagover = True Then
+            btnok.Enabled = True
+        Else
+            btnok.Enabled = False
+        End If
+    End Sub
+
+    Private Sub total_TextChanged(sender As Object, e As EventArgs) Handles total.TextChanged
+
     End Sub
 End Class

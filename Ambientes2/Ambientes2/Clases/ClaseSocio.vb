@@ -2,7 +2,7 @@
 Public Class ClaseSocio
     Dim columnas As String = "numsocio, CONCAT(nombre, ' ', apellidop) As Nombre"
     Dim columnas2 As String = "numsocio as Socio,nombre as Nombre,apellidop as Paterno, apellidom as Materno, telefono as Telefono, celular as Celular, direccion as Direccion"
-    Dim columnasDevol As String = "FechaRenta as Renta,fechaentrega as Entrega,fechaentregado as Hoy, CONCAT(s.nombre, ' ', s.apellidop) As Nombre, p.nombre as Pelicula, p.tipopelicula as TipoPel"
+    Dim columnasDevol As String = "FechaRenta as Renta,fechaentrega as Entrega,r.idrenta as NumeroRenta, CONCAT(s.nombre, ' ', s.apellidop) As Nombre, p.nombre as Pelicula, p.tipopelicula as TipoPel"
     Dim tabsocio As String = "socio"
     Dim tablamen As String = "menbresia"
     Dim nombreid As String = "numsocio"

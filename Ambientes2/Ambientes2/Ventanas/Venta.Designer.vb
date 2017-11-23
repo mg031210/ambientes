@@ -34,10 +34,6 @@ Partial Class Venta
         Me.txtBId = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.total = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.pago = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.btnok = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.dgvVenta = New System.Windows.Forms.DataGridView()
         Me.codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -46,6 +42,10 @@ Partial Class Venta
         Me.clasi = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cant = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.total = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.pago = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         CType(Me.dgvPelis, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -166,45 +166,6 @@ Partial Class Venta
         Me.Label3.Size = New System.Drawing.Size(71, 23)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Venta"
-        '
-        'total
-        '
-        Me.total.BorderColor = System.Drawing.Color.SeaGreen
-        Me.total.Location = New System.Drawing.Point(201, 477)
-        Me.total.Name = "total"
-        Me.total.ReadOnly = True
-        Me.total.Size = New System.Drawing.Size(95, 20)
-        Me.total.TabIndex = 10
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(76, 476)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(119, 21)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Total a  Pagar"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(340, 477)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 21)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Pago"
-        '
-        'pago
-        '
-        Me.pago.BorderColor = System.Drawing.Color.SeaGreen
-        Me.pago.Location = New System.Drawing.Point(395, 477)
-        Me.pago.Name = "pago"
-        Me.pago.Size = New System.Drawing.Size(95, 20)
-        Me.pago.TabIndex = 10
         '
         'btnok
         '
@@ -328,6 +289,45 @@ Partial Class Venta
         Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Location = New System.Drawing.Point(76, 476)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(119, 21)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Total a  Pagar"
+        '
+        'total
+        '
+        Me.total.BorderColor = System.Drawing.Color.SeaGreen
+        Me.total.Location = New System.Drawing.Point(201, 477)
+        Me.total.Name = "total"
+        Me.total.ReadOnly = True
+        Me.total.Size = New System.Drawing.Size(95, 20)
+        Me.total.TabIndex = 10
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Location = New System.Drawing.Point(340, 477)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(51, 21)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Pago"
+        '
+        'pago
+        '
+        Me.pago.BorderColor = System.Drawing.Color.SeaGreen
+        Me.pago.Location = New System.Drawing.Point(395, 477)
+        Me.pago.Name = "pago"
+        Me.pago.Size = New System.Drawing.Size(95, 20)
+        Me.pago.TabIndex = 10
+        '
         'Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -367,10 +367,6 @@ Partial Class Venta
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents btnok As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents pago As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents total As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents Label4 As Label
     Friend WithEvents dgvVenta As DataGridView
     Friend WithEvents codigo As DataGridViewTextBoxColumn
     Friend WithEvents titulo As DataGridViewTextBoxColumn
@@ -378,4 +374,8 @@ Partial Class Venta
     Friend WithEvents clasi As DataGridViewTextBoxColumn
     Friend WithEvents cant As DataGridViewTextBoxColumn
     Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents pago As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents total As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents Label4 As Label
 End Class
