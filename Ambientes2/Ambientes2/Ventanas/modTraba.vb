@@ -33,7 +33,7 @@
     Private Sub limpiar()
         Dim trab As New ClaseTrabajador
         trab.selectAll(dgvTrab)
-        txttrab.Text = ""
+        txtid.Text = ""
         txtuser.Text = ""
         txtpass.Text = ""
         txtnombre.Text = ""
@@ -55,15 +55,15 @@
 
     Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
         Dim trab As New ClaseTrabajador
-        trab.actualiza(txttrab.Text, txtuser.Text, txtapp.Text, txtnombre.Text, txtpass.Text, txtdir.Text, txtcel.Text, txtapm.Text, txttel.Text, dgvTrab(0, dgvTrab.CurrentRow.Index).Value)
+        trab.actualiza(txtid.Text, txtuser.Text, txtapp.Text, txtnombre.Text, txtpass.Text, txtdir.Text, txtcel.Text, txtapm.Text, txttel.Text, txtid.Text)
         limpiar()
     End Sub
 
     Private Sub dgvTrab_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles dgvTrab.MouseDoubleClick
         If dgvTrab(0, dgvTrab.CurrentRow.Index).Value IsNot DBNull.Value Then
-            txttrab.Text = dgvTrab(0, dgvTrab.CurrentRow.Index).Value
+            txtid.Text = dgvTrab(0, dgvTrab.CurrentRow.Index).Value
         Else
-            txttrab.Text = ""
+            txtid.Text = ""
         End If
         If dgvTrab(1, dgvTrab.CurrentRow.Index).Value IsNot DBNull.Value Then
             txtuser.Text = dgvTrab(1, dgvTrab.CurrentRow.Index).Value

@@ -49,6 +49,8 @@
         limpiar()
     End Sub
     Private Sub limpiar()
+        Dim prov As New ClaseProvee
+        prov.selectAllmod(dgvVista)
         txtnombre.Text = ""
         txtrfc.Text = ""
         txttel1.Text = ""
@@ -61,6 +63,16 @@
     End Sub
 
     Private Sub addProvee_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim prov As New ClaseProvee
+        dgvVista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        prov.selectAllmod(dgvVista)
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub txtfax_TextChanged(sender As Object, e As EventArgs) Handles txtfax.TextChanged
 
     End Sub
 End Class

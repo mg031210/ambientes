@@ -62,12 +62,12 @@ Public Class ClasePeli
         End Try
     End Function
 
-    Public Sub inserta(ByVal id As String, ByVal clas As String, ByVal duracion As String, ByVal tit As String, ByVal cat As String, ByVal tipo As String)
+    Public Sub inserta(ByVal clas As String, ByVal duracion As String, ByVal tit As String, ByVal cat As String, ByVal tipo As String)
         Dim strSql As String
-        strSql = "INSERT INTO " & tabla & " (idpelicula,nombre,tipopelicula,duracion,clasificacion,categoria) VALUES('" & id & "','" & tit & "','" & tipo & "','" & duracion & "','" & clas & "','" & cat & "');"
+        strSql = "INSERT INTO " & tabla & " (nombre,tipopelicula,duracion,clasificacion,categoria) VALUES('" & tit & "','" & tipo & "','" & duracion & "','" & clas & "','" & cat & "');"
         Dim xCnx As New Conexion
         xCnx.queryStr(strSql)
-        MessageBox.Show("Registro insertado!")
+        'MessageBox.Show("Registro insertado!")
         cnx.Close()
     End Sub
     Public Function selectAllMod(ByVal dtg As DataGridView) As Boolean
@@ -92,7 +92,7 @@ Public Class ClasePeli
         Dim xCnx As New Conexion
         strSql = "UPDATE " & tabla & " SET nombre = '" & titulo & "',categoria = '" & cat & "',tipopelicula = '" & tipo & "',duracion = '" & dur & "',clasificacion = '" & clas & "' WHERE " & nombreid & " = '" & id & "';"
         xCnx.queryStr(strSql)
-        MsgBox("Registro modificado")
+        'MsgBox("Registro modificado")
         cnx.Close()
         Return True
     End Function
@@ -101,7 +101,7 @@ Public Class ClasePeli
         Dim xCnx As New Conexion
         strSql = "UPDATE " & tabla & " SET estado = 'I' WHERE " & nombreid & " = '" & id & "';"
         xCnx.queryStr(strSql)
-        MsgBox("Registro eliminado")
+        'MsgBox("Registro eliminado")
         cnx.Close()
         Return True
     End Function

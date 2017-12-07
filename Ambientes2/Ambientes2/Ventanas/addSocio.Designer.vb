@@ -25,6 +25,7 @@ Partial Class addSocio
         Me.components = New System.ComponentModel.Container()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.dgvVista = New System.Windows.Forms.DataGridView()
         Me.txtcel = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtdir = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
@@ -37,12 +38,11 @@ Partial Class addSocio
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtnombre = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.txtSocio = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton5 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.dgvVista, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -52,6 +52,7 @@ Partial Class addSocio
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.dgvVista)
         Me.GroupBox1.Controls.Add(Me.txtcel)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.txtdir)
@@ -64,8 +65,6 @@ Partial Class addSocio
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.txtnombre)
         Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.txtSocio)
-        Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton3)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton5)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton1)
@@ -76,20 +75,32 @@ Partial Class addSocio
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'dgvVista
+        '
+        Me.dgvVista.AllowUserToAddRows = False
+        Me.dgvVista.AllowUserToDeleteRows = False
+        Me.dgvVista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvVista.Location = New System.Drawing.Point(18, 55)
+        Me.dgvVista.Name = "dgvVista"
+        Me.dgvVista.ReadOnly = True
+        Me.dgvVista.Size = New System.Drawing.Size(813, 171)
+        Me.dgvVista.TabIndex = 87
+        '
         'txtcel
         '
         Me.txtcel.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtcel.Location = New System.Drawing.Point(442, 176)
+        Me.txtcel.Location = New System.Drawing.Point(439, 345)
+        Me.txtcel.MaxLength = 10
         Me.txtcel.Name = "txtcel"
         Me.txtcel.Size = New System.Drawing.Size(138, 20)
-        Me.txtcel.TabIndex = 86
+        Me.txtcel.TabIndex = 6
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(360, 176)
+        Me.Label8.Location = New System.Drawing.Point(357, 345)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(65, 21)
         Me.Label8.TabIndex = 85
@@ -98,17 +109,17 @@ Partial Class addSocio
         'txtdir
         '
         Me.txtdir.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtdir.Location = New System.Drawing.Point(442, 90)
+        Me.txtdir.Location = New System.Drawing.Point(439, 259)
         Me.txtdir.Name = "txtdir"
         Me.txtdir.Size = New System.Drawing.Size(374, 20)
-        Me.txtdir.TabIndex = 84
+        Me.txtdir.TabIndex = 4
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label11.Location = New System.Drawing.Point(360, 90)
+        Me.Label11.Location = New System.Drawing.Point(357, 259)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(83, 21)
         Me.Label11.TabIndex = 83
@@ -117,17 +128,18 @@ Partial Class addSocio
         'txttel
         '
         Me.txttel.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txttel.Location = New System.Drawing.Point(442, 133)
+        Me.txttel.Location = New System.Drawing.Point(439, 302)
+        Me.txttel.MaxLength = 10
         Me.txttel.Name = "txttel"
         Me.txttel.Size = New System.Drawing.Size(138, 20)
-        Me.txttel.TabIndex = 82
+        Me.txttel.TabIndex = 5
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label12.Location = New System.Drawing.Point(360, 132)
+        Me.Label12.Location = New System.Drawing.Point(357, 301)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(76, 21)
         Me.Label12.TabIndex = 81
@@ -136,17 +148,17 @@ Partial Class addSocio
         'txtapm
         '
         Me.txtapm.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtapm.Location = New System.Drawing.Point(185, 222)
+        Me.txtapm.Location = New System.Drawing.Point(186, 349)
         Me.txtapm.Name = "txtapm"
         Me.txtapm.Size = New System.Drawing.Size(140, 20)
-        Me.txtapm.TabIndex = 80
+        Me.txtapm.TabIndex = 3
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label13.Location = New System.Drawing.Point(37, 222)
+        Me.Label13.Location = New System.Drawing.Point(38, 349)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(146, 21)
         Me.Label13.TabIndex = 79
@@ -155,17 +167,17 @@ Partial Class addSocio
         'txtapp
         '
         Me.txtapp.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtapp.Location = New System.Drawing.Point(185, 179)
+        Me.txtapp.Location = New System.Drawing.Point(186, 306)
         Me.txtapp.Name = "txtapp"
         Me.txtapp.Size = New System.Drawing.Size(140, 20)
-        Me.txtapp.TabIndex = 78
+        Me.txtapp.TabIndex = 2
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label14.Location = New System.Drawing.Point(37, 179)
+        Me.Label14.Location = New System.Drawing.Point(38, 306)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(140, 21)
         Me.Label14.TabIndex = 77
@@ -174,40 +186,21 @@ Partial Class addSocio
         'txtnombre
         '
         Me.txtnombre.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtnombre.Location = New System.Drawing.Point(129, 135)
+        Me.txtnombre.Location = New System.Drawing.Point(130, 262)
         Me.txtnombre.Name = "txtnombre"
         Me.txtnombre.Size = New System.Drawing.Size(196, 20)
-        Me.txtnombre.TabIndex = 76
+        Me.txtnombre.TabIndex = 1
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label15.Location = New System.Drawing.Point(37, 135)
+        Me.Label15.Location = New System.Drawing.Point(38, 262)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(73, 21)
         Me.Label15.TabIndex = 75
         Me.Label15.Text = "Nombre"
-        '
-        'txtSocio
-        '
-        Me.txtSocio.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtSocio.Location = New System.Drawing.Point(185, 93)
-        Me.txtSocio.Name = "txtSocio"
-        Me.txtSocio.Size = New System.Drawing.Size(140, 20)
-        Me.txtSocio.TabIndex = 74
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label16.Location = New System.Drawing.Point(37, 93)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(142, 21)
-        Me.Label16.TabIndex = 73
-        Me.Label16.Text = "Numero de Socio"
         '
         'BunifuFlatButton3
         '
@@ -237,7 +230,7 @@ Partial Class addSocio
         Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton3.selected = False
         Me.BunifuFlatButton3.Size = New System.Drawing.Size(106, 38)
-        Me.BunifuFlatButton3.TabIndex = 37
+        Me.BunifuFlatButton3.TabIndex = 8
         Me.BunifuFlatButton3.Text = "  Cancelar"
         Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
@@ -271,7 +264,7 @@ Partial Class addSocio
         Me.BunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton5.selected = False
         Me.BunifuFlatButton5.Size = New System.Drawing.Size(106, 38)
-        Me.BunifuFlatButton5.TabIndex = 36
+        Me.BunifuFlatButton5.TabIndex = 7
         Me.BunifuFlatButton5.Text = "  Finalizar"
         Me.BunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton5.Textcolor = System.Drawing.Color.White
@@ -323,6 +316,7 @@ Partial Class addSocio
         Me.Text = "addSocio"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.dgvVista, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -344,6 +338,5 @@ Partial Class addSocio
     Friend WithEvents Label14 As Label
     Friend WithEvents txtnombre As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label15 As Label
-    Friend WithEvents txtSocio As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents Label16 As Label
+    Friend WithEvents dgvVista As DataGridView
 End Class

@@ -23,7 +23,7 @@ Partial Class modSocio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtcel = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
@@ -38,8 +38,8 @@ Partial Class modSocio
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtnombre = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.txtSocio = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtid = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.dgvSocio = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -74,8 +74,8 @@ Partial Class modSocio
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.txtnombre)
         Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.txtSocio)
-        Me.GroupBox1.Controls.Add(Me.Label16)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.txtid)
         Me.GroupBox1.Controls.Add(Me.dgvSocio)
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton3)
@@ -91,142 +91,146 @@ Partial Class modSocio
         'txtcel
         '
         Me.txtcel.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtcel.Location = New System.Drawing.Point(440, 324)
+        Me.txtcel.Location = New System.Drawing.Point(443, 317)
+        Me.txtcel.MaxLength = 10
         Me.txtcel.Name = "txtcel"
         Me.txtcel.Size = New System.Drawing.Size(138, 20)
-        Me.txtcel.TabIndex = 100
+        Me.txtcel.TabIndex = 130
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(358, 324)
+        Me.Label8.Location = New System.Drawing.Point(361, 317)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(65, 21)
-        Me.Label8.TabIndex = 99
+        Me.Label8.TabIndex = 136
         Me.Label8.Text = "Celular"
         '
         'txtdir
         '
         Me.txtdir.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtdir.Location = New System.Drawing.Point(440, 238)
+        Me.txtdir.Location = New System.Drawing.Point(443, 231)
         Me.txtdir.Name = "txtdir"
         Me.txtdir.Size = New System.Drawing.Size(374, 20)
-        Me.txtdir.TabIndex = 98
+        Me.txtdir.TabIndex = 128
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label11.Location = New System.Drawing.Point(358, 238)
+        Me.Label11.Location = New System.Drawing.Point(361, 231)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(83, 21)
-        Me.Label11.TabIndex = 97
+        Me.Label11.TabIndex = 135
         Me.Label11.Text = "Direccion"
         '
         'txttel
         '
         Me.txttel.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txttel.Location = New System.Drawing.Point(440, 281)
+        Me.txttel.Location = New System.Drawing.Point(443, 274)
+        Me.txttel.MaxLength = 10
         Me.txttel.Name = "txttel"
         Me.txttel.Size = New System.Drawing.Size(138, 20)
-        Me.txttel.TabIndex = 96
+        Me.txttel.TabIndex = 129
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label12.Location = New System.Drawing.Point(358, 280)
+        Me.Label12.Location = New System.Drawing.Point(361, 273)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(76, 21)
-        Me.Label12.TabIndex = 95
+        Me.Label12.TabIndex = 134
         Me.Label12.Text = "Telefono"
         '
         'txtapm
         '
         Me.txtapm.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtapm.Location = New System.Drawing.Point(183, 370)
+        Me.txtapm.Location = New System.Drawing.Point(190, 321)
         Me.txtapm.Name = "txtapm"
         Me.txtapm.Size = New System.Drawing.Size(140, 20)
-        Me.txtapm.TabIndex = 94
+        Me.txtapm.TabIndex = 127
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label13.Location = New System.Drawing.Point(35, 370)
+        Me.Label13.Location = New System.Drawing.Point(42, 321)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(146, 21)
-        Me.Label13.TabIndex = 93
+        Me.Label13.TabIndex = 133
         Me.Label13.Text = "Apellido Materno"
         '
         'txtapp
         '
         Me.txtapp.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtapp.Location = New System.Drawing.Point(183, 327)
+        Me.txtapp.Location = New System.Drawing.Point(190, 278)
         Me.txtapp.Name = "txtapp"
         Me.txtapp.Size = New System.Drawing.Size(140, 20)
-        Me.txtapp.TabIndex = 92
+        Me.txtapp.TabIndex = 126
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label14.Location = New System.Drawing.Point(35, 327)
+        Me.Label14.Location = New System.Drawing.Point(42, 278)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(140, 21)
-        Me.Label14.TabIndex = 91
+        Me.Label14.TabIndex = 132
         Me.Label14.Text = "Apellido Paterno"
         '
         'txtnombre
         '
         Me.txtnombre.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtnombre.Location = New System.Drawing.Point(127, 283)
+        Me.txtnombre.Location = New System.Drawing.Point(134, 234)
         Me.txtnombre.Name = "txtnombre"
         Me.txtnombre.Size = New System.Drawing.Size(196, 20)
-        Me.txtnombre.TabIndex = 90
+        Me.txtnombre.TabIndex = 125
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label15.Location = New System.Drawing.Point(35, 283)
+        Me.Label15.Location = New System.Drawing.Point(42, 234)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(73, 21)
-        Me.Label15.TabIndex = 89
+        Me.Label15.TabIndex = 131
         Me.Label15.Text = "Nombre"
         '
-        'txtSocio
+        'Label10
         '
-        Me.txtSocio.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtSocio.Location = New System.Drawing.Point(183, 241)
-        Me.txtSocio.Name = "txtSocio"
-        Me.txtSocio.Size = New System.Drawing.Size(140, 20)
-        Me.txtSocio.TabIndex = 88
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label10.Location = New System.Drawing.Point(114, 362)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(68, 21)
+        Me.Label10.TabIndex = 124
+        Me.Label10.Text = "Codigo"
+        Me.Label10.Visible = False
         '
-        'Label16
+        'txtid
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label16.Location = New System.Drawing.Point(35, 241)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(142, 21)
-        Me.Label16.TabIndex = 87
-        Me.Label16.Text = "Numero de Socio"
+        Me.txtid.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtid.Location = New System.Drawing.Point(190, 362)
+        Me.txtid.Name = "txtid"
+        Me.txtid.Size = New System.Drawing.Size(95, 20)
+        Me.txtid.TabIndex = 123
+        Me.txtid.Visible = False
         '
         'dgvSocio
         '
         Me.dgvSocio.AllowUserToAddRows = False
         Me.dgvSocio.AllowUserToDeleteRows = False
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvSocio.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvSocio.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvSocio.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvSocio.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvSocio.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -455,6 +459,8 @@ Partial Class modSocio
     Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton5 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents Label10 As Label
+    Friend WithEvents txtid As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtcel As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label8 As Label
     Friend WithEvents txtdir As WindowsFormsControlLibrary1.BunifuCustomTextbox
@@ -467,6 +473,4 @@ Partial Class modSocio
     Friend WithEvents Label14 As Label
     Friend WithEvents txtnombre As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label15 As Label
-    Friend WithEvents txtSocio As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents Label16 As Label
 End Class

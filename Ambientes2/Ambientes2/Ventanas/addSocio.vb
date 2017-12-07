@@ -18,19 +18,31 @@
 
     Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
         Dim socio As New ClaseSocio
-        socio.inserta(txtSocio.Text, txtnombre.Text, txtapp.Text, txtapm.Text, txtdir.Text, txttel.Text, txtcel.Text)
+        socio.inserta(txtnombre.Text, txtapp.Text, txtapm.Text, txtdir.Text, txttel.Text, txtcel.Text)
+        limpiar()
     End Sub
     Private Sub limpiar()
+        Dim socio As New ClaseSocio
+        socio.selectAllmod(dgvVista)
         txtapm.Text = ""
         txtapp.Text = ""
         txtcel.Text = ""
         txttel.Text = ""
         txtnombre.Text = ""
-        txtSocio.Text = ""
         txtdir.Text = ""
     End Sub
 
     Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
         limpiar()
+    End Sub
+
+    Private Sub addSocio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim socio As New ClaseSocio
+        dgvVista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        socio.selectAllmod(dgvVista)
+    End Sub
+
+    Private Sub txttel_TextChanged(sender As Object, e As EventArgs) Handles txttel.TextChanged
+
     End Sub
 End Class

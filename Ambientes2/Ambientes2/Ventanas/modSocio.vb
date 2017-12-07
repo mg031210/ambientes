@@ -12,9 +12,9 @@
 
     Private Sub dgvPelis_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles dgvSocio.MouseDoubleClick
         If dgvSocio(0, dgvSocio.CurrentRow.Index).Value IsNot DBNull.Value Then
-            txtSocio.Text = dgvSocio(0, dgvSocio.CurrentRow.Index).Value
+            txtid.Text = dgvSocio(0, dgvSocio.CurrentRow.Index).Value
         Else
-            txtSocio.Text = ""
+            txtid.Text = ""
         End If
         If dgvSocio(3, dgvSocio.CurrentRow.Index).Value IsNot DBNull.Value Then
             txtapm.Text = dgvSocio(3, dgvSocio.CurrentRow.Index).Value
@@ -77,7 +77,7 @@
         txtcel.Text = ""
         txttel.Text = ""
         txtnombre.Text = ""
-        txtSocio.Text = ""
+        txtid.Text = ""
         txtdir.Text = ""
     End Sub
 
@@ -97,8 +97,12 @@
 
     Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
         Dim socio As New ClaseSocio
-        socio.actualiza(txtnombre.Text, txtcel.Text, txtapp.Text, txttel.Text, txtapm.Text, txtdir.Text, txtSocio.Text, dgvSocio(0, dgvSocio.CurrentRow.Index).Value)
+        socio.actualiza(txtnombre.Text, txtcel.Text, txtapp.Text, txttel.Text, txtapm.Text, txtdir.Text, txtid.Text)
         limpiar()
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class

@@ -19,7 +19,7 @@ Public Class Login
             HashedPass = Convert.ToBase64String(MD5hash.ComputeHash(System.Text.Encoding.ASCII.GetBytes(txtPass.Text)))
         End Using
 
-        Dim query As String = "SELECT * FROM trabajador where numtrabajador='" & txtUser.Text & "' && contrasena='" & HashedPass & "' && estado='A' ;"
+        Dim query As String = "SELECT * FROM trabajador where usuario='" & txtUser.Text & "' && contrasena='" & HashedPass & "' && estado='A' ;"
 
         DT = con.selectStr(query)
         If DT.Rows.Count = 1 Then
@@ -36,11 +36,11 @@ Public Class Login
         con.close()
     End Sub
 
-    Private Sub txtUser_OnValueChanged(sender As Object, e As EventArgs) Handles txtUser.OnValueChanged
-
+    Private Sub txtPass_GotFocus(sender As Object, e As EventArgs) Handles txtPass.GotFocus
+        txtPass.Text = ""
     End Sub
 
-    Private Sub txtPass_OnValueChanged(sender As Object, e As EventArgs) Handles txtPass.OnValueChanged
-
+    Private Sub txtUser_GotFocus(sender As Object, e As EventArgs) Handles txtUser.GotFocus
+        txtUser.Text = ""
     End Sub
 End Class

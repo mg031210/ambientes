@@ -26,8 +26,6 @@ Partial Class modProvee
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuFlatButton5 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.txttel1 = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.txtdir = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -46,6 +44,10 @@ Partial Class modProvee
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtid = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuFlatButton5 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.dgvProvee = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -66,8 +68,6 @@ Partial Class modProvee
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton3)
-        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton5)
         Me.GroupBox1.Controls.Add(Me.txttel1)
         Me.GroupBox1.Controls.Add(Me.txtdir)
         Me.GroupBox1.Controls.Add(Me.Label11)
@@ -86,6 +86,10 @@ Partial Class modProvee
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.txtid)
+        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton3)
+        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton5)
         Me.GroupBox1.Controls.Add(Me.dgvProvee)
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton1)
@@ -95,6 +99,203 @@ Partial Class modProvee
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
+        '
+        'txttel1
+        '
+        Me.txttel1.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txttel1.Location = New System.Drawing.Point(174, 357)
+        Me.txttel1.MaxLength = 10
+        Me.txttel1.Name = "txttel1"
+        Me.txttel1.Size = New System.Drawing.Size(151, 20)
+        Me.txttel1.TabIndex = 126
+        '
+        'txtdir
+        '
+        Me.txtdir.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtdir.Location = New System.Drawing.Point(428, 225)
+        Me.txtdir.Name = "txtdir"
+        Me.txtdir.Size = New System.Drawing.Size(374, 20)
+        Me.txtdir.TabIndex = 128
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label11.Location = New System.Drawing.Point(344, 225)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(78, 21)
+        Me.Label11.TabIndex = 140
+        Me.Label11.Text = "Dirrecion"
+        '
+        'txttel2
+        '
+        Me.txttel2.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txttel2.Location = New System.Drawing.Point(174, 400)
+        Me.txttel2.MaxLength = 10
+        Me.txttel2.Name = "txttel2"
+        Me.txttel2.Size = New System.Drawing.Size(151, 20)
+        Me.txttel2.TabIndex = 127
+        '
+        'txtrfc
+        '
+        Me.txtrfc.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtrfc.Location = New System.Drawing.Point(428, 358)
+        Me.txtrfc.MaxLength = 13
+        Me.txtrfc.Name = "txtrfc"
+        Me.txtrfc.Size = New System.Drawing.Size(374, 20)
+        Me.txtrfc.TabIndex = 131
+        '
+        'txtnombre
+        '
+        Me.txtnombre.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtnombre.Location = New System.Drawing.Point(174, 225)
+        Me.txtnombre.Name = "txtnombre"
+        Me.txtnombre.Size = New System.Drawing.Size(151, 20)
+        Me.txtnombre.TabIndex = 123
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label15.Location = New System.Drawing.Point(50, 225)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(73, 21)
+        Me.Label15.TabIndex = 139
+        Me.Label15.Text = "Nombre"
+        '
+        'txtcontacto
+        '
+        Me.txtcontacto.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtcontacto.Location = New System.Drawing.Point(528, 317)
+        Me.txtcontacto.Name = "txtcontacto"
+        Me.txtcontacto.Size = New System.Drawing.Size(274, 20)
+        Me.txtcontacto.TabIndex = 130
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label9.Location = New System.Drawing.Point(344, 315)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(178, 21)
+        Me.Label9.TabIndex = 138
+        Me.Label9.Text = "Persona de Contacto"
+        '
+        'txtemail
+        '
+        Me.txtemail.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtemail.Location = New System.Drawing.Point(428, 271)
+        Me.txtemail.Name = "txtemail"
+        Me.txtemail.Size = New System.Drawing.Size(374, 20)
+        Me.txtemail.TabIndex = 129
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label8.Location = New System.Drawing.Point(344, 270)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(51, 21)
+        Me.Label8.TabIndex = 137
+        Me.Label8.Text = "Email"
+        '
+        'txtcodigo
+        '
+        Me.txtcodigo.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtcodigo.Location = New System.Drawing.Point(174, 315)
+        Me.txtcodigo.MaxLength = 5
+        Me.txtcodigo.Name = "txtcodigo"
+        Me.txtcodigo.Size = New System.Drawing.Size(109, 20)
+        Me.txtcodigo.TabIndex = 125
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label7.Location = New System.Drawing.Point(50, 315)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(118, 21)
+        Me.Label7.TabIndex = 136
+        Me.Label7.Text = "Codigo Postal"
+        '
+        'txtfax
+        '
+        Me.txtfax.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtfax.Location = New System.Drawing.Point(174, 273)
+        Me.txtfax.MaxLength = 10
+        Me.txtfax.Name = "txtfax"
+        Me.txtfax.Size = New System.Drawing.Size(151, 20)
+        Me.txtfax.TabIndex = 124
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Location = New System.Drawing.Point(50, 268)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(37, 21)
+        Me.Label5.TabIndex = 135
+        Me.Label5.Text = "Fax"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.Location = New System.Drawing.Point(50, 400)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(89, 21)
+        Me.Label3.TabIndex = 134
+        Me.Label3.Text = "Telefono 2"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Location = New System.Drawing.Point(50, 357)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(89, 21)
+        Me.Label4.TabIndex = 133
+        Me.Label4.Text = "Telefono 1"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label6.Location = New System.Drawing.Point(344, 360)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(41, 21)
+        Me.Label6.TabIndex = 132
+        Me.Label6.Text = "RFC"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label10.Location = New System.Drawing.Point(344, 401)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(68, 21)
+        Me.Label10.TabIndex = 122
+        Me.Label10.Text = "Codigo"
+        Me.Label10.Visible = False
+        '
+        'txtid
+        '
+        Me.txtid.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtid.Location = New System.Drawing.Point(418, 401)
+        Me.txtid.Name = "txtid"
+        Me.txtid.Size = New System.Drawing.Size(95, 20)
+        Me.txtid.TabIndex = 121
+        Me.txtid.Visible = False
         '
         'BunifuFlatButton3
         '
@@ -163,177 +364,6 @@ Partial Class modProvee
         Me.BunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton5.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton5.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'txttel1
-        '
-        Me.txttel1.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txttel1.Location = New System.Drawing.Point(147, 358)
-        Me.txttel1.Name = "txttel1"
-        Me.txttel1.Size = New System.Drawing.Size(138, 20)
-        Me.txttel1.TabIndex = 118
-        '
-        'txtdir
-        '
-        Me.txtdir.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtdir.Location = New System.Drawing.Point(430, 226)
-        Me.txtdir.Name = "txtdir"
-        Me.txtdir.Size = New System.Drawing.Size(374, 20)
-        Me.txtdir.TabIndex = 117
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label11.Location = New System.Drawing.Point(346, 226)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(78, 21)
-        Me.Label11.TabIndex = 116
-        Me.Label11.Text = "Dirrecion"
-        '
-        'txttel2
-        '
-        Me.txttel2.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txttel2.Location = New System.Drawing.Point(147, 401)
-        Me.txttel2.Name = "txttel2"
-        Me.txttel2.Size = New System.Drawing.Size(138, 20)
-        Me.txttel2.TabIndex = 115
-        '
-        'txtrfc
-        '
-        Me.txtrfc.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtrfc.Location = New System.Drawing.Point(99, 271)
-        Me.txtrfc.Name = "txtrfc"
-        Me.txtrfc.Size = New System.Drawing.Size(186, 20)
-        Me.txtrfc.TabIndex = 114
-        '
-        'txtnombre
-        '
-        Me.txtnombre.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtnombre.Location = New System.Drawing.Point(131, 226)
-        Me.txtnombre.Name = "txtnombre"
-        Me.txtnombre.Size = New System.Drawing.Size(196, 20)
-        Me.txtnombre.TabIndex = 113
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label15.Location = New System.Drawing.Point(52, 226)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(73, 21)
-        Me.Label15.TabIndex = 112
-        Me.Label15.Text = "Nombre"
-        '
-        'txtcontacto
-        '
-        Me.txtcontacto.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtcontacto.Location = New System.Drawing.Point(530, 318)
-        Me.txtcontacto.Name = "txtcontacto"
-        Me.txtcontacto.Size = New System.Drawing.Size(274, 20)
-        Me.txtcontacto.TabIndex = 111
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label9.Location = New System.Drawing.Point(346, 316)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(178, 21)
-        Me.Label9.TabIndex = 110
-        Me.Label9.Text = "Persona de Contacto"
-        '
-        'txtemail
-        '
-        Me.txtemail.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtemail.Location = New System.Drawing.Point(430, 272)
-        Me.txtemail.Name = "txtemail"
-        Me.txtemail.Size = New System.Drawing.Size(374, 20)
-        Me.txtemail.TabIndex = 109
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(346, 271)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(51, 21)
-        Me.Label8.TabIndex = 108
-        Me.Label8.Text = "Email"
-        '
-        'txtcodigo
-        '
-        Me.txtcodigo.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtcodigo.Location = New System.Drawing.Point(176, 316)
-        Me.txtcodigo.Name = "txtcodigo"
-        Me.txtcodigo.Size = New System.Drawing.Size(109, 20)
-        Me.txtcodigo.TabIndex = 107
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(52, 316)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(118, 21)
-        Me.Label7.TabIndex = 106
-        Me.Label7.Text = "Codigo Postal"
-        '
-        'txtfax
-        '
-        Me.txtfax.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtfax.Location = New System.Drawing.Point(389, 359)
-        Me.txtfax.Name = "txtfax"
-        Me.txtfax.Size = New System.Drawing.Size(136, 20)
-        Me.txtfax.TabIndex = 105
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(346, 358)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 21)
-        Me.Label5.TabIndex = 104
-        Me.Label5.Text = "Fax"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(52, 401)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(89, 21)
-        Me.Label3.TabIndex = 103
-        Me.Label3.Text = "Telefono 2"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(52, 358)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(89, 21)
-        Me.Label4.TabIndex = 102
-        Me.Label4.Text = "Telefono 1"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(52, 271)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(41, 21)
-        Me.Label6.TabIndex = 101
-        Me.Label6.Text = "RFC"
         '
         'dgvProvee
         '
@@ -499,6 +529,10 @@ Partial Class modProvee
     Friend WithEvents txtBId As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label1 As Label
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuFlatButton5 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents Label10 As Label
+    Friend WithEvents txtid As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txttel1 As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtdir As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label11 As Label
@@ -517,6 +551,4 @@ Partial Class modProvee
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuFlatButton5 As Bunifu.Framework.UI.BunifuFlatButton
 End Class

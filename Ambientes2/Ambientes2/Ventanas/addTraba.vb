@@ -26,12 +26,13 @@ Public Class addTraba
             HashedPass = Convert.ToBase64String(MD5hash.ComputeHash(System.Text.Encoding.ASCII.GetBytes(txtpass.Text)))
         End Using
 
-        trab.inserta(txttrab.Text, txtuser.Text, HashedPass, txtnombre.Text, txtapp.Text, txtapm.Text, txttel.Text, txtcel.Text, txtdir.Text)
+        trab.inserta(txtuser.Text, HashedPass, txtnombre.Text, txtapp.Text, txtapm.Text, txttel.Text, txtcel.Text, txtdir.Text)
         limpiar()
     End Sub
 
     Private Sub limpiar()
-        txttrab.Text = ""
+        Dim trab As New ClaseTrabajador
+        trab.selectAll(dgvVista)
         txtuser.Text = ""
         txtpass.Text = ""
         txtnombre.Text = ""
@@ -44,6 +45,11 @@ Public Class addTraba
 
     Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
         limpiar()
+    End Sub
 
+    Private Sub addTraba_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim trab As New ClaseTrabajador
+        dgvVista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        trab.selectAll(dgvVista)
     End Sub
 End Class

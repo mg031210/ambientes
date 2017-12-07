@@ -59,11 +59,11 @@
     Private Sub limpiar()
         Dim peli As New ClasePeli
         peli.selectAllMod(dgvPelis)
-        txtcodigo.Text = ""
         txtclas.Text = ""
         txtdur.Text = ""
         txttitulo.Text = ""
         txtcategoria.Text = ""
+        txtcodigo.Text = ""
     End Sub
 
     Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
@@ -81,7 +81,6 @@
         Dim peli As New ClasePeli
         peli.elimina(dgvPelis(0, dgvPelis.CurrentRow.Index).Value)
         limpiar()
-
     End Sub
     Private Sub txtBId_GotFocus(sender As Object, e As EventArgs) Handles txtBId.GotFocus
         txtBTitulo.Text = ""

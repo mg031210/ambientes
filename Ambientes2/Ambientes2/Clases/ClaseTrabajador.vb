@@ -2,19 +2,19 @@
 Imports MySql.Data.MySqlClient
 
 Public Class ClaseTrabajador
-    Dim columnas As String = "numtrabajador as Trabajador,usuario as Usuario, contrasena as Contraseña, nombre as Nombre, apellidop as Paterno, apellidom as Materno, telefono as Telefono, celular as Celular, direccion as Direccion"
+    Dim columnas As String = "idusuario as Trabajador,usuario as Usuario, contrasena as Contraseña, nombre as Nombre, apellidop as Paterno, apellidom as Materno, telefono as Telefono, celular as Celular, direccion as Direccion"
     Dim nombreid As String = "idusuario"
     Dim tabla As String = "trabajador"
     Public Sub New()
     End Sub
 
-    Public Sub inserta(ByVal numtrabajador As String, ByVal usuario As String, ByVal contraseña As String, ByVal nombre As String, ByVal apep As String, ByVal apem As String, ByVal tel As String, ByVal cel As String, ByVal dir As String)
+    Public Sub inserta(ByVal usuario As String, ByVal contraseña As String, ByVal nombre As String, ByVal apep As String, ByVal apem As String, ByVal tel As String, ByVal cel As String, ByVal dir As String)
         Dim strSql As String
-        strSql = "INSERT INTO " & tabla & " (numtrabajador,usuario,contrasena,nombre,apellidop,apellidom,telefono,celular,direccion) " &
-                "VALUES('" & numtrabajador & "','" & usuario & "','" & contraseña & "','" & nombre & "','" & apep & "','" & apem & "','" & tel & "','" & cel & "','" & dir & "');"
+        strSql = "INSERT INTO " & tabla & " (usuario,contrasena,nombre,apellidop,apellidom,telefono,celular,direccion) " &
+                "VALUES('" & usuario & "','" & contraseña & "','" & nombre & "','" & apep & "','" & apem & "','" & tel & "','" & cel & "','" & dir & "');"
         Dim xCnx As New Conexion
         xCnx.queryStr(strSql)
-        MessageBox.Show("Registro insertado!")
+        'MessageBox.Show("Registro insertado!")
         cnx.Close()
     End Sub
     Public Function selectAll(ByVal dtg As DataGridView) As Boolean
@@ -22,7 +22,7 @@ Public Class ClaseTrabajador
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " where estado = 'A'", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & " where estado = 'A'and rol='2'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -37,7 +37,7 @@ Public Class ClaseTrabajador
         Dim con As New Conexion
         Dim DA As MySqlDataAdapter
         Dim DT As DataTable
-        Dim query As String = "Select " & columnas & " from " & tabla & " where numtrabajador like '" & id & "%' and estado = 'A'"
+        Dim query As String = "Select " & columnas & " from " & tabla & " where  " & nombreid & " like '" & id & "%' and estado = 'A' and rol='2'"
         Try
             DA = New MySqlDataAdapter(query, cnx)
             DT = New DataTable
@@ -59,7 +59,7 @@ Public Class ClaseTrabajador
         Dim DT As DataTable
         titulo = LCase(titulo)
         Try
-            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(nombre) like '%" & titulo & "%' and estado = 'A'", cnx)
+            DA = New MySqlDataAdapter("Select " & columnas & " from " & tabla & "  where lower(nombre) like '%" & titulo & "%' and estado = 'A' and rol='2'", cnx)
             DT = New DataTable
             DA.Fill(DT)
             dtg.DataSource = DT
@@ -70,7 +70,7 @@ Public Class ClaseTrabajador
             Return False
         End Try
     End Function
-    Public Function actualiza(ByVal numtrab As String, ByVal user As String, ByVal apep As String, ByVal nombre As String, ByVal pass As String, ByVal dir As String, ByVal cel As String, ByVal apem As String, ByVal tel As String, ByVal oldnum As String) As Boolean
+    Public Function actualiza(ByVal numtrab As String, ByVal user As String, ByVal apep As String, ByVal nombre As String, ByVal pass As String, ByVal dir As String, ByVal cel As String, ByVal apem As String, ByVal tel As String, ByVal id As String) As Boolean
         Dim strSql As String
         Dim xCnx As New Conexion
         Dim HashedPass As String = ""
@@ -81,9 +81,9 @@ Public Class ClaseTrabajador
             End If
         End Using
 
-        strSql = "UPDATE " & tabla & " SET numtrabajador = '" & numtrab & "',usuario = '" & user & "',contrasena = '" & HashedPass & "',nombre = '" & nombre & "',apellidop = '" & apep & "',apellidom = '" & apem & "',telefono = '" & tel & "',celular = '" & cel & "',direccion = '" & dir & "' WHERE numtrabajador = '" & oldnum & "';"
+        strSql = "UPDATE " & tabla & " SET numtrabajador = '" & numtrab & "',usuario = '" & user & "',contrasena = '" & HashedPass & "',nombre = '" & nombre & "',apellidop = '" & apep & "',apellidom = '" & apem & "',telefono = '" & tel & "',celular = '" & cel & "',direccion = '" & dir & "' WHERE  " & nombreid & " = '" & id & "';"
         xCnx.queryStr(strSql)
-        MsgBox("Registro modificado")
+        'MsgBox("Registro modificado")
         cnx.Close()
         Return True
     End Function
@@ -92,9 +92,9 @@ Public Class ClaseTrabajador
         Dim strSql As String
         Dim xCnx As New Conexion
 
-        strSql = "UPDATE " & tabla & " SET estado = 'I' WHERE numtrabajador = '" & numtrab & "';"
+        strSql = "UPDATE " & tabla & " SET estado = 'I' WHERE " & nombreid & " = '" & numtrab & "';"
         xCnx.queryStr(strSql)
-        MsgBox("Registro eliminado")
+        'MsgBox("Registro eliminado")
         cnx.Close()
         Return True
     End Function

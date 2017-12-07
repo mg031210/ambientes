@@ -25,13 +25,13 @@ Partial Class addPeli
         Me.components = New System.ComponentModel.Container()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.dgvVista = New System.Windows.Forms.DataGridView()
         Me.radiocat = New System.Windows.Forms.RadioButton()
         Me.radioestreno = New System.Windows.Forms.RadioButton()
         Me.txtcategoria = New System.Windows.Forms.ComboBox()
         Me.txtclas = New System.Windows.Forms.ComboBox()
-        Me.txtcodigo = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.txtdur = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -42,6 +42,7 @@ Partial Class addPeli
         Me.Label4 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.dgvVista, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -51,13 +52,13 @@ Partial Class addPeli
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.dgvVista)
         Me.GroupBox1.Controls.Add(Me.radiocat)
         Me.GroupBox1.Controls.Add(Me.radioestreno)
         Me.GroupBox1.Controls.Add(Me.txtcategoria)
         Me.GroupBox1.Controls.Add(Me.txtclas)
-        Me.GroupBox1.Controls.Add(Me.txtcodigo)
         Me.GroupBox1.Controls.Add(Me.txtdur)
-        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -74,16 +75,38 @@ Partial Class addPeli
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label6.Location = New System.Drawing.Point(276, 334)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(44, 21)
+        Me.Label6.TabIndex = 53
+        Me.Label6.Text = "mins"
+        '
+        'dgvVista
+        '
+        Me.dgvVista.AllowUserToAddRows = False
+        Me.dgvVista.AllowUserToDeleteRows = False
+        Me.dgvVista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvVista.Location = New System.Drawing.Point(38, 54)
+        Me.dgvVista.Name = "dgvVista"
+        Me.dgvVista.ReadOnly = True
+        Me.dgvVista.Size = New System.Drawing.Size(775, 150)
+        Me.dgvVista.TabIndex = 52
+        '
         'radiocat
         '
         Me.radiocat.AutoSize = True
         Me.radiocat.Checked = True
         Me.radiocat.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radiocat.ForeColor = System.Drawing.Color.White
-        Me.radiocat.Location = New System.Drawing.Point(440, 210)
+        Me.radiocat.Location = New System.Drawing.Point(615, 290)
         Me.radiocat.Name = "radiocat"
         Me.radiocat.Size = New System.Drawing.Size(104, 25)
-        Me.radiocat.TabIndex = 51
+        Me.radiocat.TabIndex = 5
         Me.radiocat.TabStop = True
         Me.radiocat.Text = "Catalogo"
         Me.radiocat.UseVisualStyleBackColor = True
@@ -93,7 +116,7 @@ Partial Class addPeli
         Me.radioestreno.AutoSize = True
         Me.radioestreno.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radioestreno.ForeColor = System.Drawing.Color.White
-        Me.radioestreno.Location = New System.Drawing.Point(440, 241)
+        Me.radioestreno.Location = New System.Drawing.Point(615, 321)
         Me.radioestreno.Name = "radioestreno"
         Me.radioestreno.Size = New System.Drawing.Size(85, 25)
         Me.radioestreno.TabIndex = 50
@@ -104,53 +127,34 @@ Partial Class addPeli
         '
         Me.txtcategoria.FormattingEnabled = True
         Me.txtcategoria.Items.AddRange(New Object() {"Ficcion", "Miedo", "Accion", "Aventura", "Comedia", "Drama", "Musical", "Misterio", "Romance", "Deportes", "Animacion"})
-        Me.txtcategoria.Location = New System.Drawing.Point(480, 160)
+        Me.txtcategoria.Location = New System.Drawing.Point(655, 240)
         Me.txtcategoria.Name = "txtcategoria"
         Me.txtcategoria.Size = New System.Drawing.Size(138, 21)
-        Me.txtcategoria.TabIndex = 49
+        Me.txtcategoria.TabIndex = 4
         '
         'txtclas
         '
         Me.txtclas.FormattingEnabled = True
         Me.txtclas.Items.AddRange(New Object() {"AA", "A", "B", "B15", "C", "D"})
-        Me.txtclas.Location = New System.Drawing.Point(195, 159)
+        Me.txtclas.Location = New System.Drawing.Point(175, 286)
         Me.txtclas.Name = "txtclas"
         Me.txtclas.Size = New System.Drawing.Size(138, 21)
-        Me.txtclas.TabIndex = 48
-        '
-        'txtcodigo
-        '
-        Me.txtcodigo.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtcodigo.Location = New System.Drawing.Point(195, 113)
-        Me.txtcodigo.Name = "txtcodigo"
-        Me.txtcodigo.Size = New System.Drawing.Size(138, 20)
-        Me.txtcodigo.TabIndex = 46
+        Me.txtclas.TabIndex = 2
         '
         'txtdur
         '
         Me.txtdur.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtdur.Location = New System.Drawing.Point(132, 209)
+        Me.txtdur.Location = New System.Drawing.Point(175, 335)
         Me.txtdur.Name = "txtdur"
         Me.txtdur.Size = New System.Drawing.Size(95, 20)
-        Me.txtdur.TabIndex = 43
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(45, 112)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(144, 21)
-        Me.Label6.TabIndex = 42
-        Me.Label6.Text = "Codigo de Barras"
+        Me.txtdur.TabIndex = 3
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(383, 160)
+        Me.Label5.Location = New System.Drawing.Point(558, 240)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 21)
         Me.Label5.TabIndex = 41
@@ -161,7 +165,7 @@ Partial Class addPeli
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(45, 163)
+        Me.Label3.Location = New System.Drawing.Point(61, 289)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(108, 21)
         Me.Label3.TabIndex = 40
@@ -172,7 +176,7 @@ Partial Class addPeli
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(383, 212)
+        Me.Label2.Location = New System.Drawing.Point(558, 292)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(42, 21)
         Me.Label2.TabIndex = 39
@@ -183,7 +187,7 @@ Partial Class addPeli
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(45, 209)
+        Me.Label1.Location = New System.Drawing.Point(61, 335)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(81, 21)
         Me.Label1.TabIndex = 38
@@ -217,7 +221,7 @@ Partial Class addPeli
         Me.btncancel.OnHoverTextColor = System.Drawing.Color.White
         Me.btncancel.selected = False
         Me.btncancel.Size = New System.Drawing.Size(106, 38)
-        Me.btncancel.TabIndex = 37
+        Me.btncancel.TabIndex = 7
         Me.btncancel.Text = "  Cancelar"
         Me.btncancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btncancel.Textcolor = System.Drawing.Color.White
@@ -251,7 +255,7 @@ Partial Class addPeli
         Me.btnok.OnHoverTextColor = System.Drawing.Color.White
         Me.btnok.selected = False
         Me.btnok.Size = New System.Drawing.Size(106, 38)
-        Me.btnok.TabIndex = 36
+        Me.btnok.TabIndex = 6
         Me.btnok.Text = "  Finalizar"
         Me.btnok.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnok.Textcolor = System.Drawing.Color.White
@@ -260,17 +264,17 @@ Partial Class addPeli
         'txttitulo
         '
         Me.txttitulo.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txttitulo.Location = New System.Drawing.Point(440, 113)
+        Me.txttitulo.Location = New System.Drawing.Point(175, 240)
         Me.txttitulo.Name = "txttitulo"
         Me.txttitulo.Size = New System.Drawing.Size(358, 20)
-        Me.txttitulo.TabIndex = 35
+        Me.txttitulo.TabIndex = 1
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(383, 113)
+        Me.Label4.Location = New System.Drawing.Point(61, 240)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 21)
         Me.Label4.TabIndex = 34
@@ -322,6 +326,7 @@ Partial Class addPeli
         Me.Text = "addPeli"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.dgvVista, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -333,9 +338,7 @@ Partial Class addPeli
     Friend WithEvents txttitulo As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label4 As Label
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents txtcodigo As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtdur As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -344,4 +347,6 @@ Partial Class addPeli
     Friend WithEvents radioestreno As RadioButton
     Friend WithEvents txtcategoria As ComboBox
     Friend WithEvents txtclas As ComboBox
+    Friend WithEvents dgvVista As DataGridView
+    Friend WithEvents Label6 As Label
 End Class

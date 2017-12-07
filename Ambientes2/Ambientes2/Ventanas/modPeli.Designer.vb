@@ -26,13 +26,14 @@ Partial Class modPeli
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtcodigo = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.radiocat = New System.Windows.Forms.RadioButton()
         Me.radioestreno = New System.Windows.Forms.RadioButton()
         Me.txtcategoria = New System.Windows.Forms.ComboBox()
         Me.txtclas = New System.Windows.Forms.ComboBox()
-        Me.txtcodigo = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.txtdur = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -61,13 +62,14 @@ Partial Class modPeli
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.txtcodigo)
+        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.radiocat)
         Me.GroupBox1.Controls.Add(Me.radioestreno)
         Me.GroupBox1.Controls.Add(Me.txtcategoria)
         Me.GroupBox1.Controls.Add(Me.txtclas)
-        Me.GroupBox1.Controls.Add(Me.txtcodigo)
         Me.GroupBox1.Controls.Add(Me.txtdur)
-        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -86,16 +88,48 @@ Partial Class modPeli
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label9.Location = New System.Drawing.Point(51, 387)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(68, 21)
+        Me.Label9.TabIndex = 67
+        Me.Label9.Text = "Codigo"
+        Me.Label9.Visible = False
+        '
+        'txtcodigo
+        '
+        Me.txtcodigo.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtcodigo.Location = New System.Drawing.Point(165, 387)
+        Me.txtcodigo.Name = "txtcodigo"
+        Me.txtcodigo.Size = New System.Drawing.Size(95, 20)
+        Me.txtcodigo.TabIndex = 66
+        Me.txtcodigo.Visible = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label6.Location = New System.Drawing.Point(266, 339)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(44, 21)
+        Me.Label6.TabIndex = 65
+        Me.Label6.Text = "mins"
+        '
         'radiocat
         '
         Me.radiocat.AutoSize = True
         Me.radiocat.Checked = True
         Me.radiocat.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radiocat.ForeColor = System.Drawing.Color.White
-        Me.radiocat.Location = New System.Drawing.Point(448, 336)
+        Me.radiocat.Location = New System.Drawing.Point(605, 295)
         Me.radiocat.Name = "radiocat"
         Me.radiocat.Size = New System.Drawing.Size(104, 25)
-        Me.radiocat.TabIndex = 64
+        Me.radiocat.TabIndex = 58
         Me.radiocat.TabStop = True
         Me.radiocat.Text = "Catalogo"
         Me.radiocat.UseVisualStyleBackColor = True
@@ -105,10 +139,10 @@ Partial Class modPeli
         Me.radioestreno.AutoSize = True
         Me.radioestreno.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radioestreno.ForeColor = System.Drawing.Color.White
-        Me.radioestreno.Location = New System.Drawing.Point(448, 367)
+        Me.radioestreno.Location = New System.Drawing.Point(605, 326)
         Me.radioestreno.Name = "radioestreno"
         Me.radioestreno.Size = New System.Drawing.Size(85, 25)
-        Me.radioestreno.TabIndex = 63
+        Me.radioestreno.TabIndex = 64
         Me.radioestreno.Text = "Estreno"
         Me.radioestreno.UseVisualStyleBackColor = True
         '
@@ -116,57 +150,38 @@ Partial Class modPeli
         '
         Me.txtcategoria.FormattingEnabled = True
         Me.txtcategoria.Items.AddRange(New Object() {"Ficcion", "Miedo", "Accion", "Aventura", "Comedia", "Drama", "Musical", "Misterio", "Romance", "Deportes", "Animacion"})
-        Me.txtcategoria.Location = New System.Drawing.Point(488, 286)
+        Me.txtcategoria.Location = New System.Drawing.Point(645, 245)
         Me.txtcategoria.Name = "txtcategoria"
         Me.txtcategoria.Size = New System.Drawing.Size(138, 21)
-        Me.txtcategoria.TabIndex = 62
+        Me.txtcategoria.TabIndex = 57
         '
         'txtclas
         '
         Me.txtclas.FormattingEnabled = True
         Me.txtclas.Items.AddRange(New Object() {"AA", "A", "B", "B15", "C", "D"})
-        Me.txtclas.Location = New System.Drawing.Point(203, 285)
+        Me.txtclas.Location = New System.Drawing.Point(165, 291)
         Me.txtclas.Name = "txtclas"
         Me.txtclas.Size = New System.Drawing.Size(138, 21)
-        Me.txtclas.TabIndex = 61
-        '
-        'txtcodigo
-        '
-        Me.txtcodigo.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtcodigo.Location = New System.Drawing.Point(203, 239)
-        Me.txtcodigo.Name = "txtcodigo"
-        Me.txtcodigo.ReadOnly = True
-        Me.txtcodigo.Size = New System.Drawing.Size(138, 20)
-        Me.txtcodigo.TabIndex = 60
+        Me.txtclas.TabIndex = 55
         '
         'txtdur
         '
         Me.txtdur.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtdur.Location = New System.Drawing.Point(140, 335)
+        Me.txtdur.Location = New System.Drawing.Point(165, 340)
+        Me.txtdur.MaxLength = 3
         Me.txtdur.Name = "txtdur"
         Me.txtdur.Size = New System.Drawing.Size(95, 20)
-        Me.txtdur.TabIndex = 59
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(53, 238)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(144, 21)
-        Me.Label6.TabIndex = 58
-        Me.Label6.Text = "Codigo de Barras"
+        Me.txtdur.TabIndex = 56
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(391, 286)
+        Me.Label5.Location = New System.Drawing.Point(548, 245)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 21)
-        Me.Label5.TabIndex = 57
+        Me.Label5.TabIndex = 63
         Me.Label5.Text = "Categoria"
         '
         'Label3
@@ -174,10 +189,10 @@ Partial Class modPeli
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(53, 289)
+        Me.Label3.Location = New System.Drawing.Point(51, 294)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(108, 21)
-        Me.Label3.TabIndex = 56
+        Me.Label3.TabIndex = 62
         Me.Label3.Text = "Clasificacion"
         '
         'Label4
@@ -185,10 +200,10 @@ Partial Class modPeli
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(391, 338)
+        Me.Label4.Location = New System.Drawing.Point(548, 297)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(42, 21)
-        Me.Label4.TabIndex = 55
+        Me.Label4.TabIndex = 61
         Me.Label4.Text = "Tipo"
         '
         'Label7
@@ -196,29 +211,29 @@ Partial Class modPeli
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(53, 335)
+        Me.Label7.Location = New System.Drawing.Point(51, 340)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(81, 21)
-        Me.Label7.TabIndex = 54
+        Me.Label7.TabIndex = 60
         Me.Label7.Text = "Duracion"
         '
         'txttitulo
         '
         Me.txttitulo.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txttitulo.Location = New System.Drawing.Point(448, 239)
+        Me.txttitulo.Location = New System.Drawing.Point(165, 245)
         Me.txttitulo.Name = "txttitulo"
         Me.txttitulo.Size = New System.Drawing.Size(358, 20)
-        Me.txttitulo.TabIndex = 53
+        Me.txttitulo.TabIndex = 54
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(391, 239)
+        Me.Label8.Location = New System.Drawing.Point(51, 245)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(51, 21)
-        Me.Label8.TabIndex = 52
+        Me.Label8.TabIndex = 59
         Me.Label8.Text = "Titulo"
         '
         'dgvPelis
@@ -455,17 +470,18 @@ Partial Class modPeli
     Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton5 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents Label6 As Label
     Friend WithEvents radiocat As RadioButton
     Friend WithEvents radioestreno As RadioButton
     Friend WithEvents txtcategoria As ComboBox
     Friend WithEvents txtclas As ComboBox
-    Friend WithEvents txtcodigo As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtdur As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents txttitulo As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents txtcodigo As WindowsFormsControlLibrary1.BunifuCustomTextbox
 End Class

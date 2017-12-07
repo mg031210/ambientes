@@ -2,7 +2,7 @@
 
 Public Class Conexion
     Public Sub New()
-        cnx.ConnectionString = "server=localhost; user=root; password=obsession; database=mybd"
+        cnx.ConnectionString = "server=localhost; user=root; password=; database=mydb"
         If cnx.State <> ConnectionState.Open Then
             Try
                 cnx.Open()

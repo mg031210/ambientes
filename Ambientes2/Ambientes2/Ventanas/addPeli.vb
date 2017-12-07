@@ -14,18 +14,29 @@
     Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
         Dim peli As New ClasePeli
         If radiocat.Checked Then
-            peli.inserta(txtcodigo.Text, txtclas.Text, txtdur.Text, txttitulo.Text, txtcategoria.Text, tipoCat)
+            peli.inserta(txtclas.Text, txtdur.Text, txttitulo.Text, txtcategoria.Text, tipoCat)
         Else
-            peli.inserta(txtcodigo.Text, txtclas.Text, txtdur.Text, txttitulo.Text, txtcategoria.Text, tipoEst)
+            peli.inserta(txtclas.Text, txtdur.Text, txttitulo.Text, txtcategoria.Text, tipoEst)
         End If
         limpiar()
     End Sub
 
     Private Sub limpiar()
-        txtcodigo.Text = ""
+        Dim peli As New ClasePeli
+        peli.selectAllMod(dgvVista)
         txtclas.Text = ""
         txtdur.Text = ""
         txttitulo.Text = ""
         txtcategoria.Text = ""
+    End Sub
+
+    Private Sub addPeli_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim peli As New ClasePeli
+        dgvVista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        peli.selectAllMod(dgvVista)
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

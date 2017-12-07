@@ -37,7 +37,7 @@ Public Class ClasePrincipal
         If NuevoNombre <> "" Then
             strSql = "UPDATE " & Tabla & " SET nombre = '" & NuevoNombre & "' WHERE nombre = '" & nombre & "';"
             xCnx.queryStr(strSql)
-            MsgBox("Registro modificado")
+            'MsgBox("Registro modificado")
             cnx.Close()
             Return True
         Else

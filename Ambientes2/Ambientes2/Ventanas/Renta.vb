@@ -175,7 +175,7 @@
         det.Show()
     End Sub
     Private Sub pago_TextChanged(sender As Object, e As EventArgs) Handles pago.TextChanged
-        If pago.Text.ToString <> "" Then
+        If pago.Text.ToString <> "" And total.Text.ToString <> "" Then
             If total.Text.ToString <> "" And total.Text.ToString <> Nothing And CInt(pago.Text.ToString) >= CInt(total.Text.ToString) And dgvVenta.RowCount <> 0 Then
                 'btnok.Enabled = True
                 pagover = True
