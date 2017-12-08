@@ -63,6 +63,16 @@ Namespace My
                 Return CType(Me("mydbConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=;database=mydb")>  _
+        Public ReadOnly Property Prueba() As String
+            Get
+                Return CType(Me("Prueba"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
